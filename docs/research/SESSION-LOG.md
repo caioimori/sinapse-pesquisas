@@ -18,9 +18,10 @@
 - Repo criado no GitHub (private), 9 commits
 
 ### O que falta:
-- [ ] **Fase 3 — Blueprint SINAPSE-AI v3** (próximo a fazer)
+- [x] **Fase 3 — Blueprint SINAPSE-AI v3** — COMPLETO (1,242 lines, 17 seções, 6 ADRs)
 - [ ] Pesquisas de DISTRIBUIÇÃO (marketing, vendas — etapa futura)
 - [ ] Revisão contínua de pesquisas conforme novos dados
+- [ ] Executar Sprint 0 "Token Diet" no repo sinapse-ai (outro projeto)
 
 ### Arquivos-chave para retomar:
 ```
