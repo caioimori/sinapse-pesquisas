@@ -3069,5 +3069,51 @@ src/
 
 ---
 
+---
+
+## Referencias Historicas & Mundiais
+
+### Pessoas Referencia
+
+**Robert C. Martin ("Uncle Bob")** -- Autor de "Clean Code" (2008) e "Clean Architecture" (2017). Criador dos principios SOLID. Co-autor do Manifesto Agil. O engenheiro de software mais influente em boas praticas de codigo das ultimas duas decadas. Relevancia para SINAPSE: os principios SOLID e Clean Architecture sao a base das regras de qualidade que o framework impoe via quality gates.
+
+**Eric Evans** -- Autor de "Domain-Driven Design: Tackling Complexity in the Heart of Software" (2003). Criou o vocabulario moderno de DDD: Bounded Context, Aggregate, Entity, Value Object, Repository, e Ubiquitous Language. Relevancia para SINAPSE: a separacao em squads tematicos do SINAPSE e essencialmente DDD aplicado -- cada squad e um Bounded Context com linguagem ubiqua propria.
+
+**Martin Fowler** -- Autor de "Refactoring" (1999/2018), "Patterns of Enterprise Application Architecture" (2002), e co-autor do Manifesto Agil. Chief Scientist da ThoughtWorks. Criou o conceito de "code smell" e sistematizou tecnicas de refactoring. Relevancia para SINAPSE: patterns de refactoring informam como o quality gate (@quality-gate) identifica problemas de codigo.
+
+**Kent Beck** -- Criador de Extreme Programming (XP) e Test-Driven Development (TDD). Autor de "Test Driven Development: By Example" (2002). Criador do framework xUnit. Relevancia para SINAPSE: TDD e a base do "Test-Driven Agentic Development" (TDAD) que o SINAPSE adota para prevenir hallucinations em codigo gerado por AI.
+
+**Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides (Gang of Four / GoF)** -- Autores de "Design Patterns: Elements of Reusable Object-Oriented Software" (1994). Catalogaram 23 design patterns que se tornaram lingua franca da engenharia de software. Relevancia para SINAPSE: patterns como Observer (hook system), Strategy (agent selection), Mediator (orchestrator), e Command (tool system) estao no DNA do framework.
+
+**Dan Abramov** -- Co-criador do Redux e membro core do time React na Meta. Autor do blog Overreacted e principal evangelista de React Hooks, Server Components, e functional patterns no frontend. Relevancia para SINAPSE: React e o framework frontend de referencia do SINAPSE, e os patterns que Abramov popularizou (hooks, composition, unidirectional data flow) sao recomendados nos templates.
+
+**Ricardo Cabello (Mr.doob)** -- Criador do Three.js (2010), a biblioteca 3D mais usada na web. Background na demoscene europeia. Originalmente escreveu o codigo em ActionScript antes de portar para JavaScript. Relevancia para SINAPSE: Three.js e a referencia principal para creative development e 3D no ecossistema web que o squad-animations suporta.
+
+**Jack Doyle** -- Criador do GreenSock Animation Platform (GSAP). Desenvolveu a biblioteca de animacao JavaScript mais performatica e confiavel do mercado, usada por 11M+ sites. Relevancia para SINAPSE: GSAP e a ferramenta principal de animacoes 2D no ecossistema web que o SINAPSE suporta.
+
+**Andrew Hunt & David Thomas** -- Co-autores de "The Pragmatic Programmer" (1999/2019). Cunharam conceitos como "DRY (Don't Repeat Yourself)," "tracer bullets," e "programming by coincidence." Relevancia para SINAPSE: DRY e o principio que guia a arquitetura de templates e tasks reutilizaveis do framework.
+
+**Steve McConnell** -- Autor de "Code Complete" (1993/2004), o livro mais vendido de construcao de software de todos os tempos. Compilou evidencias empiricas sobre o que funciona e o que nao funciona em desenvolvimento de software. Relevancia para SINAPSE: metricas de qualidade de codigo (complexidade ciclomatica, cobertura de testes) usadas nos quality gates vem deste corpo de trabalho.
+
+### Livros "Biblias"
+
+**"Clean Code: A Handbook of Agile Software Craftsmanship"** -- Robert C. Martin (2008). A referencia absoluta em qualidade de codigo: naming, funcoes, comentarios, formatacao, objetos, error handling, e testes. O que extrair para o SINAPSE: regras de naming conventions, funcoes pequenas com responsabilidade unica, e testes limpos que informam os checklists de qualidade.
+
+**"Clean Architecture: A Craftsman's Guide to Software Structure and Design"** -- Robert C. Martin (2017). Principios de arquitetura de software: dependency rule, separacao de concerns, e a Screaming Architecture. O que extrair para o SINAPSE: a dependency rule (dependencias apontam para dentro, nao para fora) que guia a separacao L1-L4 do framework.
+
+**"Domain-Driven Design: Tackling Complexity in the Heart of Software"** -- Eric Evans (2003). A "biblia" de DDD. Define Bounded Context, Aggregate, Entity, Value Object, Repository, Anti-Corruption Layer, e Context Map. O que extrair para o SINAPSE: Bounded Contexts como base para squad boundaries, Ubiquitous Language por dominio, e Anti-Corruption Layer entre squads.
+
+**"Design Patterns: Elements of Reusable Object-Oriented Software"** -- Erich Gamma et al. (1994). Os 23 patterns classicos: Creational (Factory, Singleton), Structural (Adapter, Facade), Behavioral (Observer, Strategy, Command). O que extrair para o SINAPSE: Observer para hook system, Strategy para agent selection, Command para tool invocation, Mediator para orchestration.
+
+**"Refactoring: Improving the Design of Existing Code"** -- Martin Fowler (2nd Edition, 2018). Catalogo sistematico de refactorings com exemplos em JavaScript. Define code smells e tecnicas para elimina-los. O que extrair para o SINAPSE: deteccao automatica de code smells nos quality gates e sugestoes de refactoring nos code review loops.
+
+**"Test Driven Development: By Example"** -- Kent Beck (2002). O manifesto do TDD: Red-Green-Refactor. Demonstra o processo step-by-step com exemplos reais. O que extrair para o SINAPSE: o ciclo TDD como base do TDAD (Test-Driven Agentic Development) que previne hallucinations em codigo AI-generated.
+
+**"The Pragmatic Programmer: Your Journey to Mastery"** -- Andrew Hunt & David Thomas (20th Anniversary Edition, 2019). Filosofia e pratica de desenvolvimento de software: DRY, orthogonality, tracer bullets, domain languages, e pragmatic automation. O que extrair para o SINAPSE: principios de pragmatismo que balanceiam "perfeicao arquitetural" vs "entregar valor."
+
+**"The Book of Shaders"** -- Patricio Gonzalez Vivo & Jen Lowe (online, em progresso). O guia interativo mais acessivel para aprender GLSL shaders: noise, fractals, generative patterns, e fragment shaders. O que extrair para o SINAPSE: fundamentos de shader programming para o squad-animations que suporta WebGL/Three.js.
+
+---
+
 *Pesquisa conduzida por Prism (research-orqx) | Squad Research | SINAPSE AI*
 *Nivel: DEFINITIVE (Pyramid Level 4) | 30+ fontes consultadas | Tiers 1-4*

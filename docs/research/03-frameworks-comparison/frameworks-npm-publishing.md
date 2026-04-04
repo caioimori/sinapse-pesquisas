@@ -1367,5 +1367,39 @@ Publicar como `sinapse-ai` (unscoped) no NPM com:
 
 ---
 
+---
+
+## Referencias Historicas & Mundiais
+
+### Pessoas Referencia
+
+**Ryan Dahl** -- Criador do Node.js (2009) e do Deno (2018). Revolucionou o desenvolvimento web ao trazer JavaScript para o server-side com event loop non-blocking. Sua palestra "10 Things I Regret About Node.js" (2018) e uma masterclass em autocritica tecnica. Relevancia para SINAPSE: Node.js e o runtime do ecossistema NPM que o SINAPSE usa para distribuicao.
+
+**Isaac Z. Schlueter** -- Criador do npm (Node Package Manager). Assumiu a lideranca do Node.js quando Ryan Dahl se afastou em 2012. npm se tornou o maior registry de pacotes do mundo (3M+ packages). Relevancia para SINAPSE: toda a estrategia de publicacao do SINAPSE via `npx sinapse-ai init` depende da infraestrutura que Schlueter construiu.
+
+**Jared Palmer** -- Criador do Turborepo (adquirido pela Vercel em 2021), TSDX, e Formik. Pioneiro em tooling de monorepo para o ecossistema JavaScript/TypeScript. Relevancia para SINAPSE: Turborepo e a referencia principal para monorepo management que o SINAPSE pode adotar para multi-package publishing.
+
+**Guillermo Rauch** -- CEO da Vercel, criador do Next.js e do Socket.io. Visionario do "frontend cloud" e deploy instantaneo. Relevancia para SINAPSE: Vercel e a plataforma de deploy de referencia para projetos que usam o SINAPSE, e Next.js e o framework frontend mais recomendado.
+
+**Sebastian McKenzie** -- Criador do Yarn (package manager) e do Rome (toolchain JS). Pioneiro em resolver problemas de determinismo e performance no npm. Relevancia para SINAPSE: as inovacoes de lockfile deterministic e workspaces que Yarn introduziu sao padroes que o SINAPSE segue.
+
+**Rich Harris** -- Criador do Svelte, SvelteKit, e Rollup. Pioneiro da filosofia "compile-time framework" que elimina runtime overhead. Relevancia para SINAPSE: Rollup e a base de bundlers modernos (Vite) usados no ecossistema de frameworks que o SINAPSE suporta.
+
+**Harrison Chase** -- Criador do LangChain/LangGraph. Seu BMAD-METHOD (43.5K stars) e a maior inspiracao publica para frameworks de AI development como o SINAPSE. Relevancia para SINAPSE: entender o BMAD e competir com ele e critico para posicionamento no mercado.
+
+### Livros "Biblias"
+
+**"Node.js Design Patterns"** -- Mario Casciaro & Luciano Mammino (3rd Edition, 2020). A "biblia" de patterns para Node.js: module system, observer, reactor, middleware, streams, e escalabilidade. O que extrair para o SINAPSE: patterns de plugin architecture, middleware (como o hook system), e module loading que sao a base de CLI tools no ecossistema Node.
+
+**"Working in Public: The Making and Maintenance of Open Source Software"** -- Nadia Eghbal (2020). Analise profunda sobre como projetos open-source sao criados, mantidos, e financiados. Categoriza projetos em federacoes, clubes, stadiums, e brinquedos. O que extrair para o SINAPSE: estrategia de community building, contributor management, e sustentabilidade de longo prazo para um framework OSS.
+
+**"Monorepo Handbook"** -- Nrwl/Nx Team (2023, online). Guia definitivo sobre monorepos: workspace management, dependency graph, affected commands, e caching. O que extrair para o SINAPSE: estrategia de multi-package publishing, dependency management entre @sinapse-ai/core, @sinapse-ai/cli, e squad packages.
+
+**"The Lean Startup"** -- Eric Ries (2011). Embora nao seja tecnico, fundamenta a filosofia de "build-measure-learn" que frameworks modernos adotam. MVP, validated learning, pivot. O que extrair para o SINAPSE: estrategia de lancamento incremental -- publicar @sinapse-ai/core primeiro, medir adocao, iterar.
+
+**"Producing Open Source Software"** -- Karl Fogel (2nd Edition, 2017, online gratuito). O guia classico sobre como administrar projetos open-source: governanca, code review, releases, e comunicacao com comunidade. O que extrair para o SINAPSE: processo de release, CHANGELOG, CONTRIBUTING.md, e issue triage para quando o framework for publicado.
+
+---
+
 *Pesquisa conduzida por Prism (Research Operations Conductor, squad-research)*
 *Nivel: DEEP DIVE (L3) | Fontes: 30+ | Tempo: multi-hora*

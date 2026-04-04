@@ -1660,6 +1660,36 @@ Mesmo com AGI, humanos mantem:
 | Codeium (Windsurf) | Cascade memories, rules com triggers |
 | AWS | Amazon Q -- agents JSON com hooks e MCP |
 
+## Livros "Biblias" por Sub-Area
+
+### Swarm Intelligence
+
+**"Swarm Intelligence: From Natural to Artificial Systems"** -- Eric Bonabeau, Marco Dorigo, Guy Theraulaz (1999, Oxford University Press). O livro fundacional que definiu o campo. Cobre ant colony optimization, particle swarm optimization, e emergencia em sistemas biologicos e artificiais. O que extrair para o SINAPSE: principios de emergencia (comportamento global de regras locais), stigmergy (comunicacao indireta via ambiente), e auto-organizacao que informam o design de agent swarms.
+
+**"The Wisdom of Crowds"** -- James Surowiecki (2004). Demonstra que grupos diversos tomam decisoes melhores que individuos experts, desde que haja diversidade, independencia, descentralizacao, e agregacao. O que extrair para o SINAPSE: fundamentacao teorica para multi-agent decision making -- squads com agentes diversos produzem resultados melhores que um agente unico generalista.
+
+**"Complexity: A Guided Tour"** -- Melanie Mitchell (2009). Introducao acessivel a ciencia da complexidade: automata celulares, redes, computacao biologica, e emergencia. O que extrair para o SINAPSE: como sistemas simples (agents com regras simples) produzem comportamento complexo (framework completo).
+
+### AGI e Safety
+
+**"Superintelligence: Paths, Dangers, Strategies"** -- Nick Bostrom (2014). A "biblia" sobre riscos de AGI/ASI. Orthogonality thesis, instrumental convergence, treacherous turn. O que extrair para o SINAPSE: design de guardrails e kill switches para agents autonomos.
+
+**"Human Compatible: AI and the Problem of Control"** -- Stuart Russell (2019). Propoe "assistance games" onde AI infere preferencias humanas. O que extrair para o SINAPSE: agents que expressam incerteza e pedem confirmacao em vez de assumir.
+
+**"Life 3.0: Being Human in the Age of Artificial Intelligence"** -- Max Tegmark (2017). Cenarios para o futuro com AGI: utopia, dystopia, e caminhos intermediarios. O que extrair para o SINAPSE: design para autonomia progressiva (human-in-the-loop -> human-on-the-loop -> human-over-the-loop).
+
+**"The Alignment Problem: Machine Learning and Human Values"** -- Brian Christian (2020). Como a comunidade de ML descobriu que alignment e o desafio central. O que extrair para o SINAPSE: Constitution como mecanismo de alignment -- principios que governam comportamento de agents.
+
+**"The Singularity is Near"** -- Ray Kurzweil (2005). Previsoes sobre AGI (2029) e Singularidade (2045) baseadas em "law of accelerating returns." O que extrair para o SINAPSE: timeline planning -- o framework precisa ser projetado para um mundo onde agents sao significativamente mais capazes em 3-5 anos.
+
+**"AI 2041: Ten Visions for Our Future"** -- Kai-Fu Lee & Chen Qiufan (2021). 10 cenarios de ficcao + analise tecnica para 2041. Perspectiva China + Ocidente. O que extrair para o SINAPSE: cenarios de uso futuro que informam roadmap de longo prazo.
+
+### LLM CLI/IDE Tools
+
+**"AI Engineering"** -- Chip Huyen (2025). O guia definitivo para construir sistemas de producao com LLMs. O que extrair para o SINAPSE: patterns de configuration management, model routing, e observability que cada CLI tool implementa de forma diferente.
+
+**"The LLM Engineer's Handbook"** -- Paul Iusztin & Maxime Labonne (2025). Framework end-to-end para LLM apps production-ready. O que extrair para o SINAPSE: comparativo de approaches para context management e tool orchestration entre diferentes CLI tools.
+
 ---
 
 # Fontes e Links

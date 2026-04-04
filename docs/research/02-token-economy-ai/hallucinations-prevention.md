@@ -913,6 +913,42 @@ Nenhum framework de desenvolvimento AI pode confiar cegamente em output de LLMs.
 
 ---
 
+---
+
+## Referencias Historicas & Mundiais
+
+### Pessoas Referencia
+
+**Ziwei Ji, Nayeon Lee et al.** -- Autores do survey "Survey of Hallucination in Natural Language Generation" (2023, ACM Computing Surveys), o paper mais citado e abrangente sobre taxonomia de hallucinations em LLMs. Definiram a classificacao intrinsic vs extrinsic que se tornou padrao na area. Relevancia para SINAPSE: a taxonomia deles fundamenta as 7 camadas de verificacao anti-hallucination do framework.
+
+**Sebastian Farquhar et al. (Oxford/DeepMind)** -- Autores do paper sobre semantic entropy publicado na Nature (2024), demonstrando que medir incerteza no nivel de significado (nao de tokens) detecta confabulations de forma robusta. Relevancia para SINAPSE: semantic entropy e a base teorica para quality gates que medem confianca do modelo.
+
+**Amos Tversky & Daniel Kahneman** -- Pioneiros do estudo de vieses cognitivos e heuristicas (decadas de 1970-80). Ganhadores do Nobel de Economia (2002, Kahneman). Seu trabalho sobre overconfidence bias e fundamental para entender por que humanos confiam demais em outputs de LLMs. Relevancia para SINAPSE: vieses cognitivos explicam por que "vibe coders" aceitam hallucinations sem verificar -- o framework precisa compensar isso com gates automaticos.
+
+**Patrick Lewis et al. (Meta/UCL)** -- Autores do paper original de RAG: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks" (2020). Demonstraram que combinar retrieval com generation reduz hallucinations significativamente. Relevancia para SINAPSE: RAG e o pattern mais eficaz para grounding -- o uso de Read tool antes de Edit no Claude Code e essencialmente RAG aplicado a codigo.
+
+**Andrej Karpathy** -- Cunhou o termo "vibe coding" em fevereiro de 2025. Ex-diretor de AI da Tesla e pesquisador da OpenAI. Seu tweet definindo vibe coding como "you give in to the vibes, embrace exponentials, and forget that the code even exists" gerou um movimento global. Relevancia para SINAPSE: o framework precisa suportar vibe coders enquanto previne hallucinations via guardrails automaticos.
+
+**Stuart Russell** -- Professor de Computer Science em Berkeley, co-autor do textbook "Artificial Intelligence: A Modern Approach." Autor de "Human Compatible" (2019) sobre o problema de controle em AI. Relevancia para SINAPSE: sua proposta de "assistance games" (AI que infere preferencias humanas em vez de seguir objetivos fixos) inspira o design de quality gates adaptativos.
+
+**Yejin Choi** -- Professora na University of Washington e pesquisadora da Allen Institute for AI. MacArthur Fellow. Pioneira em pesquisa sobre common sense reasoning em AI e deteccao de desinformacao. Relevancia para SINAPSE: seu trabalho mostra que LLMs falham em raciocinio de senso comum, exigindo verificacao explicita em dominios criticos.
+
+### Livros "Biblias"
+
+**"RAG-Driven Generative AI"** -- Denis Rothman (2024, Packt). O guia pratico mais completo sobre Retrieval-Augmented Generation: vector stores, chunking, indexing, ranking, e human feedback. Ensina a minimizar hallucinations construindo pipelines RAG com LlamaIndex, Deep Lake, e Pinecone. O que extrair para o SINAPSE: patterns de grounding, chunking strategies para documentacao, e metricas de retrieval quality.
+
+**"Enterprise RAG"** -- Tyler Suard (2025, Manning). Baseado em experiencia real com Fortune 500. Cobre selecao de LLM, handling de hallucinations, e construcao de sistemas RAG production-ready. O que extrair para o SINAPSE: estrategias enterprise-grade de verificacao e fallback quando RAG falha.
+
+**"Thinking, Fast and Slow"** -- Daniel Kahneman (2011). A "biblia" sobre vieses cognitivos: System 1 (rapido, intuitivo, propenso a erros) vs System 2 (lento, analitico, caro). Explica por que humanos aceitam hallucinations -- porque o System 1 processa outputs de LLMs como se fossem de fonte confiavel. O que extrair para o SINAPSE: design de UX que forca System 2 (review explicito, quality gates) em decisoes criticas.
+
+**"Human Compatible: AI and the Problem of Control"** -- Stuart Russell (2019). Propoe que AI deveria inferir preferencias humanas em vez de otimizar objetivos fixos. O conceito de "assistance games" e diretamente aplicavel ao design de agents que "perguntam quando nao sabem." O que extrair para o SINAPSE: agents que expressam incerteza em vez de hallucinar respostas confiantes.
+
+**"Artificial Intelligence: A Modern Approach"** -- Stuart Russell & Peter Norvig (4th Edition, 2020). O textbook definitivo de AI, usado em 1,500+ universidades. Cobre search, reasoning, planning, learning, e decision-making. O que extrair para o SINAPSE: fundamentos de search e planning que informam como agents decidem quando precisam de mais informacao vs quando podem agir.
+
+**"The Alignment Problem"** -- Brian Christian (2020). Historia de como a comunidade de ML descobriu que alinhar AI com valores humanos e o desafio central. Narrativa jornalistica acessivel. O que extrair para o SINAPSE: como reward hacking e sycophancy (causas de hallucination) emergem do treinamento RLHF.
+
+---
+
 *Pesquisa conduzida por Prism (Research Orchestrator) | Squad Research | SINAPSE-AI*
 *Nivel: DEFINITIVE | 40+ fontes | Tier 1-4*
 *Data: 2026-04-04*

@@ -2215,4 +2215,44 @@ RAG evoluiu de simples text retrieval para integracao multimodal (imagens, audio
 > **Total de fontes consultadas:** 50+ (Tier 2-4 da Source Credibility Matrix)
 > **Data de producao:** 2026-04-04
 
+---
+
+## Referencias Historicas & Mundiais
+
+### Pessoas Referencia
+
+**Paul Copplestone** -- Co-fundador e CEO do Supabase. Transformou o Supabase de "alternativa open-source ao Firebase" em uma plataforma de desenvolvimento PostgreSQL avaliada em $5B (2025). Filosofia: "nao abstrair o banco, empoderar o desenvolvedor." Relevancia para SINAPSE: Supabase e a plataforma de backend recomendada pelo framework, e a filosofia de nao-abstracao influencia como o SINAPSE expoe configuracoes.
+
+**Guillermo Rauch** -- CEO da Vercel, criador do Next.js e Socket.io. Visionario do "frontend cloud" e deploy instantaneo com preview deployments. Populariazou serverless functions e edge computing para frontend developers. Relevancia para SINAPSE: Vercel e a plataforma de deploy de referencia, e o pattern de preview deployments e CI/CD integrado e recomendado pelo framework.
+
+**Linus Torvalds** -- Criador do Linux (1991) e do Git (2005). Criou o Git em 10 dias quando a licenca do BitKeeper foi revogada para o kernel Linux. Definiu distributed version control como padrao mundial. Relevancia para SINAPSE: Git e o backbone de colaboracao do framework -- branch naming, hooks, PR workflows, tudo depende da arquitetura que Torvalds criou.
+
+**Bruce Schneier** -- Criptografo, autor, e a maior autoridade mundial em seguranca digital. Autor de "Applied Cryptography" (1996), "Secrets and Lies" (2000), e "Schneier on Security" (blog). Cunhou a frase "security is a process, not a product." Relevancia para SINAPSE: a filosofia de "security from day one" do framework (Constitution Article X) ecoa o principio de Schneier de que seguranca nao e bolt-on.
+
+**OWASP Foundation** -- Organizacao sem fins lucrativos fundada em 2001. Publica o OWASP Top 10 (riscos criticos em aplicacoes web) desde 2003. Mantem projetos como ZAP (scanner), Dependency-Check, e Cheat Sheet Series. Relevancia para SINAPSE: o OWASP Top 10 e referencia direta dos 25 deployment blockers do framework e dos checklists de seguranca.
+
+**Tiago Forte** -- Criador do metodo PARA (Projects, Areas, Resources, Archives) e autor de "Building a Second Brain" (2022). Sistematizou como organizar conhecimento digital para maxima produtividade e criatividade. Relevancia para SINAPSE: o Ars Contexta (sistema de persistencia de conhecimento do SINAPSE em Obsidian) e diretamente inspirado no conceito de Second Brain.
+
+**Scott Chacon & Ben Straub** -- Co-autores de "Pro Git" (2nd Edition, 2014, online gratuito), o livro oficial e mais completo sobre Git. Chacon e co-fundador do GitHub. Relevancia para SINAPSE: o workflow de Git do framework (auto-branch, auto-sync, auto-resolve) e baseado nos patterns ensinados em Pro Git.
+
+**Jeff Atwood & Joel Spolsky** -- Co-fundadores do Stack Overflow (2008). Atwood e autor do blog "Coding Horror" e Spolsky do "Joel on Software." Juntos, democratizaram o compartilhamento de conhecimento entre desenvolvedores. Relevancia para SINAPSE: a filosofia de "documentacao acessivel para todos" do framework ecoa a missao do Stack Overflow.
+
+### Livros "Biblias"
+
+**"Building a Second Brain: A Proven Method to Organize Your Digital Life"** -- Tiago Forte (2022). O guia definitivo para criar um sistema de gestao de conhecimento pessoal usando o metodo PARA e o processo CODE (Capture, Organize, Distill, Express). 500,000+ copias vendidas, 25+ idiomas. O que extrair para o SINAPSE: o metodo PARA para organizar knowledge bases por squad, e o processo CODE como framework para o Ars Contexta (Obsidian persistence).
+
+**"Pro Git"** -- Scott Chacon & Ben Straub (2nd Edition, 2014, gratuito em git-scm.com). O livro oficial sobre Git: branching models, merging, rebasing, workflows distribuidos, hooks, e internals. O que extrair para o SINAPSE: patterns de branching (feature branches, pull requests), hooks (pre-commit, pre-push), e gitflow adaptado para colaboracao segura.
+
+**"The Web Application Hacker's Handbook"** -- Dafydd Stuttard & Marcus Pinto (2nd Edition, 2011). O guia mais pratico de seguranca de aplicacoes web: injection, authentication, session management, access control, e XSS. Hands-on com Burp Suite. O que extrair para o SINAPSE: os 25 deployment blockers do framework (RLS, input validation, rate limiting) vem deste corpo de conhecimento.
+
+**"Applied Cryptography"** -- Bruce Schneier (1996). A "biblia" de criptografia: symmetric encryption, public key, hash functions, digital signatures, e protocolos. O que extrair para o SINAPSE: fundamentos de JWT (como GoTrue do Supabase funciona), TLS, e hashing que informam as decisoes de seguranca do framework.
+
+**"Secrets and Lies: Digital Security in a Networked World"** -- Bruce Schneier (2000/2015). Visao holistica de seguranca digital: nao e so sobre tecnologia, e sobre pessoas, processos, e incentivos. O que extrair para o SINAPSE: a perspectiva de que seguranca e processo (nao produto) fundamenta a abordagem de "security gates automaticos" do framework.
+
+**"OWASP Testing Guide"** -- OWASP Foundation (v4.2, 2024, online gratuito). O guia mais completo de testes de seguranca para aplicacoes web: information gathering, configuration testing, authentication testing, session management, e business logic. O que extrair para o SINAPSE: checklists de seguranca pre-deploy e patterns de testes automatizados que os quality gates podem incorporar.
+
+**"Supabase Documentation"** -- Supabase Team (online, continuamente atualizado). Embora nao seja um livro, a documentacao do Supabase e a referencia definitiva para PostgreSQL-as-a-service: RLS, auth, realtime, edge functions, e storage. O que extrair para o SINAPSE: patterns de RLS (Row Level Security), autenticacao, e Edge Functions que o framework recomenda.
+
+---
+
 -- Prism, iluminando o caminho

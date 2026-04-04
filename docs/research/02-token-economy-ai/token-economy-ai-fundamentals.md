@@ -1220,6 +1220,46 @@ Seguranca nao e feature -- e fundacao. Mesma filosofia do SINAPSE (Article X: Se
 
 ---
 
+---
+
+## Referencias Historicas & Mundiais
+
+### Pessoas Referencia
+
+**Ashish Vaswani** -- Autor principal do paper "Attention Is All You Need" (2017), que introduziu a arquitetura Transformer. Com 173,000+ citacoes, e um dos papers mais citados do seculo XXI. Co-autores: Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan Gomez, Lukasz Kaiser, Illia Polosukhin. Relevancia para SINAPSE: TODA a infraestrutura de LLMs que o SINAPSE orquestra (Claude, GPT, Gemini) e baseada na arquitetura Transformer.
+
+**Geoffrey Hinton** -- "Padrinho do Deep Learning." Nobel de Fisica 2024 por trabalho fundacional em redes neurais e backpropagation. Pioneiro de Boltzmann machines, backpropagation, e deep belief networks. Alertou publicamente sobre riscos de AI em 2023 ao sair do Google. Relevancia para SINAPSE: todo o machine learning moderno que alimenta LLMs descende do trabalho de Hinton.
+
+**Yoshua Bengio** -- Turing Award 2018 (com Hinton e LeCun). Pioneiro de word embeddings, attention mechanisms, e generative adversarial networks. Fundador do MILA (Montreal Institute for Learning Algorithms). Relevancia para SINAPSE: word embeddings e attention sao a base de como tokens sao processados nos modelos que o SINAPSE usa.
+
+**Yann LeCun** -- Turing Award 2018. Inventor das Convolutional Neural Networks (CNNs). Chief AI Scientist da Meta. Defensor vocal de que LLMs atuais nao atingirao AGI sem novas arquiteturas. Relevancia para SINAPSE: sua perspectiva sobre limitacoes de LLMs informa como projetar guardrails e quality gates.
+
+**Ilya Sutskever** -- Co-fundador da OpenAI, depois fundador da Safe Superintelligence Inc. Proponente da "scaling hypothesis" -- a ideia de que escalar modelos e dados e suficiente para capacidades emergentes. Relevancia para SINAPSE: a scaling hypothesis explica por que modelos maiores (Claude 4 Opus vs Haiku) se comportam diferentemente no framework.
+
+**Andrej Karpathy** -- Ex-diretor de AI da Tesla, ex-OpenAI. Criador do minbpe (tokenizer educacional), nanoGPT, e dos cursos mais influentes sobre deep learning e LLMs. Cunhou "vibe coding" em 2025. Relevancia para SINAPSE: seus tutoriais sobre tokenizacao e BPE sao a melhor referencia pratica para entender token economy.
+
+**Philip Gage** -- Inventor do algoritmo Byte Pair Encoding (BPE) em 1994, originalmente para compressao de dados. Adaptado para tokenizacao de NLP por Sennrich et al. (2016). Relevancia para SINAPSE: BPE e o algoritmo de tokenizacao usado por Claude, GPT, e praticamente todos os LLMs modernos -- entende-lo e fundamental para otimizar custos.
+
+**Dario Amodei** -- CEO da Anthropic. Liderou pesquisa de scaling laws na OpenAI antes de fundar a Anthropic. Autor de "Machines of Loving Grace." Relevancia para SINAPSE: as decisoes de pricing, context windows, e safety do Claude sao diretamente influenciadas por suas pesquisas.
+
+### Livros "Biblias"
+
+**"Attention Is All You Need"** -- Vaswani et al. (2017, paper). Nao e um livro, mas e O documento fundacional. Introduziu self-attention, multi-head attention, positional encoding, e a arquitetura encoder-decoder que define todos os LLMs modernos. O que extrair para o SINAPSE: entender por que attention escala quadraticamente com contexto (O(n^2)) e fundamental para otimizar compaction e context management.
+
+**"Deep Learning"** -- Ian Goodfellow, Yoshua Bengio, Aaron Courville (2016, MIT Press). A "biblia" academica de deep learning. Cobre fundamentos matematicos (algebra linear, probabilidade, otimizacao), redes neurais, CNNs, RNNs, autoencoders, e modelos generativos. O que extrair para o SINAPSE: fundamentos de backpropagation, gradient descent, e regularizacao que explicam como LLMs aprendem.
+
+**"Natural Language Processing with Transformers"** -- Lewis Tunstall, Leandro von Werra, Thomas Wolf (2022, O'Reilly, Revised Edition). Escrito pelos criadores da biblioteca Hugging Face Transformers. Guia hands-on que cobre fine-tuning, text generation, question answering, NER, e deployment de modelos. O que extrair para o SINAPSE: patterns praticos de como usar Transformers em producao, tokenizacao, e pipeline de inferencia.
+
+**"Hands-On Large Language Models"** -- Jay Alammar & Maarten Grootendorst (2024, O'Reilly). O guia visual e pratico mais acessivel sobre LLMs: tokenizacao, embeddings, attention, fine-tuning, RAG, e deployment. Ilustracoes detalhadas de cada conceito. O que extrair para o SINAPSE: visualizacoes de como tokens fluem pela rede, como attention funciona, e como embeddings representam significado.
+
+**"Speech and Language Processing"** -- Dan Jurafsky & James H. Martin (3rd Edition, draft). O textbook definitivo de NLP. Cobre desde n-grams ate Transformers, passando por POS tagging, parsing, semantica, e dialogue systems. O que extrair para o SINAPSE: fundamentos de linguistica computacional que explicam por que LLMs "entendem" e "hallucinam."
+
+**"Transformers for Machine Learning: A Deep Dive"** -- Uday Kamath, Kenneth Graham, Wael Emara (2022, Chapman & Hall). O primeiro livro abrangente sobre Transformers: 60+ arquiteturas cobertas com case studies e codigo executavel. O que extrair para o SINAPSE: comparativo entre arquiteturas (encoder-only vs decoder-only vs encoder-decoder) e trade-offs de cada uma.
+
+**"AI Engineering"** -- Chip Huyen (2025, O'Reilly). O guia definitivo para engenheiros construindo sistemas de producao com LLMs. Cobre model serving, cost optimization, evaluation, RAG, agents, e observability. O que extrair para o SINAPSE: patterns de cost tracking, model routing (Haiku vs Sonnet vs Opus), e metricas de avaliacao.
+
+---
+
 *Pesquisa conduzida por Prism (Research Operations Conductor) - squad-research*
 *Nivel: DEFINITIVE | 30+ queries de pesquisa | 15+ paginas full-fetch | 65+ fontes citadas*
 *Data: 2026-04-04*

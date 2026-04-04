@@ -1170,5 +1170,41 @@ O leak aconteceu porque:
 
 ---
 
-*Pesquisa conduzida por Prism (Research Operations Conductor) — squad-research*
+---
+
+## Referencias Historicas & Mundiais
+
+### Pessoas Referencia
+
+**Steve McConnell** -- Autor de "Code Complete" (1993/2004), a referencia mais abrangente em construcao de software. Capitulos sobre naming variables, organizing code, e layout/style sao os mais citados da industria em convencoes de nomenclatura. Relevancia para SINAPSE: suas regras de naming (nomes devem revelar intencao, evitar abreviacoes, ser consistentes) fundamentam as convencoes do framework.
+
+**Robert C. Martin ("Uncle Bob")** -- Autor de "Clean Code" (2008). O capitulo 2 ("Meaningful Names") e a referencia mais influente sobre naming conventions em codigo moderno. Definiu regras como "use intention-revealing names," "avoid disinformation," e "make meaningful distinctions." Relevancia para SINAPSE: as regras de naming do SINAPSE (kebab-case para arquivos, PascalCase para componentes) derivam diretamente de Uncle Bob.
+
+**Douglas Crockford** -- Criador do JSON e autor de "JavaScript: The Good Parts" (2008). Definiu as convencoes de formatacao JavaScript que se tornaram padrao: camelCase para variaveis/funcoes, PascalCase para construtores. Relevancia para SINAPSE: as convencoes JavaScript/TypeScript que o SINAPSE segue foram estabelecidas por Crockford.
+
+**Misko Hevery** -- Criador do Angular (Google). O Angular Style Guide e uma das referencias mais completas de convencoes de projeto: file naming (kebab-case), module structure, barrel exports, e conventional suffixes (.component, .service, .module). Relevancia para SINAPSE: o update do Angular Style Guide 2025 (conciso vs legado) informou as convencoes de arquivo do SINAPSE.
+
+**Guido van Rossum** -- Criador do Python e autor do PEP 8 (Python Style Guide). PEP 8 definiu snake_case como padrao para Python e influenciou convencoes de database (PostgreSQL usa snake_case). Relevancia para SINAPSE: snake_case para database columns e variaveis de ambiente no SINAPSE vem desta tradicao.
+
+**Kent C. Dodds** -- Criador do Testing Library, Remix educator, e evangelista de boas praticas React. Popularizou patterns de organizacao de projeto como "colocation" (testes ao lado do codigo) e "feature folders." Relevancia para SINAPSE: o pattern de feature folders e colocation que o SINAPSE recomenda foi sistematizado por Dodds.
+
+**Vercel Team (Guillermo Rauch, Lee Robinson)** -- Criadores do Next.js e Turborepo. Definiram convencoes de projeto que se tornaram padrao na industria: App Router structure, `app/` directory, route groups `(groupName)`, e `public/` assets. Relevancia para SINAPSE: a estrutura de diretorio recomendada pelo SINAPSE para projetos Next.js segue as convencoes da Vercel.
+
+### Livros "Biblias"
+
+**"Code Complete: A Practical Handbook of Software Construction"** -- Steve McConnell (2nd Edition, 2004). A "biblia" absoluta de construcao de software. 900+ paginas cobrindo naming, formatting, comments, complexity management, testing, debugging, e refactoring. Baseado em evidencias empiricas de centenas de estudos. O que extrair para o SINAPSE: capitulos 11 (Naming Variables), 31 (Layout and Style), e 32 (Self-Documenting Code) fundamentam todas as convencoes de naming e organizacao.
+
+**"Clean Code: A Handbook of Agile Software Craftsmanship"** -- Robert C. Martin (2008). Capitulo 2 (Meaningful Names) e capitulo 3 (Functions) sao as referencias mais citadas sobre naming em codigo moderno. O que extrair para o SINAPSE: regras de naming conventions, tamanho de funcoes, e principio de responsabilidade unica que informam os linting rules do framework.
+
+**"JavaScript: The Good Parts"** -- Douglas Crockford (2008). Definiu as convencoes fundamentais do ecossistema JavaScript: camelCase, strict mode, modulos. Embora datado em APIs, os principios de estilo permanecem validos. O que extrair para o SINAPSE: convencoes de naming JavaScript (camelCase variaveis, PascalCase classes) que o framework segue.
+
+**"Docs for Developers: An Engineer's Field Guide to Technical Writing"** -- Jared Bhatt et al. (2021, Apress). Guia pratico para documentacao tecnica: README, API docs, tutorials, e reference guides. O que extrair para o SINAPSE: templates de README, CONTRIBUTING.md, CHANGELOG, e docs-as-code patterns que o framework usa.
+
+**"The Art of Readable Code"** -- Dustin Boswell & Trevor Foucher (2011). Focado exclusivamente em legibilidade: naming things, simplifying expressions, reorganizing code, e writing comments. Mais pratico e conciso que Clean Code. O que extrair para o SINAPSE: heuristicas de naming (nomes curtos para escopos curtos, nomes longos para escopos longos) e patterns de organizacao de codigo.
+
+**"A Philosophy of Software Design"** -- John Ousterhout (2018). Propoe que o principal problema em software e complexidade, e que "deep modules" (interface simples, implementacao rica) sao a solucao. Contraria algumas ideias de Clean Code (funcoes nao precisam ser minusculas). O que extrair para o SINAPSE: o conceito de "deep modules" justifica agents com interface simples (*help, *task) mas implementacao complexa internamente.
+
+---
+
+*Pesquisa conduzida por Prism (Research Operations Conductor) -- squad-research*
 *Nivel: DEFINITIVE | Fontes: 40+ | Tiers: 1-4*

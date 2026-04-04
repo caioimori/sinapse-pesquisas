@@ -1,78 +1,86 @@
 # SINAPSE Deep Research Initiative — Master Index
 
-> **Date:** 2026-04-04
 > **Status:** Phase 1 COMPLETE | Phase 2 COMPLETE | Phase 2.5 COMPLETE | Phase 3 (Blueprint) PENDING
-> **Total Output:** 16,480 lines across 13 research documents + 3 meta-docs
-> **Agents Used:** 11 parallel research agents across 3 phases
-> **Sources Analyzed:** 6+ repos, 20+ websites, 200+ system prompts, 7 LLM CLIs
+> **Total Output:** 18,958 lines across 15 research documents
+> **Agents Used:** 12 parallel research agents across 4 phases
+> **Repository:** github.com/caioimori/caioimori-pesquisas (private)
 
 ---
 
-## How to Navigate This Research
+## How to Navigate
 
-1. **Start here** — Read this INDEX for overview
-2. **For Claude Code internals** — Read Streams 1 + Architecture Deep Dive + Source Extractions
-3. **For token optimization** — Read Stream 2 + Gap Analysis (Section 1)
-4. **For infrastructure** — Read Stream 4 (Supabase, Vercel, Security)
-5. **For SINAPSE improvements** — Read Gap Analysis (50 gaps prioritized)
-6. **For organization standards** — Read Naming & Scaffolding
-7. **For AIOX comparison** — Read AIOX Deep Analysis + Source Extractions (Section 6)
-
----
-
-## Phase 1 — Collection (COMPLETE)
-
-### Stream 1: Claude Code Internals & Source Code
-**File:** [`2026-04-04-claude-code-internals/README.md`](2026-04-04-claude-code-internals/README.md)
-**Lines:** 1,026 | **Sections:** 28
-**Covers:** Leak event, codebase scale (1,902 files, 512K LOC), agent loop, system prompt engineering, tool system (24+ tools), permission system (5 modes), hook system (9 lifecycle events), memory architecture (Dream consolidation), compaction (4 messages preserved, 10K threshold), MCP (6 transport types), config (3-source merge), sessions, cost tracking (per-model pricing), sandbox (3 isolation modes), security (9,707-line bash parser), multi-agent/coordinator, feature flags (44 hidden), anti-distillation, bootstrap (12-phase sequence), services (130 modules), skills (14 bundled), bridge/IDE (31 modules)
-
-### Stream 2: Token Economy & AI/LLM Fundamentals
-**File:** [`token-economy-ai-fundamentals.md`](token-economy-ai-fundamentals.md)
-**Lines:** 1,225 | **Sections:** 20+
-**Covers:** Tokenization (BPE), cost per operation, context window strategies, compaction mechanics, file format efficiency (YAML 20-30% more efficient than JSON), prompt caching ($1.50 vs $15.00/M tokens), batch vs sequential operations, rule injection cost (~500-800 tokens per 100 lines), agent overhead (min 20K tokens per spawn), memory optimization, LLM fundamentals (transformers, attention, RLHF, Constitutional AI), tool use, chain-of-thought, multi-agent patterns (ReAct, Plan-and-Execute), self-learning, second brain concepts, LLM comparison (Claude vs GPT vs Gemini)
-
-### Stream 3: Frameworks, NPM & Project Organization
-**File:** [`ai-frameworks-npm-publishing-deep-dive.md`](ai-frameworks-npm-publishing-deep-dive.md)
-**Lines:** 1,371 | **Sections:** 20+
-**Covers:** 15 frameworks compared (BMAD 43.5K stars, OpenHands 70.5K, Aider 42.8K, AIOX 2.6K), NPM publishing (semver, CI/CD with OIDC, scoped packages, Changesets for monorepo, tsup for dual ESM/CJS), file naming conventions, directory structures (5 paradigms), .env management (T3+Zod), .gitignore, monorepo patterns (Turborepo), template/scaffold systems
-
-### Stream 4: Infrastructure, Security & Collaboration
-**File:** [`infraestrutura-profissional-cybersecurity-colaboracao.md`](infraestrutura-profissional-cybersecurity-colaboracao.md)
-**Lines:** 2,218 | **Sections:** 30+
-**Covers:** Supabase complete (11 components, auth+MFA, RLS with 99.99% improvement examples, Edge Functions, Realtime, Storage, Vault, performance, pricing), Vercel complete (3-layer architecture, Fluid Compute, deploy, Edge, CI/CD, analytics), OWASP Top 10 2025, auth security, API security, XSS/CSRF/CSP, supply chain attacks, LGPD compliance, pen testing (ZAP vs Burp), incident response, git workflows (Git Flow vs GitHub Flow vs Trunk-Based), CI/CD pipelines, testing pyramid, Obsidian second brain + RAG with pgvector
-
-### Stream 5: Source Extractions (Raw Data)
-**File:** [`2026-04-04-source-extractions/README.md`](2026-04-04-source-extractions/README.md)
-**Lines:** 298 | **Sections:** 7
-**Covers:** Piebald catalog complete inventory (33 agent prompts, 75+ system prompts, 14 skills, 30+ system reminders, 24+ tool descriptions, 16 data references), Dream memory consolidation full 4-phase text, Worker fork execution full system prompt, Context compaction summary template, Architecture constants (pricing tables, char limits, config sources), AIOX comparison table, all source URLs
-
-### Supplementary: Architecture Deep Dive
-**File:** [`claude-code-architecture-deep-dive.md`](claude-code-architecture-deep-dive.md)
-**Lines:** 1,299 | **Sections:** 15+
-**Covers:** KAIROS autonomous daemon (150+ references, 15s blocking budget), autoDream memory consolidation (4-phase with triple gate), 3-layer compaction (Micro/Auto/Full), prompt cache optimization (14 cache-break vectors), anti-distillation mechanisms, undercover mode, 44 feature flags with codenames (Capybara, Fennec=Opus 4.6, Tengu, Numbat)
+```
+docs/research/
+├── INDEX.md                    ← VOCE ESTA AQUI
+├── RESEARCH-STANDARD.md        ← Padrao de qualidade obrigatorio
+├── EXECUTION-PLAN.md           ← Plano completo + como retomar
+│
+├── 01-claude-code/             ← Tudo sobre Claude Code
+├── 02-token-economy-ai/        ← Tokens, AI, LLM, ML, alucinacoes
+├── 03-frameworks-comparison/    ← AIOX, BMad, multi-LLM, NPM
+├── 04-software-engineering/     ← Full-stack, animacoes, naming
+├── 05-infrastructure/           ← Supabase, Vercel, security
+├── 06-sinapse-improvement/      ← Gap analysis, roadmap
+├── 07-skills-agents-swarm/      ← Skills, swarm, AGI
+└── sources/                     ← Catalogos de repos
+```
 
 ---
 
-## Phase 2 — Synthesis (COMPLETE)
+## 01-claude-code/ — Claude Code Internals
 
-### Gap Analysis — SINAPSE vs Claude Code vs AIOX
-**File:** [`2026-04-04-sinapse-gap-analysis/README.md`](2026-04-04-sinapse-gap-analysis/README.md)
-**Lines:** 733 | **Gaps Found:** 50 | **Dimensions:** 12
-**Covers:** Token economy (CRITICAL: ~40% CLAUDE.md truncated, 17K tokens overhead from unfiltered rules), context engineering (no static/dynamic separation, no document sharding), memory system (no auto-consolidation, no relevance scoring, no HOT/WARM/COLD tiers), planning pipeline (rigid vs adaptive, missing fast-track), agent architecture (20K+ tokens per spawn, 175 agents vs value), skills system (ABSENT — biggest opportunity), hooks (5 of 9 lifecycle events used), security (no AST bash parser, incomplete secret scanning), NPM distribution (no npx installer, no onboarding flow), naming inconsistencies (different personas per project), project scaffolding (no sinapse init), productization (no multi-tenancy, no usage tracking)
+| File | Lines | Focus |
+|------|-------|-------|
+| [internals.md](01-claude-code/internals.md) | 1,026 | Leak event, 1,902 files, agent loop, system prompt, 24+ tools, permissions, hooks, memory, compaction, MCP, config, sessions, cost tracking, sandbox, security, multi-agent, 44 feature flags, bootstrap (12 phases), services (130 modules), skills, bridge (31 modules) |
+| [architecture-deep-dive.md](01-claude-code/architecture-deep-dive.md) | 1,299 | KAIROS daemon, autoDream memory (4-phase), 3-layer compaction, prompt cache optimization (14 cache-break vectors), anti-distillation, undercover mode, model codenames (Capybara, Fennec=Opus 4.6) |
+| [source-extractions.md](01-claude-code/source-extractions.md) | 298 | Raw data: Piebald catalog (33 agent prompts, 75+ system prompts, 14 skills, 30+ reminders, 24+ tools), Dream memory full text, Worker fork prompt, compaction template, pricing tables, architecture constants |
 
-**Priority Matrix:** 4 P0 (immediate), 18 P1 (next sprint), 16 P2 (backlog), 12 P3 (future)
-**Sprint 0 "Token Diet":** ~14,000 tokens/turn savings (45% reduction), effort S/M
+## 02-token-economy-ai/ — Tokens, AI & Machine Learning
 
-### AIOX Deep Analysis
-**File:** [`2026-04-04-aiox-deep-analysis/README.md`](2026-04-04-aiox-deep-analysis/README.md)
-**Lines:** 1,417 | **Domains:** 8 | **Recommendations:** 13
-**Covers:** Memory Intelligence System (4 sub-layers: Capture/Storage/Retrieval/Evolution, attention scoring formula, HOT/WARM/COLD/ARCHIVE tiers, cognitive sectors, progressive disclosure for 73% token reduction, self-learning with confidence scoring), 14+ workflows (SDC 4-phase, QA Loop max 5, Spec Pipeline 6-phase, Brownfield 10-phase), 12 agents with ADE commands, 3-layer quality gates (pre-commit 30s, PR automation 5min, human review), L1-L4 architecture model, IDE sync for 6 IDEs, squad marketplace, 11 security domains, NPM distribution (package.json, binaries, installation flow)
+| File | Lines | Focus |
+|------|-------|-------|
+| [token-economy-ai-fundamentals.md](02-token-economy-ai/token-economy-ai-fundamentals.md) | 1,225 | Tokenization (BPE), cost per operation, context strategies, YAML 20-30% more efficient than JSON, prompt caching ($1.50 vs $15/M), rule cost (~500-800 tokens/100 lines), agent overhead (min 20K/spawn), LLM fundamentals (transformers, attention, RLHF, Constitutional AI), multi-agent patterns, self-learning, second brain, LLM comparison |
+| [hallucinations-prevention.md](02-token-economy-ai/hallucinations-prevention.md) | 918 | 3 root causes, code hallucinations (19.7% phantom packages), 6 prevention strategies (CoVe, RAG 40-96% reduction), detection (semantic entropy, HaluGate), Verification-First Architecture (7-layer defense), SINAPSE anti-hallucination patterns, vibe coding (92% adoption, "Vibe & Verify") |
 
-### Naming, Organization & Scaffolding
-**File:** [`2026-04-04-naming-organization-scaffolding/README.md`](2026-04-04-naming-organization-scaffolding/README.md)
-**Lines:** 1,174 | **Sections:** 12
-**Covers:** Naming golden rule (file reflects export), 5 directory paradigms (Screaming Architecture recommended), scaffolding comparison (Yeoman vs Plop vs Hygen), T3 Env + Zod for .env validation, comprehensive .gitignore template, GitHub Actions CI/CD pipelines, Conventional Commits spec, PR/issue templates, Atomic Design + Tailwind CSS 4, docs-as-code (Docusaurus vs VitePress vs Mintlify), productization structure (multi-tenancy, billing, marketplace), 3 validation checklists
+## 03-frameworks-comparison/ — Frameworks & Multi-LLM
+
+| File | Lines | Focus |
+|------|-------|-------|
+| [frameworks-npm-publishing.md](03-frameworks-comparison/frameworks-npm-publishing.md) | 1,371 | 15 frameworks (BMAD 43.5K stars, OpenHands 70.5K, Aider 42.8K), NPM publishing (semver, OIDC, Changesets, tsup), .env management (T3+Zod), monorepo (Turborepo) |
+| [aiox-deep-analysis.md](03-frameworks-comparison/aiox-deep-analysis.md) | 1,417 | Memory Intelligence (4 layers, HOT/WARM/COLD, 73% token reduction), 14 workflows, 12 agents, 3-layer quality gates, L1-L4 architecture, IDE sync (6 IDEs), 11 security domains, NPM distribution |
+| [multi-llm-squads-ux.md](03-frameworks-comparison/multi-llm-squads-ux.md) | 1,250 | 7 LLM CLIs (Claude Code, Codex, Gemini, Cursor, Copilot, Windsurf, Amazon Q), AGENTS.md universal standard (Linux Foundation, 20K+ repos), squad creation (4-8 agents sweet spot), persona design 4-layer, CLI UX (Vercel pattern) |
+
+## 04-software-engineering/ — Full-Stack & Standards
+
+| File | Lines | Focus |
+|------|-------|-------|
+| [fullstack-engineering-animations.md](04-software-engineering/fullstack-engineering-animations.md) | 3,073 | Architecture patterns (Clean, DDD, Hexagonal, Serverless + decision trees), SOLID + TypeScript, design patterns, Next.js App Router, TanStack Query + Zustand, testing (Vitest/Playwright/MSW), CI/CD, Disney's 12 principles, GSAP, Framer Motion, React Three Fiber, GLSL shaders, post-processing, 7 project templates (LP → Fintech → Mobile) |
+| [naming-organization-scaffolding.md](04-software-engineering/naming-organization-scaffolding.md) | 1,174 | Naming golden rule, 5 directory paradigms (Screaming Architecture), scaffolding (Yeoman/Plop/Hygen), T3 Env + Zod, .gitignore template, GitHub Actions, Conventional Commits, Atomic Design + Tailwind 4, docs-as-code, productization, 3 validation checklists |
+
+## 05-infrastructure/ — Infra, Security & DevOps
+
+| File | Lines | Focus |
+|------|-------|-------|
+| [infra-cybersecurity-colaboracao.md](05-infrastructure/infra-cybersecurity-colaboracao.md) | 2,218 | Supabase (11 components, auth+MFA, RLS, Edge Functions, Realtime, Vault), Vercel (3-layer, Fluid Compute), OWASP Top 10 2025, auth security, XSS/CSRF/CSP, supply chain, LGPD, pen testing, git workflows, testing pyramid, Obsidian + RAG with pgvector |
+
+## 06-sinapse-improvement/ — Gap Analysis & Roadmap
+
+| File | Lines | Focus |
+|------|-------|-------|
+| [gap-analysis.md](06-sinapse-improvement/gap-analysis.md) | 733 | **50 gaps across 12 dimensions.** CRITICAL: ~40% CLAUDE.md truncated, 17K tokens unfiltered rules. Sprint 0 "Token Diet" = 14K tokens/turn savings (45%). Priority matrix: 4 P0, 18 P1, 16 P2, 12 P3 |
+
+## 07-skills-agents-swarm/ — Skills, Agents, Swarm & AGI
+
+| File | Lines | Focus |
+|------|-------|-------|
+| [skills-ecosystem-analysis.md](07-skills-agents-swarm/skills-ecosystem-analysis.md) | 595 | SKILL.md universal standard (33 platforms), anthropics/skills (110K stars), obra/superpowers (134K stars), 1,060+ skills catalogued, Progressive Disclosure pattern, SINAPSE is a category above all competitors |
+| [llm-files-swarm-agi.md](07-skills-agents-swarm/llm-files-swarm-agi.md) | 1,794 | File maps for 7 LLM CLIs, swarm history (Reynolds 1986 → OpenAI Swarm 2025), 9 frameworks (CrewAI, AutoGen, LangGraph, MetaGPT), 7 orchestration patterns, AGI levels (OpenAI 5, DeepMind 6), 11 historical figures, timeline predictions (~2033), 7 fundamental books |
+
+## sources/ — Reference Catalogs
+
+| File | Lines | Focus |
+|------|-------|-------|
+| [github-repos-ecosystem.md](sources/github-repos-ecosystem.md) | 60 | 18 curated repos (anthropics/skills, openai/codex, awesome lists, community skills) |
 
 ---
 
@@ -80,72 +88,45 @@
 
 | Source | Stars | What We Extracted |
 |--------|-------|-------------------|
-| [Piebald-AI/claude-code-system-prompts](https://github.com/Piebald-AI/claude-code-system-prompts) | 8,197 | 200+ system prompts, 24+ tool descriptions, agent prompts |
-| [ultraworkers/claw-code](https://github.com/ultraworkers/claw-code) | 163,357 | Full Rust implementation (compact, prompt, conversation, hooks, MCP, permissions, session, usage) |
-| [h26liu/claude-code-unpacked](https://github.com/h26liu/claude-code-unpacked) | — | Architecture analysis, CLI rebuild, leaked tools inventory |
-| [SynkraAI/aiox-core](https://github.com/SynkraAI/aiox-core) | 2,583 | Framework comparison (2,647 files), constitution, 12 agents, 14 workflows |
-| [aiox.academialendaria.ai](https://aiox.academialendaria.ai/materiais) | — | 61 articles: memory (4 layers), security (11 domains), workflows, squads |
-| [asgeirtj/system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks) | — | Multi-LLM system prompts (GPT-5, Claude, Gemini, Grok) |
+| [Piebald-AI/claude-code-system-prompts](https://github.com/Piebald-AI/claude-code-system-prompts) | 8,197 | 200+ system prompts |
+| [ultraworkers/claw-code](https://github.com/ultraworkers/claw-code) | 163,357 | Full Rust port |
+| [h26liu/claude-code-unpacked](https://github.com/h26liu/claude-code-unpacked) | — | Architecture analysis |
+| [SynkraAI/aiox-core](https://github.com/SynkraAI/aiox-core) | 2,583 | Competing framework |
+| [anthropics/skills](https://github.com/anthropics/skills) | 110,000+ | Official skills repo |
+| [obra/superpowers](https://github.com/obra/superpowers) | 134,000+ | Community skills |
+| [aiox.academialendaria.ai](https://aiox.academialendaria.ai/materiais) | — | 61 articles |
 
 ---
 
-## Quick Reference: Top 20 Discoveries
+## Top 20 Actionable Discoveries
 
-### CRITICAL (act immediately)
-1. **~40% do CLAUDE.md e truncado silenciosamente** — limite 4K/arquivo, temos 13K
-2. **18/19 rules carregam SEMPRE** — ~17K tokens de overhead fixo desnecessario
-3. **Duplicacao massiva** — global/project CLAUDE.md + rules repetem conteudo
-4. **Skills system AUSENTE** — a maior oportunidade de economia (14K tokens/turn quando movido)
+### CRITICAL (P0)
+1. ~40% do CLAUDE.md é truncado (limite 4K/arquivo, temos 13K)
+2. 18/19 rules carregam SEMPRE (~17K tokens overhead)
+3. Skills system AUSENTE (maior oportunidade: 14K tokens/turn)
+4. Duplicação massiva entre CLAUDE.md e rules
 
-### HIGH (next sprint)
-5. **Compaction preserves only 4 messages** — Claude Code's internal limit
-6. **Cache read 10x cheaper** ($1.50 vs $15/M) — structure for cache hits
-7. **Dream Memory Consolidation** — 4-phase automated (Orient/Gather/Consolidate/Prune)
-8. **AIOX Memory Intelligence** — HOT/WARM/COLD tiers, 73% token reduction
-9. **Worker Fork Model** — isolated workers with 500-word structured reports
-10. **Planning pipeline rigid** — needs fast-track for trivial fixes
-11. **Auto-sync not enforced** — safe-collaboration rule exists but no SessionStart hook
-12. **NPX installer missing** — blocks adoption
+### HIGH (P1)
+5. SKILL.md é o formato universal (33 plataformas) — adotar
+6. AGENTS.md é standard da Linux Foundation — gerar
+7. Dream Memory Consolidation (4-phase automated)
+8. AIOX Memory Intelligence (73% token reduction)
+9. Worker Fork Model (500-word structured reports)
+10. Planning pipeline precisa fast-track
+11. Auto-sync não enforced (falta SessionStart hook)
+12. NPX installer missing (blocks adoption)
 
-### MEDIUM (backlog)
-13. **200+ modular prompt fragments** in Claude Code — conditional loading
-14. **Document sharding** (BMAD) — 70-80% savings per document
-15. **Deferred Tools pattern** — 93% reduction in tool descriptions
-16. **9 hook lifecycle events** — we use 5
-17. **Agent personas inconsistent** — different names per project
-18. **No usage tracking** — can't identify inefficient workflows
+### MEDIUM (P2)
+13. Deferred Tools (93% reduction in tool descriptions)
+14. Document sharding (70-80% savings)
+15. 4-8 agents per squad is sweet spot
+16. Verification-First Architecture (7-layer defense)
+17. Persona design 4-layer model
+18. CLI UX: speed > delight (Vercel pattern)
 
-### STRATEGIC (future)
-19. **KAIROS daemon** — autonomous agent with GitHub webhooks
-20. **44 feature flags** — progressive rollout system
-
----
-
-## Phase 2.5 — Close All Creation Gaps (COMPLETE)
-
-### AI Hallucinations & Vibe Coding
-**File:** [`2026-04-04-hallucinations-prevention/README.md`](2026-04-04-hallucinations-prevention/README.md)
-**Lines:** 918 | **Sections:** 11
-**Covers:** Hallucination science (3 root causes, mathematically inevitable), code-specific hallucinations (19.7% phantom packages, slopsquatting), 6 prevention strategies (CoVe, RAG 40-96% reduction, Constitutional AI), detection (semantic entropy, HaluGate), Verification-First Architecture with 7-layer defense, anti-hallucination patterns for SINAPSE (CLAUDE.md rules, hooks, agent behaviors), vibe coding best practices (92% adoption, "Vibe & Verify" approach), 40+ sources
-
-### Multi-LLM Compatibility, Squad Creation & CLI UX
-**File:** [`2026-04-04-multi-llm-squads-ux/README.md`](2026-04-04-multi-llm-squads-ux/README.md)
-**Lines:** 1,250 | **Sections:** 8
-**Covers:** 7 LLM CLIs analyzed (Claude Code, Codex, Gemini CLI, Cursor, Copilot, Windsurf, Amazon Q), AGENTS.md universal standard (Linux Foundation, 20K+ repos), transpilation strategies per tool, squad creation pipeline (4-8 agents sweet spot per Google Research), persona design 4-layer model, CLI UX philosophy (Vercel speed-first pattern), installation/onboarding flow, branding conventions
-
-### Full-Stack Engineering & Advanced Animations
-**File:** [`2026-04-04-fullstack-engineering-animations/README.md`](2026-04-04-fullstack-engineering-animations/README.md)
-**Lines:** 3,073 | **Sections:** 20+
-**Covers:** Architecture patterns (Clean, DDD, Hexagonal, Serverless with decision trees), SOLID + TypeScript examples, design patterns, Next.js App Router architecture, state management (TanStack Query + Zustand), testing pyramid (Vitest/Playwright/MSW), CI/CD pipeline, Disney's 12 principles for web, GSAP ScrollTrigger, Framer Motion, React Three Fiber, GLSL shaders, post-processing (bloom, DOF), motion design patterns, Awwwards techniques, 7 project templates (LP → Fintech → Mobile)
-
----
-
-## Pending: Phase 3 — Blueprint
-
-- [ ] SINAPSE-AI v3 Blueprint (consolidated architecture)
-- [ ] Sprint 0 "Token Diet" execution plan
-- [ ] Improvement Roadmap with epics/stories
-- [ ] Reorganize research into subfolders by topic
+### STRATEGIC (P3)
+19. KAIROS autonomous daemon (future vision)
+20. AGI preparation (progressive autonomy)
 
 ---
 
@@ -153,10 +134,11 @@
 
 | File | Purpose |
 |------|---------|
-| `INDEX.md` | This file — master navigation |
-| `RESEARCH-STANDARD.md` | Quality template (auto-applied to all research) |
-| `EXECUTION-PLAN.md` | Full plan with phases, status, continuity instructions |
+| [INDEX.md](INDEX.md) | This file — master navigation |
+| [RESEARCH-STANDARD.md](RESEARCH-STANDARD.md) | Quality template (auto-applied) |
+| [EXECUTION-PLAN.md](EXECUTION-PLAN.md) | Full plan + session continuity |
 
 ---
 
-*Research Initiative — 2026-04-04. Total: 16,480 lines, 13 research documents, 50 gaps identified, 11 agents used, 6+ repos analyzed.*
+*SINAPSE Deep Research Initiative — 2026-04-04*
+*18,958 lines | 15 documents | 50 gaps | 12 agents | 8 commits*

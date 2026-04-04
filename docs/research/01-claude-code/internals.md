@@ -1023,4 +1023,36 @@ Every frequently-executed shell command should become a dedicated, typed, gated 
 
 ---
 
+---
+
+## Referencias Historicas & Mundiais
+
+### Pessoas Referencia
+
+**Dario Amodei** -- CEO e co-fundador da Anthropic, a empresa por tras do Claude e Claude Code. Pesquisador de scaling laws em AI e autor do ensaio "Machines of Loving Grace" (2024) sobre o potencial positivo de AI poderosa. Relevancia para SINAPSE: toda a arquitetura do Claude Code que o SINAPSE orquestra foi construida sob a visao de safety-first de Amodei.
+
+**Daniela Amodei** -- Co-fundadora e President da Anthropic. Responsavel pela operacao, cultura e estrategia de go-to-market do Claude. Ex-VP de Safety & Policy na OpenAI. Relevancia para SINAPSE: a filosofia operacional da Anthropic (transparencia, Constitutional AI) influencia diretamente como o Claude Code se comporta.
+
+**Amanda Askell** -- Filosofa e pesquisadora de alignment na Anthropic. Responsavel pelo design do "carater" e personalidade do Claude, incluindo como o modelo responde eticamente. Relevancia para SINAPSE: o comportamento do Claude nos agent loops (recusa a executar acoes perigosas, honestidade sobre limitacoes) e moldado pelo trabalho dela.
+
+**Jarred Sumner** -- Criador do Bun, o runtime JavaScript que a Anthropic adquiriu em 2025 e que roda o Claude Code. Bun gera source maps por default (causa raiz do leak). Relevancia para SINAPSE: entender o runtime subjacente e critico para otimizar performance de hooks e CLI.
+
+**Harrison Chase** -- Criador do LangChain/LangGraph, o framework de orquestracao de AI agents mais usado do mundo. Pioneiro dos patterns de agent loops, tool calling, e memory management que o Claude Code implementa nativamente. Relevancia para SINAPSE: patterns de orquestracao multi-agent do LangGraph informam o design de squads e workflows.
+
+**Andrew Ng** -- Professor de Stanford, co-fundador do Google Brain, fundador da DeepLearning.AI. Popularizou o conceito de "agentic workflows" como paradigma de desenvolvimento AI em 2024. Relevancia para SINAPSE: a visao de "agentes com loops de planejamento e reflexao" e o principio central da arquitetura SINAPSE.
+
+### Livros "Biblias"
+
+**"AI Engineering"** -- Chip Huyen (2025). O guia definitivo para construir sistemas de producao com LLMs: versionamento de modelos, infraestrutura escalavel, orquestracao, RAG, e deployment confiavel. O que extrair para o SINAPSE: patterns de model routing, cost tracking, e orquestracao de pipelines -- tudo que o Claude Code faz internamente.
+
+**"Building LLM Powered Applications"** -- Valentina Alto (2024). Guia pratico para construir aplicacoes agenticas com LLMs: tool use, memory, planning, e multi-agent coordination. O que extrair para o SINAPSE: implementacao de agent loops, context management, e patterns de tool calling que espelham a arquitetura do Claude Code.
+
+**"The LLM Engineer's Handbook"** -- Paul Iusztin & Maxime Labonne (2025). Framework end-to-end para construir aplicacoes LLM production-ready: data collection, prompt engineering, RAG, evaluation, fine-tuning, e deployment. O que extrair para o SINAPSE: metricas de avaliacao, estrategias de compaction, e patterns de cost optimization.
+
+**"Prompt Engineering for Generative AI"** -- James Phoenix & Mike Taylor (2024, O'Reilly). O guia mais completo sobre prompt engineering: tecnicas avanacadas, chain-of-thought, few-shot, system prompts, e structured outputs. O que extrair para o SINAPSE: otimizacao de system prompts, rules files, e CLAUDE.md para minimizar token waste.
+
+**"Designing Data-Intensive Applications"** -- Martin Kleppmann (2017). A "biblia" de arquitetura de sistemas distribuidos: replicacao, particionamento, consistencia, e stream processing. O que extrair para o SINAPSE: patterns de session management, event sourcing (como o hook system), e data pipelines que o Claude Code implementa em 35 subsistemas.
+
+---
+
 *Research compiled 2026-04-04 for SINAPSE AI framework improvement.*
