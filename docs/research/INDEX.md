@@ -1,7 +1,7 @@
 # SINAPSE Deep Research Initiative — Master Index
 
-> **Status:** Phase 1 COMPLETE | Phase 2 COMPLETE | Phase 2.5 COMPLETE | Wave 1 COMPLETE | Wave 2 COMPLETE
-> **Total Output:** 26,279 lines across 20 research documents
+> **Status:** Phase 1 COMPLETE | Phase 2 COMPLETE | Phase 2.5 COMPLETE | Wave 1 COMPLETE | Wave 2 COMPLETE | Wave 3 COMPLETE
+> **Total Output:** 29,871 lines across 22 research documents
 > **Agents Used:** 15 parallel research agents across 5 phases
 > **Repository:** github.com/caioimori/caioimori-pesquisas (private)
 
@@ -106,6 +106,18 @@ docs/research/
 |------|-------|-------|
 | [research.md](12-finance/research.md) | 1,633 | 14 systems: Corporate Finance (DuPont, EVA, ROIC, WACC), Valuation (DCF, CAPM, multiplos, opcoes reais, Black-Scholes), Cash Flow (CCC, working capital, 13-week forecast), Capital Budgeting (NPV, IRR, Monte Carlo, sensitivity), Capital Structure (M&M, Trade-Off, Pecking Order, funding sources), Mercado Financeiro (renda fixa/variavel, derivativos, Greeks), Risk Management (VaR, hedge, Basileia III), FP&A (OBZ/3G Capital, Beyond Budgeting, rolling forecast), M&A (processo, sinergias, CADE), FinTech (PIX, Open Finance, DREX, DeFi, embedded finance, IA), Pricing (10 frameworks, elasticidade, revenue management), Financial Reporting (IFRS 18, earnings quality, Beneish M-Score), Tributacao (reforma 2026-2033, CBS/IBS), Startups & VC (rodadas, unit economics, cap table, 10 VCs), 45+ sources |
 
+## 13-sales-revenue/ — Sales & Revenue Master System (Wave 3)
+
+| File | Lines | Focus |
+|------|-------|-------|
+| [research.md](13-sales-revenue/research.md) | 1,832 | 17 systems: Sales Strategy & Methodology (SPIN, Challenger, MEDDPICC, Sandler, GAP Selling, Value Selling, 12+ frameworks), RevOps (3 pillars, data model, maturity model), Pipeline Management (velocity formula, forecasting, MAPE), CRM & Sales Tech (Salesforce, HubSpot, RD Station, Ploomes), SDR/BDR Operations (cadences, cold calling, social selling), Enterprise Sales (ABS, multi-threading, RFP), Pricing & Deal Strategy (CPQ, discount governance, Chris Voss negotiation), Customer Success (NRR, health scoring, QBR), Sales Enablement (playbooks, coaching), Sales Analytics (win/loss, AI forecasting), B2B vs B2C (PLG/PLS), Compensation (OTE, Brazil CLT benchmarks), AI in Sales (Gong, AI SDRs, 11x.ai), Brazilian Context (WhatsApp sales, ICMS/ISS/CBS/IBS, licitacao), 55+ sources |
+
+## 14-growth/ — Growth Master System (Wave 3)
+
+| File | Lines | Focus |
+|------|-------|-------|
+| [research.md](14-growth/research.md) | 1,760 | 17 systems: Growth Strategy (AARRR/RARRA, North Star Metric, Growth Loops vs Funnels, ICE/RICE), PLG (freemium, PQL, viral loops, network effects), SEO (technical/content/link building, E-E-A-T, Core Web Vitals, programmatic SEO, AI SGE impact), Content Marketing (flywheel, pillar/cluster, content scoring), Analytics (GA4, Mixpanel, Amplitude, attribution, cohort, LTV/CAC), Experimentation (Bayesian vs frequentist, multi-armed bandit, Statsig), Retention (Hook Model, lifecycle marketing, churn analysis), Viral Mechanics (K-factor, referral programs), CRO (landing pages, checkout optimization), Email & Lifecycle (segmentation, automation, deliverability), Community-Led Growth, AI & Growth (personalization, predictive, generative), Brazilian Context (PIX conversion impact, LGPD, RD Station, Hotmart, infoproducts), 42+ sources |
+
 ## sources/ — Reference Catalogs
 
 | File | Lines | Focus |
@@ -171,4 +183,4 @@ docs/research/
 ---
 
 *SINAPSE Deep Research Initiative — 2026-04-07*
-*26,279 lines | 20 documents | 50 gaps | 15 agents | Wave 2 COMPLETE*
+*29,871 lines | 22 documents | 50 gaps | 17 agents | Wave 3 COMPLETE*
