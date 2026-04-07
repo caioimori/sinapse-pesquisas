@@ -1,8 +1,8 @@
 # SINAPSE Deep Research Initiative — Master Index
 
-> **Status:** Phase 1 COMPLETE | Phase 2 COMPLETE | Phase 2.5 COMPLETE | Phase 3 (Blueprint) PENDING
-> **Total Output:** 18,958 lines across 15 research documents
-> **Agents Used:** 12 parallel research agents across 4 phases
+> **Status:** Phase 1 COMPLETE | Phase 2 COMPLETE | Phase 2.5 COMPLETE | Wave 1 COMPLETE | Wave 2 COMPLETE
+> **Total Output:** 26,279 lines across 20 research documents
+> **Agents Used:** 15 parallel research agents across 5 phases
 > **Repository:** github.com/caioimori/caioimori-pesquisas (private)
 
 ---
@@ -76,6 +76,36 @@ docs/research/
 | [skills-ecosystem-analysis.md](07-skills-agents-swarm/skills-ecosystem-analysis.md) | 595 | SKILL.md universal standard (33 platforms), anthropics/skills (110K stars), obra/superpowers (134K stars), 1,060+ skills catalogued, Progressive Disclosure pattern, SINAPSE is a category above all competitors |
 | [llm-files-swarm-agi.md](07-skills-agents-swarm/llm-files-swarm-agi.md) | 1,794 | File maps for 7 LLM CLIs, swarm history (Reynolds 1986 → OpenAI Swarm 2025), 9 frameworks (CrewAI, AutoGen, LangGraph, MetaGPT), 7 orchestration patterns, AGI levels (OpenAI 5, DeepMind 6), 11 historical figures, timeline predictions (~2033), 7 fundamental books |
 
+## 08-agentic-second-brain/ — Agentic Second Brain Engineering (Wave 1)
+
+| File | Lines | Focus |
+|------|-------|-------|
+| [research.md](08-agentic-second-brain/research.md) | 1,262 | 12 systems: Knowledge Architecture (GraphRAG, temporal knowledge graphs), Context Engineering (Karpathy 2025, replaces prompt engineering), Memory layers (90% token reduction, Letta/Mem0/A-Mem), Hybrid retrieval (BM25+embeddings+graph), Agent modeling (LangGraph, CrewAI, Agent SDKs), Obsidian+Claude Code orchestration, 67 sources |
+
+## 09-community-platforms/ — Forum & Community Platform Engineering (Wave 1)
+
+| File | Lines | Focus |
+|------|-------|-------|
+| [research.md](09-community-platforms/research.md) | 1,320 | 8 systems: Social graph engine (Barabási-Albert, network effects taxonomy), Thread dynamics (Reddit Hot/HN Gravity/Wilson Score formulas), Trust & moderation (Discourse 5-tier, SO privilege ladder), Gamification (Hook Model, Amy Jo Kim core loop), Growth loops (K-factor, SEO-driven), Monetization ($200B creator economy), SEO engine (SSR/ISR, JSON-LD), 80+ sources |
+
+## 10-contabilidade/ — Contabilidade Master System (Wave 2)
+
+| File | Lines | Focus |
+|------|-------|-------|
+| [research.md](10-contabilidade/research.md) | 1,526 | 10 systems: Contabilidade Financeira (IFRS/CPC, IFRS 18 nova DRE 2027), Tributaria (Simples/Presumido/Real, Reforma Tributaria 2026-2033 CBS/IBS), Auditoria (COSO ICIF 5+17, ISA/NBC), Digital (SPED 8 modulos, eSocial, AI), Forensic (Benford's Law, Lei 12.846), Custos (ABC com exemplo numerico), Estrategica (target/kaizen/lifecycle costing), 55+ sources |
+
+## 11-advocacia/ — Advocacia Master System (Wave 2)
+
+| File | Lines | Focus |
+|------|-------|-------|
+| [research.md](11-advocacia/research.md) | 1,580 | 12 systems: Direito Civil & Obrigacoes (CC/2002, teoria geral, responsabilidade civil), Empresarial & Societario (SA/Ltda, governanca, recuperacao judicial), Tributario (CTN, 5 especies, CARF, Reforma Tributaria CBS/IBS), Trabalhista & Previdenciario (CLT, Reforma 2017, eSocial), Digital & LGPD (Marco Civil, LGPD, IA, crimes digitais), Consumidor (CDC, inversao onus), Penal Empresarial (Lei 12.846, compliance criminal), Compliance & Governanca (FCPA/UK Bribery Act, ESG), Legal Tech (jurimetria, automacao, LegalAI), Contencioso & Arbitragem (CPC/2015, Lei 9.307, dispute boards), Contratual & M&A (due diligence, SPA/SHA), Propriedade Intelectual (INPI, direito autoral, trade dress), 80+ juristas, 60+ livros, 48+ sources |
+
+## 12-finance/ — Finance Master System (Wave 2)
+
+| File | Lines | Focus |
+|------|-------|-------|
+| [research.md](12-finance/research.md) | 1,633 | 14 systems: Corporate Finance (DuPont, EVA, ROIC, WACC), Valuation (DCF, CAPM, multiplos, opcoes reais, Black-Scholes), Cash Flow (CCC, working capital, 13-week forecast), Capital Budgeting (NPV, IRR, Monte Carlo, sensitivity), Capital Structure (M&M, Trade-Off, Pecking Order, funding sources), Mercado Financeiro (renda fixa/variavel, derivativos, Greeks), Risk Management (VaR, hedge, Basileia III), FP&A (OBZ/3G Capital, Beyond Budgeting, rolling forecast), M&A (processo, sinergias, CADE), FinTech (PIX, Open Finance, DREX, DeFi, embedded finance, IA), Pricing (10 frameworks, elasticidade, revenue management), Financial Reporting (IFRS 18, earnings quality, Beneish M-Score), Tributacao (reforma 2026-2033, CBS/IBS), Startups & VC (rodadas, unit economics, cap table, 10 VCs), 45+ sources |
+
 ## sources/ — Reference Catalogs
 
 | File | Lines | Focus |
@@ -140,5 +170,5 @@ docs/research/
 
 ---
 
-*SINAPSE Deep Research Initiative — 2026-04-04*
-*18,958 lines | 15 documents | 50 gaps | 12 agents | 8 commits*
+*SINAPSE Deep Research Initiative — 2026-04-07*
+*26,279 lines | 20 documents | 50 gaps | 15 agents | Wave 2 COMPLETE*
