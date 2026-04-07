@@ -2,7 +2,7 @@
 
 > **Data:** 2026-04-06
 > **Autor:** @analyst (Scope) via SINAPSE Research Initiative
-> **Fontes:** 55+ fontes consultadas
+> **Fontes:** 70+ fontes consultadas (55 originais + 15 adicionadas na verificacao de 2026-04-07)
 > **Objetivo:** Pesquisa profunda dos 10 sistemas contabeis — contexto brasileiro + melhores praticas internacionais
 
 ---
@@ -23,6 +23,7 @@
 12. [Referencias Historicas & Mundiais](#12-referencias-historicas--mundiais)
 13. [Fontes & Links](#13-fontes--links)
 14. [Checklist de Completude](#14-checklist-de-completude)
+15. [Verificacao de Qualidade](#verificacao-de-qualidade)
 
 ---
 
@@ -71,10 +72,10 @@ No Brasil, a contabilidade possui particularidades unicas decorrentes de:
 | 2010 | Adocao integral das IFRS pelas companhias abertas brasileiras |
 | 2014 | eSocial — inicio do projeto de unificacao trabalhista |
 | 2023 | Lei 14.596 — novas regras de transfer pricing alinhadas a OCDE |
-| 2024 | EC 132/2023 — Reforma Tributaria aprovada |
-| 2025 | IFRS 18 (CPC 51) publicado — nova DRE |
-| 2026 | Inicio da transicao CBS/IBS — fase de testes |
-| 2027 | CBS entra em vigor definitivo (substitui PIS/COFINS) |
+| 2024 | EC 132/2023 — Reforma Tributaria aprovada. IFRS 18 publicada pelo IASB (abril) |
+| 2025 | LC 214/2025 — regulamenta CBS/IBS/IS. LC 224/2025 — altera lucro presumido. CPC 51 (IFRS 18) aprovado. CVM Res. 237/238 (CPC 51 obrigatorio 2027). eSocial versao S-1.3 obrigatoria |
+| 2026 | Fase de testes CBS/IBS (informativo). IFRS S1/S2 obrigatorios (CVM 193/23). Extincao definitiva da DIRF |
+| 2027 | CBS entra em vigor (~8,8%). Imposto Seletivo entra em vigor. PIS/COFINS extintos. IFRS 18 / CPC 51 obrigatorio |
 | 2033 | Fim da transicao — ICMS e ISS extintos, IBS pleno |
 
 ---
@@ -135,9 +136,10 @@ A IFRS 18 ("Presentation and Disclosure in Financial Statements") foi publicada 
 4. **Agregacao e desagregacao** — Regras mais claras sobre o que pode ser agrupado
 
 **Cronograma:**
-- Obrigatorio para exercicios com inicio em ou apos 1/jan/2027
+- Obrigatorio para exercicios com inicio em ou apos 1/jan/2027 (CVM Resolucoes 237 e 238, de dez/2025)
 - Aplicacao antecipada permitida
-- Exige aplicacao retrospectiva (reapresentacao comparativos)
+- Exige aplicacao retrospectiva (demonstracoes de 2027 devem reapresentar comparativos de 2026 na nova estrutura)
+- Nao ha impacto cumulativo em reservas (mudanca de apresentacao, nao de reconhecimento)
 - Empresas devem preparar simulacoes em 2025-2026
 
 ### 2.6 Reconhecimento de Receita — CPC 47 / IFRS 15
@@ -172,7 +174,7 @@ O modelo de 5 passos do CPC 47:
 
 ### 2.9 Tendencias
 
-- **IFRS S1 e S2 (Sustentabilidade)** — A partir de 2026, companhias abertas brasileiras devem divulgar informacoes financeiras relacionadas a sustentabilidade (Resolucao CVM 193/23)
+- **IFRS S1 e S2 (Sustentabilidade)** — A partir de 1/jan/2026, companhias abertas brasileiras devem divulgar informacoes financeiras relacionadas a sustentabilidade (Resolucao CVM 193/23, obrigatoria). Brasil foi o primeiro pais do mundo a adotar os padroes ISSB. IFRS S1 cobre riscos/oportunidades gerais de sustentabilidade; IFRS S2 foca em riscos climaticos (Escopos 1, 2 e 3 de GEE)
 - **IFRS 18** redefinira a apresentacao da DRE globalmente
 - **Digitalizacao total** do processo de elaboracao de demonstracoes
 - **XBRL (eXtensible Business Reporting Language)** para taxonomia padronizada
@@ -343,9 +345,10 @@ A contabilidade tributaria e o ramo especializado na apuracao, pagamento e plane
 | Transporte de passageiros | 16% |
 | Servicos hospitalares | 8% |
 
-**Mudancas em 2026 (LC 224/2025):**
-- Empresas com faturamento > R$5 milhoes/ano: base de calculo aumenta sobre o excedente
-- Restricao de isencoes de PIS e COFINS para diversos setores
+**Mudancas em 2026 (LC 224/2025, de 26/dez/2025):**
+- Empresas com faturamento > R$5 milhoes/ano (ou R$1,25 milhao/trimestre): aumento de 10% nos percentuais de presuncao sobre o excedente (ex.: servicos passam de 32% para 35,2% sobre a parcela excedente)
+- Impacto estimado: ate 1,73% de aumento na carga combinada IRPJ+CSLL para empresas acima do limite
+- Esvaziamento progressivo do regime de lucro presumido como opcao competitiva
 
 #### 4.3.3 Lucro Real
 
@@ -389,7 +392,7 @@ A contabilidade tributaria e o ramo especializado na apuracao, pagamento e plane
 | IPTU | Propriedade urbana | Varia por municipio |
 | ITBI | Transmissao de imoveis | Varia por municipio |
 
-### 4.5 A Reforma Tributaria (EC 132/2023 + LC 214/2025)
+### 4.5 A Reforma Tributaria (EC 132/2023 + LC 214/2025 + LC 224/2025)
 
 **O que muda:**
 
@@ -402,16 +405,16 @@ A contabilidade tributaria e o ramo especializado na apuracao, pagamento e plane
 
 | Ano | Evento |
 |-----|--------|
-| **2026** | Fase de testes: CBS 0,9% + IBS 0,1% (meramente informativo) |
-| **2027** | CBS entra em vigor (aliquota integral ~8,4%). PIS e COFINS zerados |
+| **2026** | Fase de testes: CBS 0,9% + IBS 0,1% (caráter meramente informativo, sem efeitos tributarios) |
+| **2027** | CBS entra em vigor (aliquota de referencia ~8,8%). PIS e COFINS extintos. Imposto Seletivo (IS) entra em vigor |
 | **2028** | Ajustes e consolidacao da CBS |
-| **2029** | IBS comeca: ICMS reduz 10%/ano, ISS reduz 10%/ano |
-| **2030** | ICMS -20%, ISS -20% |
-| **2031** | ICMS -30%, ISS -30% |
-| **2032** | ICMS -40%, ISS -40% |
-| **2033** | ICMS e ISS extintos. IBS em vigor pleno |
+| **2029** | IBS comeca transicao: ICMS e ISS reduzidos a 9/10 das aliquotas atuais, IBS cobra 1/10 |
+| **2030** | ICMS e ISS reduzidos a 8/10, IBS cobra 2/10 |
+| **2031** | ICMS e ISS reduzidos a 7/10, IBS cobra 3/10 |
+| **2032** | ICMS e ISS reduzidos a 6/10, IBS cobra 4/10 |
+| **2033** | ICMS e ISS extintos. IBS em vigor pleno (aliquota de referencia ~17,7%) |
 
-**Aliquota de referencia estimada:** 26,5% (CBS + IBS combinados) — pode ser a maior aliquota de IVA do mundo.
+**Aliquota de referencia estimada:** 26,5% (CBS ~8,8% + IBS ~17,7%) — entre as maiores aliquotas de IVA do mundo (media UE: 21%, media OCDE: 19%).
 
 **Impactos na contabilidade:**
 - Redesenho completo de controles contabeis
@@ -702,7 +705,7 @@ O SPED e o projeto de modernizacao da administracao tributaria brasileira, insti
 | CTe | | Conhecimento transporte | Por operacao |
 | MDFe | | Manifesto documentos | Por viagem |
 
-**Versao 2026:** EFD ICMS/IPI ganha versao 6.0.0 (obrigatoria a partir de jan/2026), com Guia Pratico versao 3.2.0. Ato Conjunto CGIBS/RFB estabelece framework regulatorio para CBS/IBS no SPED.
+**Versao 2026:** EFD ICMS/IPI ganha PVA versao 6.0.0 (obrigatoria a partir de jan/2026). Guia Pratico atualizado ate versao 3.2.2 (mar/2026), com inclusao de campos para NFCom (modelo 62) e ajustes de regras de validacao. Ato Conjunto CGIBS/RFB estabelece framework regulatorio para CBS/IBS no SPED.
 
 ### 7.7 eSocial
 
@@ -714,7 +717,12 @@ Sistema de escrituracao digital das obrigacoes fiscais, previdenciarias e trabal
 - S-1200 a S-1299: Eventos periodicos (folha, pagamentos)
 - S-2210 a S-2240: SST (Saude e Seguranca do Trabalho)
 
-**Versao 2025:** S-1.2.2 com novas exigencias de SST.
+**Versao atual:** S-1.3 (obrigatoria desde jan/2025, com Notas Orientativas ate NO S-1.3 08/2026). Principais mudancas:
+- **Extincao da DIRF** — A partir de 2026, as informacoes de retencao na fonte migram integralmente para eSocial + EFD-Reinf (transmissao mensal)
+- **CPF como identificador exclusivo** — Substituicao progressiva de outros identificadores
+- **Novos campos SST** — Saude e Seguranca do Trabalho com exigencias ampliadas
+- **Reformulacao da Tabela 03** — Novos codigos (1015, 1799, 1811) e ajustes nas naturezas de rubricas
+- **Certificado digital Sectigo** — Novo padrao de seguranca (producao a partir de jun/2026)
 
 ### 7.8 XBRL
 
@@ -752,7 +760,7 @@ A contabilidade forense (forensic accounting) e a aplicacao de habilidades conta
 ### 8.2 Por que importa
 
 - **Fraudes corporativas** — Estimativa global de perdas por fraude: 5% da receita anual (ACFE)
-- **Corrupcao** — Brasil ocupa 104o lugar no Indice de Percepcao de Corrupcao (Transparency International, 2024)
+- **Corrupcao** — Brasil ocupa 107o lugar (score 34/100) no Indice de Percepcao de Corrupcao (Transparency International, 2024) — pior resultado desde 2012
 - **Legislacao** — Lei Anticorrupcao (12.846/2013), Lei da Lavagem de Dinheiro (9.613/98), FCPA, UK Bribery Act
 - **Litigios** — Pericia contabil em processos judiciais e arbitragem
 
@@ -1419,6 +1427,10 @@ Baseada na Teoria das Restricoes de Eliyahu Goldratt:
 10. [Cronograma 2026-2033 — Jettax](https://www.jettax.com.br/blog/cronograma-e-fases-da-reforma-tributaria-de-2026-a-2033/)
 11. [Reforma Tributaria 2026 — Tax Group](https://www.taxgroup.com.br/intelligence/reforma-tributaria-2026-guia-completo-sobre-o-que-muda-e-a-transicao/)
 12. [CBS/IBS no Lucro Real — Escola Superior ESN](https://escolasuperioresn.com.br/reforma-tributaria-2026-cbs-ibs-lucro-real/)
+12a. [LC 214/2025 — Planalto](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm)
+12b. [LC 224/2025 — Lucro Presumido mudancas](https://camargoscontadores.com.br/lucro-presumido-2026-entenda-as-mudancas-da-lc-224-2025/)
+12c. [Orientacoes Reforma Tributaria 2026 — Receita Federal](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026)
+12d. [CBS Aliquota referencia 8,8% — Assertif](https://assertif.com.br/cbs-teste-2026-referencia-88-2027-impactos/)
 
 ### IFRS e CPC
 
@@ -1428,6 +1440,11 @@ Baseada na Teoria das Restricoes de Eliyahu Goldratt:
 16. [Atualizacoes IFRS — KPMG Brasil](https://kpmg.com/br/pt/home/servicos/auditoria-asseguracao/ifrs.html)
 17. [CPC e IFRS — CPCON](https://grupocpcon.com/cpc-e-ifrs-normas-contabeis/)
 18. [IFRS — IRKO](https://site.irko.com.br/blog/ifrs-normas-internacionais-de-contabilidade-e-ifrs-18-cpc-51/)
+18a. [IFRS 18 — IASB Completed Projects](https://www.ifrs.org/projects/completed-projects/2024/primary-financial-statements/)
+18b. [IFRS 18 Standard — IASB](https://www.ifrs.org/issued-standards/list-of-standards/ifrs-18-presentation-and-disclosure-in-financial-statements/)
+18c. [CVM edita normas CPC 51 — CVM](https://www.gov.br/cvm/pt-br/assuntos/noticias/2025/cvm-edita-normas-sobre-novas-regras-contabeis-provenientes-do-pronunciamento-tecnico-cpc-51)
+18d. [IFRS S1/S2 obrigatorios 2026 — CVM 193/23](https://www.gov.br/cvm/pt-br/assuntos/noticias/2023/brasil-e-1o-pais-no-mundo-a-adotar-relatorio-de-informacoes-financeiras-relacionadas-a-sustentabilidade-emitidas-pelo-issb)
+18e. [Applying IFRS 18 — EY Global](https://www.ey.com/en_gl/technical/ifrs-technical-resources/applying-ifrs-a-closer-look-at-ifrs-18-updated-july-2025)
 
 ### Contabilidade Digital e Automacao
 
@@ -1438,6 +1455,12 @@ Baseada na Teoria das Restricoes de Eliyahu Goldratt:
 23. [SPED Contabil 2026](https://contabilidadefinanceira.com.br/declaracoes-e-demonstrativos/sped-contabil-2026/)
 24. [EFD ICMS IPI 2026 — Contabeis](https://www.contabeis.com.br/noticias/73131/efd-icms-ipi-ganha-atualizacao-para-2026/)
 25. [Integrar SAP TOTVS — Confirp](https://confirp.com.br/integrar-sap-totvs-linx-omie-oracle-contabilidade/)
+25a. [eSocial 2026 — Mudancas e Novos Eventos](https://escolasuperioresn.com.br/esocial-2026-mudancas-novos-eventos-obrigatorios/)
+25b. [eSocial S-1.3 — Guia Omie](https://www.omie.com.br/blog/esocial-2026-confira-o-guia-completo-das-mudancas/)
+25c. [Manual eSocial S-1.3 — Gov.br](https://www.gov.br/esocial/pt-br/documentacao-tecnica)
+25d. [EFD ICMS IPI Guia Pratico 3.2.2 — SPED](http://sped.rfb.gov.br/pagina/show/8114)
+25e. [Novas Normas CFC 2026 — ABCONSP](https://abconsp.com.br/novas-normas-cfc-2026-guia-essencial-para-prestadores-contabeis/)
+25f. [IA do Prompt a Especificacao — Roberto Dias Duarte](https://www.robertodiasduarte.com.br/ia-na-contabilidade-do-prompt-a-especificacao-2022-2026/)
 
 ### Transfer Pricing
 
@@ -1523,4 +1546,78 @@ Baseada na Teoria das Restricoes de Eliyahu Goldratt:
 > **Documento gerado por:** @analyst (Scope) via SINAPSE Research Initiative
 > **Modelo:** Claude Opus 4.6 (1M context)
 > **Total de linhas:** 900+
-> **Total de fontes:** 55+
+> **Total de fontes:** 55+ (expandido para 70+ apos verificacao)
+
+---
+
+## Verificacao de Qualidade
+
+> **Data da verificacao:** 2026-04-07
+> **Verificador:** @research-orqx (Prism) via SINAPSE Research Initiative
+> **Metodo:** WebSearch cruzado com fontes oficiais (gov.br, IASB, CVM, CFC, Transparency International)
+
+### Correcoes Aplicadas
+
+| Item | Antes | Depois | Fonte |
+|------|-------|--------|-------|
+| CBS aliquota referencia 2027 | ~8,4% | ~8,8% | Assertif, Tax Group, Contabeis |
+| IBS transicao 2029-2032 | "ICMS reduz 10%/ano" | "ICMS reduzido a 9/10, 8/10, 7/10, 6/10" (LC 214/2025) | Camara, CRCSP, Simtax |
+| Indice Corrupcao Brasil | 104o lugar | 107o lugar, score 34/100 (pior desde 2012) | Transparency International CPI 2024 |
+| eSocial versao | S-1.2.2 | S-1.3 (obrigatoria desde jan/2025, NO S-1.3 08/2026) | Gov.br/esocial, Omie, FENACON |
+| SPED Guia Pratico | 3.2.0 | 3.2.2 (mar/2026) | SPED RFB, FENACON |
+| LC 224/2025 lucro presumido | Descricao generica | Aumento de 10% na presuncao sobre excedente a R$5mi/ano | Camargos, MSV Advogados, Migalhas |
+| IFRS 18 / CPC 51 regulamentacao | Sem detalhe CVM | CVM Resolucoes 237/238 (dez/2025), retrospectiva sem impacto cumulativo | CVM, BLB Escola, EY |
+| Timeline 1.3 | Faltavam marcos 2025 | Adicionados: LC 214, LC 224, CPC 51, CVM 237/238, eSocial S-1.3 | Multiplas |
+
+### Enriquecimentos Adicionados
+
+| Secao | Enriquecimento |
+|-------|---------------|
+| 2.9 IFRS S1/S2 | Brasil primeiro pais a adotar ISSB; detalhamento Escopos 1-3 GEE |
+| 4.5 Reforma cronograma | Aliquotas fracionarias (9/10 a 6/10) conforme LC 214; IS em 2027 |
+| 4.5 Aliquota referencia | CBS 8,8% + IBS 17,7% = 26,5%; comparacao UE/OCDE |
+| 7.6 SPED | NFCom modelo 62, PVA 6.0.0 |
+| 7.7 eSocial | Extincao DIRF, CPF exclusivo, Tabela 03, certificado Sectigo |
+| Timeline 1.3 | DIRF extinta 2026, IFRS S1/S2 obrigatorios 2026 |
+| 13. Fontes | +15 novas fontes verificadas (LC 214 Planalto, CVM, IASB, EY, FENACON, Gov.br) |
+
+### URLs Verificadas
+
+| # | URL | Status |
+|---|-----|--------|
+| 1 | ifrs.org | OK |
+| 2 | cpc.org.br | OK |
+| 3 | cfc.org.br | OK |
+| 4 | gov.br/cvm | OK |
+| 5 | sped.rfb.gov.br | OK |
+| 6 | coso.org | OK |
+| 7 | theiia.org | OK |
+| 8 | acfe.com | OK |
+| 9 | camara.leg.br (ref 9) | OK |
+| 10 | jettax.com.br (ref 10) | OK |
+| 11 | taxgroup.com.br (ref 11) | OK |
+| 26 | planalto.gov.br Lei 14.596 (ref 26) | OK |
+| 31 | wiley.com Benford (ref 31) | OK |
+| 52 | amazon.com Financial Shenanigans (ref 52) | OK |
+
+### Dados Nao Alterados (Confirmados)
+
+- IFRS 18 publicada em abril de 2024 pelo IASB (confirmado)
+- IFRS 18 obrigatoria para exercicios iniciados em ou apos 1/jan/2027 (confirmado)
+- EC 132/2023 como base constitucional da reforma (confirmado)
+- LC 214/2025 como regulamentacao da reforma (confirmado: 16/jan/2025)
+- Lei 14.596/2023 transfer pricing alinhada OCDE (confirmado)
+- CPC 51 substitui CPC 26 (R1) (confirmado)
+- TOTVS ~50% market share ERP Brasil (confirmado)
+- SAP ~24% global market share (confirmado)
+- Ferramentas citadas (Omie, Bling, Conta Azul, Sankhya) todas ativas (confirmado)
+- Big Four presencas Brasil (confirmado)
+- COSO ICIF 2013 e COSO ERM 2017 (confirmado)
+- Aliquota de referencia combinada 26,5% (confirmado como faixa 26,5%-28%)
+
+### Riscos Residuais
+
+- Cronograma da reforma pode sofrer ajustes legislativos (acompanhar LC complementares)
+- Aliquota de referencia de 26,5% e estimativa; valor final depende de regulamentacao
+- SPED Guia Pratico pode receber novas versoes ao longo de 2026
+- eSocial NO (Notas Orientativas) sao publicadas continuamente

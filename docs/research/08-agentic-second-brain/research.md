@@ -59,7 +59,7 @@ Um Agentic Second Brain completo requer 12 sistemas interconectados, cada um abo
 
 ### O Mercado
 
-O mercado global de graph databases deve crescer de $2.85B (2025) para $15.32B (2032), com CAGR de 27.1%. O segmento de knowledge management atingiu $400B em 2024. 85% das empresas planejam incorporar agentes de IA em seus workflows ate o final de 2026 (Gartner). O custo de ma qualidade de dados e de $12.9M/ano por organizacao (IBM).
+O mercado global de graph databases foi avaliado em $2.85B (2025) e deve crescer para $18-20B ate 2032-2034, dependendo da fonte (Fortune Business Insights projeta $20.29B/2034 com CAGR 24.13%; MarketsandMarkets projeta $18.61B/2032 com CAGR 21.9%). O segmento de knowledge management foi avaliado entre $773B e $885B em 2024 (FactMR e Research and Markets, respectivamente), dependendo da abrangencia da definicao. Gartner preve que 33% dos aplicativos enterprise incluirao IA agenticia ate 2028 (vs <1% em 2024), e que 40% dos apps enterprise terao agentes task-specific ate 2026. O custo de ma qualidade de dados e de $12.9M/ano por organizacao (Gartner, 2021).
 
 ---
 
@@ -142,7 +142,7 @@ A maioria do conhecimento valioso e gerada em contextos efemeros -- uma conversa
 
 **Agentic Context Engineering (ACE):** Framework academico que adota uma arquitetura agenticia com tres componentes especializados -- Generator, Reflector, e Curator -- representando contexto como uma colecao de bullets estruturados em vez de um prompt monolitico. Cada entrada de memoria consiste em metadados (IDs unicos, contadores de utilidade) e conteudo capturando unidades pequenas como estrategias reutilizaveis, conceitos de dominio, ou modos de falha comuns.
 
-**Cognee:** Motor de memoria cognitiva para aplicacoes de IA que combina estruturas de grafo com embeddings vetoriais em um sistema unificado. Oferece pipelines modulares para extracoes customizadas, enriquecimento e retrieval, com 30+ conectores para documentos, imagens, audio e conversas.
+**Cognee:** Motor de memoria cognitiva open-source para aplicacoes de IA que combina estruturas de grafo com embeddings vetoriais em um sistema unificado. Oferece pipelines modulares para extracoes customizadas, enriquecimento e retrieval, com 30+ conectores para documentos, imagens, audio e conversas. Em Fev 2026, levantou $7.5M seed (backed por fundadores do OpenAI e FAIR), com 1M+ pipeline runs e 70+ empresas em producao. Roadmap inclui Rust engine para edge/on-device e multi-database support.
 
 **Pipelines de Normalizacao:** Equipes de dados constroem pipelines de preprocessamento que limpam, enriquecem e rotulam dados, adicionando contexto de negocio e verificacoes de qualidade. Dados de multiplas fontes sao continuamente ingeridos, transformados e recombinados com checks de qualidade, controles de seguranca e rastreamento de linhagem automatizados e embutidos diretamente nos pipelines.
 
@@ -257,11 +257,13 @@ TOTAL WINDOW: 200,000 tokens (exemplo Claude)
 
 | Ferramenta | Abordagem | Destaque |
 |-----------|-----------|----------|
-| **Letta (MemGPT)** | Virtual context management inspirado em OS | Hierarquia main context (RAM) + external (disk) |
-| **Mem0** | Memory layer com graph DB | 26% accuracy gain vs OpenAI Memory, 91% menor latencia |
+| **Letta (MemGPT)** | Virtual context management inspirado em OS | Hierarquia main context (RAM) + external (disk). Letta Code lancado Dez 2025 (#1 em Terminal-Bench). V1 architecture para GPT-5/Claude 4.5 Sonnet. Conversations API (Jan 2026) para memoria compartilhada cross-sessao |
+| **Mem0** | Memory layer com graph DB | 26% accuracy gain vs OpenAI Memory, 91% menor latencia, 90% menor uso de tokens. $24M Series A (Out 2025), 41K GitHub stars, 186M API calls/Q3 2025. Paper publicado no ECAI 2025 |
 | **A-Mem (NeurIPS 2025)** | Zettelkasten-inspired agentic memory | Notas atomicas com keywords, tags, descricoes contextuais |
 | **OpenMemory** | Local-first persistent memory | SQL-native com temporal graphs e entity tracking |
-| **ContextForge** | Three-tier memory system | Promocao/democao automatica entre tiers |
+| **ContextForge** | Three-tier memory system | Promocao/democao automatica entre tiers (HOT=Redis <10ms, WARM=Qdrant, COLD=PostgreSQL). 10x compression ratio |
+| **Hindsight** | Quatro redes de memoria separadas (fatos, experiencias, entidades, crencas) | 91.4% accuracy no DMR benchmark (Dez 2025). Open-source por Vectorize.io + Virginia Tech + Washington Post. Multi-session 21%->79.7%, temporal reasoning 31.6%->79.7% |
+| **Cognee** | Graph-vector hybrid com motor cognitivo | $7.5M seed (Fev 2026, backed por fundadores do OpenAI e FAIR). 1M+ pipeline runs, 70+ empresas em producao. 30+ conectores de dados |
 
 ### Riscos
 
@@ -330,7 +332,7 @@ Experimentos reportam ganhos em faithfulness, relevancia de resposta e context r
 
 ### Zep/Graphiti: Retrieval Temporal
 
-Retrieval P95 de 300ms atraves de busca hibrida combinando embeddings semanticos, keyword (BM25) e graph traversal direto -- sem chamadas LLM durante a recuperacao. No benchmark DMR (estabelecido pela equipe MemGPT), Zep demonstra performance superior (94.8% vs 93.4%).
+Retrieval P95 de 300ms atraves de busca hibrida combinando embeddings semanticos, keyword (BM25) e graph traversal direto -- sem chamadas LLM durante a recuperacao. No benchmark DMR (estabelecido pela equipe MemGPT), Zep demonstra performance superior (94.8% com gpt-4-turbo vs 93.4% do MemGPT; 98.2% com gpt-4o-mini). No LongMemEval, Zep mostra ganhos de ate 18.5% em accuracy agregada com 90% de reducao de latencia. Nota: o DMR usa conversas de apenas 60 mensagens e questoes fact-retrieval single-turn, nao testando compreensao complexa de memoria.
 
 ### Como Implementar
 
@@ -352,8 +354,9 @@ Retrieval P95 de 300ms atraves de busca hibrida combinando embeddings semanticos
 
 - Hybrid search (BM25 + embeddings + graph) como padrao inquestionavel
 - Retrieval sem LLM calls (Graphiti) para latencia ultra-baixa
-- Agentic retrieval: agentes decidindo qual estrategia de busca usar para cada query
+- Agentic RAG como estado da arte: sistemas que planejam, recuperam, raciocinam, criticam e refinam em loops ate confianca suficiente (survey formal: arXiv 2501.09136)
 - Auto-indexacao: LLMs gerando automaticamente indices e tags para novas notas
+- LazyGraphRAG (Microsoft): indexacao ao custo de vector RAG (0.1% do custo de GraphRAG full) com qualidade comparavel para queries globais
 
 ---
 
@@ -388,16 +391,19 @@ Um Second Brain agenticio nao e operado por um unico "super-agente" -- e um sist
 |-----------|-------------|----------|-----------|-----------|
 | **LangGraph** | State machine com grafo dirigido | Maximo (nodes, edges, routing condicional) | Producao enterprise, fluxos complexos | Alta |
 | **CrewAI** | Role-playing + task delegation | Medio (roles, tasks, SOPs) | Prototipagem rapida, equipes conceituais | Alta |
-| **AutoGen (AG2)** | Conversacao multi-agente | Baixo-Medio (emergente) | Negociacao entre agentes, debates | Media |
+| **AutoGen/AG2** | Conversacao multi-agente | Baixo-Medio (emergente) | Negociacao entre agentes, debates | Em transicao (ver nota abaixo) |
 | **OpenAI Agents SDK** | Agentes com handoffs e guardrails | Medio | Ecossistema OpenAI nativo | Alta |
-| **Anthropic Agent SDK** | Claude-native com tool use | Medio | Ecossistema Claude nativo | Alta |
-| **Google ADK** | Agent Development Kit | Medio | Ecossistema Google/Gemini | Media |
+| **Claude Agent SDK** | Claude-native com tool use (renomeado de Claude Code SDK) | Medio | Ecossistema Claude nativo, Claude Sonnet 4.5/4.6. File checkpointing e rewind | Alta |
+| **Google ADK** | Agent Development Kit | Medio | Ecossistema Google/Gemini. Python v1.0.0 estavel, TypeScript (Dez 2025), Java v0.1.0. Lancado no Cloud NEXT 2025 | Alta |
+| **Microsoft Agent Framework** | Unificacao de AutoGen + Semantic Kernel | Medio-Alto | Substitui AutoGen e Semantic Kernel (ambos em maintenance mode). SDK unico para agentes enterprise | Nova (2026) |
+
+**Nota sobre AutoGen/AG2 (atualizado Abril 2026):** Microsoft aposentou oficialmente o AutoGen em favor do novo Microsoft Agent Framework, que unifica AutoGen e Semantic Kernel em um unico SDK. O AutoGen permanece em maintenance mode (apenas bug fixes e patches de seguranca). A comunidade open-source mantém o fork AG2 (ag2ai/ag2) como projeto independente com governanca aberta, contando com contribuidores de Meta, IBM e universidades.
 
 **LangGraph** traz pensamento graph-first para workflows agenticios. Em vez de chains monoliticos, voce define state machines com nodes, edges e routing condicional -- resultando em fluxos traceaeis e debugaveis para raciocinio complexo.
 
 **CrewAI** enfatiza coordenacao multi-agente atraves de roles, tasks e protocolos de colaboracao. Modela crews de agentes especializados que cooperam assincronamente ou em rodadas.
 
-**deepagents (LangChain, late 2025):** "Batteries-included agent harness" com planning para tarefas de longo horizonte, tool-calling em loop, context offloading para filesystem, e orquestracao de subagentes.
+**deepagents (LangChain, Jul 2025):** "Batteries-included agent harness" com planning para tarefas de longo horizonte, tool-calling em loop, context offloading para filesystem, e orquestracao de subagentes. 14K GitHub stars em 8 meses; LangChain Academy course disponivel.
 
 ### Arquitetura de Agentes para Second Brain
 
@@ -442,7 +448,7 @@ Skills sao capacidades modulares que agentes podem invocar:
 ### Tendencias
 
 - Multi-agent orchestration como infraestrutura padrao em 2026
-- Agents SDK de cada vendor (OpenAI, Anthropic, Google) convergindo em padroes
+- Agents SDK de cada vendor (OpenAI Agents SDK, Claude Agent SDK, Google ADK, Microsoft Agent Framework) convergindo mas tambem fragmentando -- Microsoft consolidou AutoGen+Semantic Kernel em Agent Framework unico
 - Task decomposition automatica via planning modules
 - Agentes com memoria persistente cross-session (A-Mem, Mem0)
 
@@ -466,7 +472,7 @@ Um Second Brain que depende 100% de acao humana nao escala. As automacoes transf
 
 ### Estado da Arte (2025-2026)
 
-**Agentic Workflows:** Em 2026, workflows agenticios representam uma evolucao significativa da automacao baseada em regras para sistemas inteligentes e adaptativos capazes de raciocinio e decisao autonoma. Gartner preve que 33% dos aplicativos enterprise terao IA agenticia ate 2028 (vs <1% em 2024).
+**Agentic Workflows:** Em 2026, workflows agenticios representam uma evolucao significativa da automacao baseada em regras para sistemas inteligentes e adaptativos capazes de raciocinio e decisao autonoma. Gartner preve que 33% dos aplicativos enterprise incluirao IA agenticia ate 2028 (vs <1% em 2024), com 40% dos apps enterprise tendo agentes task-specific ate 2026. Porem, Gartner tambem alerta que >40% dos projetos de IA agenticia serao cancelados ate final de 2027 por custos, ROI incerto ou governanca inadequada.
 
 **Event-Driven Knowledge Processing:** Automacoes comecam quando um event trigger chega -- como um lead no CRM, um webhook de formulario, ou o fim de uma conversa. O event payload carrega a informacao que inicia a pipeline.
 
@@ -808,7 +814,7 @@ O "deep research" explodiu em 2025 quando cada provider lancou sua versao:
 - **Perplexity Deep Research:** Pesquisa estruturada acessivel para o publico geral
 - **Claude:** Capacidades de analise profunda com context windows de 1M tokens
 
-**The AI Scientist:** Um sistema que cria ideias de pesquisa, escreve codigo, executa experimentos, plota e analisa dados, escreve o manuscrito cientifico inteiro, e realiza seu proprio peer review. Manuscritos gerados pelo sistema passaram o primeiro round de peer review de um workshop em conferencia top de machine learning.
+**The AI Scientist (Sakana AI):** Um sistema que cria ideias de pesquisa, escreve codigo, executa experimentos, plota e analisa dados, escreve o manuscrito cientifico inteiro, e realiza seu proprio peer review. Um dos manuscritos gerados recebeu score 6.33 (acima do threshold de aceitacao) no ICLR 2025 ICBINB Workshop, superando 55% dos papers humanos naquele workshop. O trabalho descrevendo o sistema foi publicado na Nature em Marco 2026.
 
 ### Pipeline de Pesquisa
 
@@ -842,7 +848,7 @@ O "deep research" explodiu em 2025 quando cada provider lancou sua versao:
 
 | Ferramenta | Tipo | Destaque |
 |-----------|------|----------|
-| **Elicit** | Paper discovery + synthesis | Extrai claims estruturados de papers |
+| **Elicit** | Paper discovery + synthesis | Busca sobre 138M papers. Research Agent (Dez 2025) com 99.4% de accuracy em screening. API publica (Mar 2026). Integrou Claude Opus 4.5 (Dez 2025) |
 | **Consensus** | Evidence-based answers | Busca em corpus cientifico |
 | **Scite.ai** | Citation analysis | Verifica se papers foram supported/contrasted |
 | **Perplexity** | General research | Busca web + citacoes inline |
@@ -977,13 +983,13 @@ Obsidian e a ferramenta de vault local-first mais madura e extensivel. Claude Co
 
 ### Estado da Arte (2025-2026)
 
-**Claudian:** Plugin Obsidian que embute Claude Code como colaborador de IA no vault, com o vault se tornando o working directory do Claude e dando capacidades agenticias completas (read/write de arquivos, busca, bash commands, workflows multi-step).
+**Claudian:** Plugin Obsidian que embute agentes de IA (Claude Code, Codex, e outros) como colaboradores no vault, com o vault se tornando o working directory do agente e dando capacidades agenticias completas (read/write de arquivos, busca, bash commands, workflows multi-step). Suporta inline edit com diff preview, slash commands/skills, e @mentions para subagentes e MCP servers. ~4K GitHub stars (Abr 2026).
 
 **obsidian-ai-agent:** Plugin que integra Claude Code como agente de IA dentro do Obsidian, permitindo interacao natural com o vault.
 
 **obsidian-claude-pkm (Starter Kit):** Kit completo com 4 agentes especializados com memoria, 10 skills, auto-commit hooks, e agentes que usam memoria para aprender padroes do usuario entre sessoes.
 
-**Obsidian Nativo:** O CEO da Obsidian anunciou que qualquer agente -- Claude Code, Codex, Gemini CLI -- pode agora usar Obsidian nativamente.
+**Obsidian Agent Skills (Jan 2026):** O CEO da Obsidian (Steph Ango/Kepano) lancou o repositorio oficial [obsidian-skills](https://github.com/kepano/obsidian-skills), ensinando agentes de IA (Claude Code, Codex CLI, Gemini CLI) a manipularem corretamente wikilinks, frontmatter, Bases databases e JSON Canvas. Obsidian 1.12 introduziu uma CLI nativa que facilitou dramaticamente a integracao com agentes.
 
 ### CLAUDE.md como Constituicao do Vault
 
@@ -1142,7 +1148,7 @@ A implementacao especifica do SINAPSE (cronjob diario 23h BRT):
 | **"MemGPT: Towards LLMs as Operating Systems"** | Packer et al. | 2023 | Gerenciamento virtual de contexto |
 | **"A-Mem: Agentic Memory for LLM Agents"** | Xu et al. | 2025 | Memoria agenticia inspirada no Zettelkasten (NeurIPS 2025) |
 | **"Zep: A Temporal Knowledge Graph Architecture for Agent Memory"** | Rasmussen | 2025 | Grafos temporais para memoria de agentes |
-| **"Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory"** | Mem0 team | 2025 | Memory layer escalavel para agentes |
+| **"Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory"** | Mem0 team | 2025 | Memory layer escalavel para agentes (publicado no ECAI 2025) |
 | **"Agentic Context Engineering"** | ACE Authors | 2025 | Framework ACE com Generator/Reflector/Curator |
 
 ---
@@ -1177,6 +1183,32 @@ A implementacao especifica do SINAPSE (cronjob diario 23h BRT):
 - [OpenMemory (GitHub)](https://github.com/CaviraOSS/OpenMemory)
 - [Hindsight: Agentic Memory with 91% Accuracy (VentureBeat)](https://venturebeat.com/data/with-91-accuracy-open-source-hindsight-agentic-memory-provides-20-20-vision)
 - [Cognee: AI Memory Tools Evaluation](https://www.cognee.ai/blog/deep-dives/ai-memory-tools-evaluation)
+
+### Agentic Memory Systems (adicoes Abr 2026)
+- [Hindsight: Agent Memory That Works Like Human Memory (Vectorize.io)](https://vectorize.io/blog/introducing-hindsight-agent-memory-that-works-like-human-memory)
+- [With 91% accuracy, Hindsight agentic memory provides 20/20 vision (VentureBeat)](https://venturebeat.com/data/with-91-accuracy-open-source-hindsight-agentic-memory-provides-20-20-vision)
+- [Cognee Raises $7.5M Seed (Feb 2026)](https://www.cognee.ai/blog/cognee-news/cognee-raises-seven-million-five-hundred-thousand-dollars-seed)
+- [Mem0 Raises $24M Series A (Oct 2025)](https://mem0.ai/series-a)
+- [State of AI Agent Memory 2026 (Mem0)](https://mem0.ai/blog/state-of-ai-agent-memory-2026)
+- [Letta Code: A Memory-First Coding Agent (Dec 2025)](https://www.letta.com/blog/letta-code)
+- [Rearchitecting Letta's Agent Loop: Lessons from ReAct, MemGPT, & Claude Code](https://www.letta.com/blog/letta-v1-agent)
+
+### Agent Frameworks (adicoes Abr 2026)
+- [Microsoft retires AutoGen and debuts Agent Framework (VentureBeat)](https://venturebeat.com/ai/microsoft-retires-autogen-and-debuts-agent-framework-to-unify-and-govern)
+- [AG2 (formerly AutoGen): The Open-Source AgentOS (GitHub)](https://github.com/ag2ai/ag2)
+- [Google ADK Agent Development Kit (GitHub)](https://github.com/google/adk-python)
+- [Claude Agent SDK Overview (Anthropic)](https://platform.claude.com/docs/en/agent-sdk/overview)
+- [deepagents: Agent Harness Built with LangChain (GitHub)](https://github.com/langchain-ai/deepagents)
+- [Gartner Predicts 40% of Enterprise Apps Will Feature AI Agents by 2026](https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025)
+- [Gartner Predicts >40% of Agentic AI Projects Will Be Canceled by End 2027](https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027)
+
+### Obsidian + Claude Code (adicoes Abr 2026)
+- [Obsidian Skills: Agent Skills for Obsidian by Kepano (GitHub)](https://github.com/kepano/obsidian-skills)
+- [Obsidian CEO Creates Claude Skills (ClawList)](https://clawlist.io/blog/obsidian-ceo-creates-claude-skills)
+
+### Research & Synthesis (adicoes Abr 2026)
+- [The AI Scientist: Towards Fully Automated AI Research, Published in Nature (Sakana AI)](https://sakana.ai/ai-scientist-nature/)
+- [Towards end-to-end automation of AI research (Nature, Mar 2026)](https://www.nature.com/articles/s41586-026-10265-5)
 
 ### RAG & Retrieval
 - [Hybrid Search RAG for Better AI Answers (Meilisearch)](https://www.meilisearch.com/blog/hybrid-search-rag)
@@ -1259,4 +1291,77 @@ A implementacao especifica do SINAPSE (cronjob diario 23h BRT):
 
 ---
 
-> **Nota Final:** Este documento mapeia o estado da arte em Abril de 2026. O campo evolui rapidamente -- A-Mem foi publicado ha apenas 14 meses, Context Engineering foi cunhado ha menos de 1 ano, e Obsidian abriu integracao nativa com agentes em 2025. Revisar este documento trimestralmente e recomendado.
+> **Nota Final:** Este documento mapeia o estado da arte em Abril de 2026. O campo evolui rapidamente -- A-Mem foi publicado ha apenas 14 meses, Context Engineering foi cunhado ha menos de 1 ano, e Obsidian lancou Agent Skills em Jan 2026. Revisar este documento trimestralmente e recomendado.
+
+---
+
+## Verificacao de Qualidade
+
+> **Data da verificacao:** 2026-04-07
+> **Verificado por:** Prism (research-orqx) via WebSearch + WebFetch
+> **Modelo:** Claude Opus 4.6 (1M context)
+
+### URLs Verificadas
+
+| URL/Recurso | Status | Nota |
+|-------------|--------|------|
+| arXiv:2502.12110 (A-Mem) | OK | Confirmado NeurIPS 2025 |
+| arXiv:2501.13956 (Zep/Graphiti) | OK | Paper acessivel |
+| arXiv:2504.19413 (Mem0) | OK | Confirmado ECAI 2025 |
+| arXiv:2603.28361v1 (Deep Research of Deep Research) | OK | Survey acessivel |
+| arXiv:2506.18019v1 (Graphs Meet AI Agents) | OK | Survey acessivel |
+| github.com/getzep/graphiti | OK | Repositorio ativo |
+| github.com/WujiangXu/A-mem | OK | Repositorio ativo |
+| github.com/CaviraOSS/OpenMemory | OK | Ativo, commits recentes Mar 2026 |
+| github.com/YishenTu/claudian | OK | ~4K stars, ultimo push Fev 2026 |
+| github.com/ballred/obsidian-claude-pkm | OK | Repositorio ativo |
+| github.com/mem0ai/mem0 | OK | 41K stars |
+| github.com/letta-ai/letta | OK | Repositorio ativo |
+| Karpathy tweet (Context Engineering) | OK | Tweet verificado |
+| Simon Willison blog post | OK | URL funcional |
+| Nature - AI Scientist (s41586-026-10265-5) | OK | Publicado Mar 2026 |
+| Todas as URLs de Medium, Substack, blogs | NAO VERIFICADAS INDIVIDUALMENTE | Risco medio de link rot para posts de blog |
+
+### Dados Corrigidos
+
+| Dado Original | Correcao | Fonte |
+|---------------|----------|-------|
+| "Mercado KM atingiu $400B em 2024" | Corrigido para $773B-$885B (2024, dependendo da definicao) | FactMR, Research and Markets |
+| "85% das empresas planejam incorporar agentes ate 2026 (Gartner)" | Corrigido para 33% dos apps enterprise ate 2028, 40% com agentes task-specific ate 2026 | Gartner press releases |
+| "$12.9M/ano por organizacao (IBM)" | Corrigida atribuicao: fonte e Gartner (2021), nao IBM | Gartner research, multiplas fontes secundarias |
+| "Graph databases $2.85B -> $15.32B (2032), CAGR 27.1%" | Atualizado com range de multiplas fontes: $18-20B ate 2032-2034, CAGR 21.9-24.1% | Fortune Business Insights, MarketsandMarkets |
+| "deepagents (LangChain, late 2025)" | Corrigido para "Jul 2025" | GitHub release data |
+| "Anthropic Agent SDK" | Atualizado para "Claude Agent SDK" (nome oficial apos rebrand de Claude Code SDK) | Anthropic docs |
+
+### Adicoes Feitas
+
+| Adicao | Secao | Justificativa |
+|--------|-------|---------------|
+| Hindsight (Vectorize.io) como framework de memoria | Sistema 3 (tabela) | 91.4% accuracy no DMR benchmark (Dez 2025), open-source, nao estava coberto |
+| Cognee enriquecido ($7.5M seed, metricas) | Sistema 2 + Sistema 3 (tabela) | Funding significativo Fev 2026 e adocao enterprise |
+| Microsoft Agent Framework | Sistema 5 (tabela) | Microsoft aposentou AutoGen em favor de Agent Framework unificado -- mudanca estrutural no ecossistema |
+| Nota sobre AutoGen/AG2 split | Sistema 5 | Fragmentacao relevante: AG2 como fork comunitario, AutoGen em maintenance mode |
+| Google ADK maturidade atualizada | Sistema 5 (tabela) | Python v1.0.0 estavel, TypeScript e Java lancados |
+| Letta updates (Letta Code, V1, Conversations API) | Sistema 3 (tabela) | Atualizacoes significativas Dez 2025 - Jan 2026 |
+| Mem0 funding e metricas | Sistema 3 (tabela) | $24M Series A, ECAI 2025 paper, 41K stars |
+| LazyGraphRAG (Microsoft) | Sistema 4 tendencias | 0.1% do custo de GraphRAG full com qualidade comparavel |
+| Agentic RAG survey (arXiv 2501.09136) | Sistema 4 tendencias | Survey formal definindo estado da arte |
+| AI Scientist publicado na Nature | Sistema 10 | Marco historico: Mar 2026 publicacao Nature |
+| Obsidian Agent Skills by Kepano | Sistema 12 | Precisao sobre o mecanismo (Skills + CLI 1.12 vs. anuncio generico) |
+| Claudian enriquecido (funcionalidades) | Sistema 12 | Agora suporta multiplos agentes, @mentions, inline edit |
+| Gartner cancelamento prediction | Sistema 6 | Contraponto importante: >40% projetos agenticos cancelados ate 2027 |
+| 21 novas URLs de fontes | Secao 15 | Fontes para todas as adicoes feitas |
+
+### Items NAO Alterados (confirmados corretos)
+
+- Karpathy Context Engineering quote e definicao
+- Simon Willison Context Engineering quote
+- A-Mem como NeurIPS 2025 paper (confirmado)
+- Zep DMR benchmark 94.8% vs MemGPT 93.4% (confirmado, nuancas adicionadas)
+- OpenAI Deep Research lancamento Fev 2025 (confirmado: 2 de Fevereiro)
+- Graphiti modelo bi-temporal (confirmado)
+- obsidian-claude-pkm starter kit (confirmado ativo)
+- OpenMemory CaviraOSS (confirmado ativo, Apache 2.0)
+- Frameworks de organizacao (Zettelkasten, PARA, Evergreen, MOC) -- estavel
+- Referencias historicas (Bush, Engelbart, Luhmann, etc.) -- estavel
+- Vector database comparativo -- amplamente correto para 2026
