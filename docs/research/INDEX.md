@@ -1,7 +1,7 @@
 # SINAPSE Deep Research Initiative — Master Index
 
-> **Status:** Phase 1 COMPLETE | Phase 2 COMPLETE | Phase 2.5 COMPLETE | Wave 1 COMPLETE | Wave 2 COMPLETE | Wave 3 COMPLETE
-> **Total Output:** 29,871 lines across 22 research documents
+> **Status:** Phase 1 COMPLETE | Phase 2 COMPLETE | Phase 2.5 COMPLETE | Wave 1 COMPLETE | Wave 2 COMPLETE | Wave 3 COMPLETE | Wave 4 COMPLETE
+> **Total Output:** 35,409 lines across 25 research documents
 > **Agents Used:** 15 parallel research agents across 5 phases
 > **Repository:** github.com/caioimori/caioimori-pesquisas (private)
 
@@ -118,6 +118,24 @@ docs/research/
 |------|-------|-------|
 | [research.md](14-growth/research.md) | 1,760 | 17 systems: Growth Strategy (AARRR/RARRA, North Star Metric, Growth Loops vs Funnels, ICE/RICE), PLG (freemium, PQL, viral loops, network effects), SEO (technical/content/link building, E-E-A-T, Core Web Vitals, programmatic SEO, AI SGE impact), Content Marketing (flywheel, pillar/cluster, content scoring), Analytics (GA4, Mixpanel, Amplitude, attribution, cohort, LTV/CAC), Experimentation (Bayesian vs frequentist, multi-armed bandit, Statsig), Retention (Hook Model, lifecycle marketing, churn analysis), Viral Mechanics (K-factor, referral programs), CRO (landing pages, checkout optimization), Email & Lifecycle (segmentation, automation, deliverability), Community-Led Growth, AI & Growth (personalization, predictive, generative), Brazilian Context (PIX conversion impact, LGPD, RD Station, Hotmart, infoproducts), 42+ sources |
 
+## 15-paid-traffic/ — Paid Traffic Master System (Wave 4)
+
+| File | Lines | Focus |
+|------|-------|-------|
+| [research.md](15-paid-traffic/research.md) | 1,780 | 15 systems: Meta Ads (CBO/ABO, Advantage+, ASC, Pixel/CAPI, iOS 14.5+ impact), Google Ads (Search/Display/YouTube/Shopping/PMax, Smart Bidding, Quality Score), TikTok Ads (Spark Ads, Creative Center), LinkedIn Ads (B2B targeting, ABM, Lead Gen Forms), Programmatic & DSPs (RTB, DV360, The Trade Desk, header bidding, viewability), Attribution & Measurement (MMM with Robyn/Meridian, incrementality, post-cookie Privacy Sandbox), Creative Strategy (3-second rule, UGC, AIDA/PAS/BAB, ad fatigue cadence), CRO & Landing Pages (A/B testing, Unbounce/Instapage), Audiences & Segmentation (CDP, retargeting, first-party data), Budget & Bidding (pacing, dayparting, diminishing returns), Analytics (ROAS, CAC, LTV:CAC, MER), AI & Automation (AI creative, dynamic optimization, predictive audiences), Brazilian Context (PIX checkout, nota fiscal, WhatsApp Click-to-Message, CONAR, CPM benchmarks), 41+ sources |
+
+## 16-social-algorithms/ — Social Algorithms Master System (Wave 4)
+
+| File | Lines | Focus |
+|------|-------|-------|
+| [research.md](16-social-algorithms/research.md) | 1,550 | 18 systems: Instagram Algorithm (Feed/Reels/Stories/Explore, shadowban, engagement velocity), TikTok Algorithm (FYP, interest graph, batch testing, Monolith paper), YouTube Algorithm (CTR x AVD, Browse/Suggested/Search/Shorts, satisfaction surveys, 2016 DNN paper), LinkedIn Algorithm (dwell time, SSI, newsletters, employee advocacy), Twitter/X (open source code, Blue boost, Community Notes, Grok), Facebook (MSI, Groups, Reels, link penalty), Emerging Platforms (Threads, Bluesky AT Protocol, WhatsApp Channels, Telegram, Pinterest, Reddit), Recommendation Systems Theory (collaborative/content-based/hybrid, two-tower, multi-armed bandits, cold start, embeddings), Content Strategy (format optimization, hooks, PAS/AIDA/BAB), Engagement Mechanics (ER formulas, saves/shares signals, community building), Creator Economy (YPP, brand deals, affiliate, subscriptions), Social Commerce (live commerce Brazil, TikTok Shop), AI & Social Media (content generation, deepfakes, moderation), Brazilian Context (WhatsApp dominance, CONAR/#publi, CPM benchmarks), 42+ sources |
+
+## 17-content/ — Content Master System (Wave 4)
+
+| File | Lines | Focus |
+|------|-------|-------|
+| [research.md](17-content/research.md) | 2,208 | 17 systems: Content Strategy Frameworks (Halvorson Quad, Hero/Hub/Help, StoryBrand SB7, They Ask You Answer, Content Marketing Funnel), Content Architecture & Taxonomy (information architecture, headless CMS, DITA, structured content), Editorial Operations (workflow, briefs, style guides, tone of voice), Copywriting & Persuasion (AIDA, PAS, BAB, 4Ps, Hero's Journey, Pixar structure, power words, Flesch-Kincaid), SEO Content (pillar/cluster, semantic SEO, content decay, programmatic), Video Content (YouTube strategy, short-form, scripting, hooks), Audio Content (podcasting, RSS, Spotify/Apple, repurposing), Social Media Content (platform-native, UGC, social listening), Email & Newsletter (Substack, beehiiv, segmentation, automation), AI Content Production (LLM workflows, CRAFT prompt, human-in-the-loop, quality control), Content Measurement (KPIs, scoring models, ROI, GA4), Repurposing (GaryVee Content Pyramid, atomization, distribution matrix), Content Governance (audits, QA, WCAG, inclusive language), Tech Stack (50+ tools catalogadas), Brazilian Context (Hotmart, Kiwify, CONAR, cultural calendar), 38+ sources |
+
 ## sources/ — Reference Catalogs
 
 | File | Lines | Focus |
@@ -183,4 +201,4 @@ docs/research/
 ---
 
 *SINAPSE Deep Research Initiative — 2026-04-07*
-*29,871 lines | 22 documents | 50 gaps | 17 agents | Wave 3 COMPLETE*
+*35,409 lines | 25 documents | 50 gaps | 20 agents | Wave 4 COMPLETE*
