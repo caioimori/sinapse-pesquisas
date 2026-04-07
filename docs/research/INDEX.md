@@ -1,7 +1,7 @@
 # SINAPSE Deep Research Initiative — Master Index
 
-> **Status:** Phase 1 COMPLETE | Phase 2 COMPLETE | Phase 2.5 COMPLETE | Wave 1 COMPLETE | Wave 2 COMPLETE | Wave 3 COMPLETE | Wave 4 COMPLETE
-> **Total Output:** 35,409 lines across 25 research documents
+> **Status:** Phase 1 COMPLETE | Phase 2 COMPLETE | Phase 2.5 COMPLETE | Wave 1 COMPLETE | Wave 2 COMPLETE | Wave 3 COMPLETE | Wave 4 COMPLETE | MS-002 COMPLETE | MS-006 COMPLETE
+> **Total Output:** 39,630 lines across 27 research documents
 > **Agents Used:** 15 parallel research agents across 5 phases
 > **Repository:** github.com/caioimori/caioimori-pesquisas (private)
 
@@ -22,6 +22,18 @@ docs/research/
 ├── 05-infrastructure/           ← Supabase, Vercel, security
 ├── 06-sinapse-improvement/      ← Gap analysis, roadmap
 ├── 07-skills-agents-swarm/      ← Skills, swarm, AGI
+├── 08-agentic-second-brain/     ← Knowledge architecture, context engineering
+├── 09-community-platforms/      ← Forum engineering, social graphs
+├── 10-contabilidade/            ← Contabilidade, tributaria, auditoria
+├── 11-advocacia/                ← Direito, compliance, legal tech
+├── 12-finance/                  ← Corporate finance, valuation, FinTech
+├── 13-sales-revenue/            ← Sales, RevOps, CRM
+├── 14-growth/                   ← Growth, PLG, SEO, analytics
+├── 15-paid-traffic/             ← Meta/Google/TikTok Ads, attribution
+├── 16-social-algorithms/        ← Platform algorithms, creator economy
+├── 17-content/                  ← Content strategy, copywriting, AI content
+├── 18-branding/                 ← Branding, identity, brand equity, visual systems
+├── 19-design-system/            ← Design systems, tokens, a11y, components
 └── sources/                     ← Catalogos de repos
 ```
 
@@ -136,6 +148,18 @@ docs/research/
 |------|-------|-------|
 | [research.md](17-content/research.md) | 2,208 | 17 systems: Content Strategy Frameworks (Halvorson Quad, Hero/Hub/Help, StoryBrand SB7, They Ask You Answer, Content Marketing Funnel), Content Architecture & Taxonomy (information architecture, headless CMS, DITA, structured content), Editorial Operations (workflow, briefs, style guides, tone of voice), Copywriting & Persuasion (AIDA, PAS, BAB, 4Ps, Hero's Journey, Pixar structure, power words, Flesch-Kincaid), SEO Content (pillar/cluster, semantic SEO, content decay, programmatic), Video Content (YouTube strategy, short-form, scripting, hooks), Audio Content (podcasting, RSS, Spotify/Apple, repurposing), Social Media Content (platform-native, UGC, social listening), Email & Newsletter (Substack, beehiiv, segmentation, automation), AI Content Production (LLM workflows, CRAFT prompt, human-in-the-loop, quality control), Content Measurement (KPIs, scoring models, ROI, GA4), Repurposing (GaryVee Content Pyramid, atomization, distribution matrix), Content Governance (audits, QA, WCAG, inclusive language), Tech Stack (50+ tools catalogadas), Brazilian Context (Hotmart, Kiwify, CONAR, cultural calendar), 38+ sources |
 
+## 18-branding/ — Branding Master System (MS-006)
+
+| File | Lines | Focus |
+|------|-------|-------|
+| [research.md](18-branding/research.md) | 1,661 | 18 systems: Brand Strategy (purpose, Golden Circle, VMV, Ries & Trout positioning, differentiation, brand promise, brand architecture — branded house/house of brands/endorsed/hybrid), Brand Identity (Kapferer Prism 6 facets, Aaker Identity Model, Jennifer Aaker 5 personality dimensions, Jung 12 archetypes, tone of voice, naming SMILE/SCRATCH), Visual Identity System (7 logo types, color psychology + Pantone/CMYK/RGB systems, typography families + custom typefaces, iconography, photography direction, illustration styles, motion/animation identity), Brand Guidelines & Systems (brand book structure, design tokens, governance, DAM platforms), Brand Experience (customer journey mapping, touchpoint audit, sonic/olfactory/haptic branding, spatial branding, employee BX), Brand Equity & Measurement (Keller CBBE pyramid, Aaker equity model, BAV PowerGrid, NPS, brand tracking, Interbrand/BrandZ/Brand Finance valuation), Rebranding (refresh vs full rebrand, process, famous successes + failures — Tropicana, Gap, Twitter→X), Employer Branding (EVP, Glassdoor/LinkedIn, internal branding), Personal Branding (thought leadership, LinkedIn strategy, content-driven), Brand & Digital (social media voice, UX/UI branding, PLG, D2C, brand communities), Brand & Culture (Douglas Holt cultural branding, storytelling, mythology, brand activism vs performative), Branding for Startups & Tech (MVP branding, brand-market fit, SaaS, marketplace), Legal & IP (INPI Brazil, USPTO, EUIPO, Madrid Protocol, domain/handle strategy), Brazilian Context (top brands ranking, agencies — Ana Couto/CBA B+G/FutureBrand, Alexandre Wollner, CONAR, cultural nuances), 15+ key people, 24 books, 42+ sources |
+
+## 19-design-system/ — Design System Master System (MS-002)
+
+| File | Lines | Focus |
+|------|-------|-------|
+| [research.md](19-design-system/research.md) | 2,560 | 19 systems: Design System Architecture (5-layer model, system of systems, federated/centralized governance, contribution models), Design Tokens (W3C DTCG spec, 3-tier taxonomy global/alias/component, multi-theme, Style Dictionary, Tokens Studio, Figma Variables), Foundations (OKLCH color spaces, type scales, fluid typography, variable fonts, 4px/8px grid, elevation, motion tokens, iconography), Component Architecture (Atomic Design, compound components, headless components Radix/React Aria, polymorphic, API design), Accessibility (WCAG 2.2, ARIA patterns, contrast, focus management, inclusive design, axe-core), Design-to-Code Pipeline (Figma Dev Mode, Code Connect, Storybook 8, Chromatic, visual regression), Component Libraries (MUI, Chakra, shadcn/ui, Radix Themes, Ant Design, Mantine, Tailwind, vanilla-extract, Panda CSS, Web Components), Documentation & Governance (living docs, MDX, Zeroheight, SemVer, RFC process), Testing (visual regression, unit, interaction, cross-browser, performance), DesignOps (team models, adoption metrics, ROI, maturity model 1-5), Advanced Patterns (theming, dark mode, controlled/uncontrolled, slots, RTL, responsive tokens, animation systems), Performance (tree-shaking, code-splitting, bundle analysis, Core Web Vitals), Famous Design Systems (Material Design, Carbon, Polaris, Primer, Atlassian, Lightning, Spectrum, Fluent, HIG, Geist — architecture comparison), Brazilian Context (Natura, Itau, Nubank, VTEX, LBI, e-MAG, community), 46+ sources |
+
 ## sources/ — Reference Catalogs
 
 | File | Lines | Focus |
@@ -201,4 +225,4 @@ docs/research/
 ---
 
 *SINAPSE Deep Research Initiative — 2026-04-07*
-*35,409 lines | 25 documents | 50 gaps | 20 agents | Wave 4 COMPLETE*
+*39,630 lines | 27 documents | 50 gaps | 20 agents | Wave 4 COMPLETE | MS-002 COMPLETE | MS-006 COMPLETE*
