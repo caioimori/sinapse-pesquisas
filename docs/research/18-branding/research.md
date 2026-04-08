@@ -50,7 +50,7 @@ A historia do branding moderno pode ser dividida em cinco eras distintas:
 
 ### 1.2 Marca como Ativo de Negocios
 
-Em 2025, o ranking Brand Finance Global 500 avaliou as 500 marcas mais valiosas do mundo em US$ 9.3 trilhoes. Apple liderou com US$ 574.4 bilhoes em valor de marca. O ranking Interbrand Best Global Brands 2025 posicionou Apple, Microsoft, Amazon, Google e Samsung no topo. A marca media da Fortune 500 tem valor de marca equivalente a 15-25% do seu valor total de mercado.
+Em 2025, o ranking Brand Finance Global 500 avaliou as 500 marcas mais valiosas do mundo em US$ 9.5 trilhoes (crescimento de 10% vs 2024). Apple liderou com US$ 574.5 bilhoes em valor de marca. O ranking Interbrand Best Global Brands 2025 posicionou Apple (US$ 470.9B), Microsoft (US$ 388.5B), Amazon (US$ 319.9B), Google (US$ 317.1B) e Samsung (US$ 90.5B) no topo. A marca media da Fortune 500 tem valor de marca equivalente a 15-25% do seu valor total de mercado.
 
 Esses numeros revelam uma verdade fundamental: **marca e o ativo intangivel mais valioso da maioria das empresas**. E diferente de ativos fisicos (fabricas, equipamentos, inventario), o valor da marca cresce com investimento consistente e diminui com negligencia — mas nunca deprecia de forma linear como um ativo contabil.
 
@@ -974,7 +974,7 @@ Rebranding e uma das decisoes mais consequentes e arriscadas que uma empresa pod
 
 - **Tropicana (2009).** Redesign de embalagem custou US$ 35 milhoes e foi revertido em 60 dias apos queda de 20% nas vendas. O novo design removeu a iconica laranja com canudo — consumidores nao reconheciam o produto na prateleira.
 - **Gap (2010).** Novo logo durou 6 dias. Clientes odiaram, ridicularizaram nas redes sociais, Gap voltou atras. O erro: mudar sem necessidade e sem consultar ninguem.
-- **Twitter → X (2023).** Elon Musk renomeou uma das marcas mais reconhecidas do mundo para "X" — uma letra generica sem significado de marca. O passarinho azul tinha brand equity de bilhoes. "X" e visualmente identico a dezenas de outras marcas. Caso classico de ego do fundador sobrepondo estrategia de marca.
+- **Twitter → X (2023).** Elon Musk renomeou uma das marcas mais reconhecidas do mundo para "X" — uma letra generica sem significado de marca. O passarinho azul tinha brand equity de bilhoes (Brand Finance avaliava Twitter em US$ 5.7B em jan/2022). Apos o rebrand, o valor caiu para US$ 673M em 2024, saindo de todos os rankings Brand Finance. Receita publicitaria caiu 46.6% (de US$ 4.5B para US$ 2.2B entre 2022-2023). Em 2025, metade dos americanos ainda chamava a plataforma de "Twitter". Caso classico de ego do fundador sobrepondo estrategia de marca.
 - **RadioShack rebrandings (multiplos).** A varejista de eletronicos tentou se rebrandar como "The Shack" e outras variantes, mas nunca resolveu o problema fundamental: o modelo de negocio era obsoleto. Rebrand nao conserta product-market fit quebrado.
 
 ---
@@ -1403,21 +1403,22 @@ O Brasil tem um cenario de branding unico, moldado por fatores culturais, econom
 
 | Posicao | Marca | Valor (R$ bi) | Setor |
 |---------|-------|---------------|-------|
-| 1 | Itau | ~44.7 | Financeiro |
-| 2 | Bradesco | ~28.2 | Financeiro |
-| 3 | Skol | ~19.3 | Bebidas |
-| 4 | Natura | ~14.8 | Cosmeticos |
-| 5 | Brahma | ~13.1 | Bebidas |
-| 6 | Banco do Brasil | ~12.5 | Financeiro |
-| 7 | Nubank | ~11.8 | Fintech |
-| 8 | Magazine Luiza | ~9.2 | Varejo |
-| 9 | Petrobras | ~8.7 | Energia |
-| 10 | Renner | ~7.6 | Moda |
+| 1 | Itau | ~48.6 | Financeiro |
+| 2 | Bradesco | ~27.7 | Financeiro |
+| 3 | Skol | ~16.2 | Bebidas |
+| 4 | Brahma | ~14.6 | Bebidas |
+| 5 | Banco do Brasil | ~10.6 | Financeiro |
+| 6 | Natura | ~8.6 | Cosmeticos |
+| 7 | Nubank | ~5.7 | Fintech |
+| 8 | Petrobras | ~3.4 | Energia |
+| 9 | Vivo | ~3.0 | Telecom |
+| 10 | Magazine Luiza | ~2.7 | Varejo |
 
 **Observacoes:**
-- O setor financeiro domina o topo — reflexo da concentracao bancaria brasileira e dos investimentos massivos em branding dos grandes bancos.
-- **Nubank** e a marca de crescimento mais rapido, entrando no top 10 em poucos anos de existencia.
-- **Natura** e a marca brasileira com maior reconhecimento internacional.
+- O setor financeiro domina o topo (3 das 5 primeiras posicoes) — reflexo da concentracao bancaria brasileira e dos investimentos massivos em branding dos grandes bancos. Itau cresceu 3% e lidera pelo quarto ano consecutivo.
+- **Vivo** entrou no top 10 (9a posicao), substituindo Renner.
+- **Nubank** mantem presenca no top 10 apesar de ser a mais jovem da lista.
+- **Natura** e a marca brasileira com maior reconhecimento internacional, na 6a posicao.
 
 ### 15.3 Agencias de Branding Brasileiras
 
@@ -1464,6 +1465,8 @@ O **CONAR (Conselho Nacional de Autorregulamentacao Publicitaria)** e o orgao de
 - Fiscaliza publicidade infantil (restricoes severas)
 - Monitora diversidade e representatividade em campanhas
 - Qualquer cidadao pode denunciar anuncios no CONAR
+
+**Atualizacao 2025 — Anti-Greenwashing:** Em outubro de 2025, o CONAR atualizou o Artigo 36 e o Anexo U do Codigo, criando novas regras para anuncios com claims de sustentabilidade e responsabilidade socioambiental. Os novos Artigos 36-A e 36-B exigem que claims ambientais sejam comprovados com evidencias robustas, que simbolos e certificacoes tenham origem claramente identificavel, e que anuncios indiquem quais etapas do ciclo de vida do produto sao cobertas. A atualizacao alinha o Brasil com regulacoes internacionais (UE, Reino Unido, EUA, OCDE) contra greenwashing. Prioridades do CONAR para 2025-2026 incluem tambem IA em publicidade, marketing de influenciadores e diversidade.
 
 **PROCON e CDC (Codigo de Defesa do Consumidor):** Complementam o CONAR com forca de lei. Claims de marca que configuram propaganda enganosa sao passiveis de multa e acao judicial.
 
@@ -1659,3 +1662,40 @@ O Brasil e continental. Uma marca que funciona em Sao Paulo pode nao funcionar n
 ---
 
 *MS-006 — Branding Master System | SINAPSE Research Initiative v1.0 | 2026-04-07*
+
+---
+
+## Verificacao de Qualidade
+
+**Data da verificacao:** 2026-04-07
+**Verificador:** @research-orqx (Prism) via fact-check pipeline
+
+### Correcoes Realizadas
+
+| Dado Original | Correcao | Fonte |
+|---------------|----------|-------|
+| Brand Finance Global 500 total: US$ 9.3 tri | Corrigido para US$ 9.5 tri (crescimento de 10% vs 2024) | Brand Finance Global 500 2025 Report |
+| Apple brand value (Brand Finance): US$ 574.4B | Corrigido para US$ 574.5B | Brand Finance 2025 |
+| Interbrand top 5 sem valores individuais | Adicionados valores: Apple $470.9B, Microsoft $388.5B, Amazon $319.9B, Google $317.1B, Samsung $90.5B | Interbrand BGB 2025 |
+| Ranking brasileiro Interbrand: valores inflados (Itau ~44.7, Natura 4a posicao) | Corrigido com dados oficiais: Itau R$ 48.6B, Bradesco R$ 27.7B, Skol R$ 16.2B, Brahma R$ 14.6B, BB R$ 10.6B, Natura R$ 8.6B (6a), Nubank R$ 5.7B, Petrobras R$ 3.4B, Vivo R$ 3.0B, Magalu R$ 2.7B | Interbrand Marcas Brasileiras 24/25 |
+| Renner no top 10 brasileiro | Substituida por Vivo (9a posicao) | Interbrand 24/25 |
+| Twitter/X: descricao sem dados financeiros | Adicionados: valor caiu de US$ 5.7B (2022) para US$ 673M (2024); receita publicitaria -46.6%; 50% dos americanos ainda chamam de "Twitter" em 2025 | Brand Finance, WARC, YouGov |
+| CONAR sem atualizacoes 2025 | Adicionada atualizacao anti-greenwashing (Art. 36, Anexo U, Arts. 36-A/36-B, outubro 2025) e prioridades 2025-2026 | CONAR, Migalhas, PropMark |
+
+### URLs Verificadas
+
+- https://interbrand.com/best-global-brands/ — Ativo, ranking 2025 disponivel
+- https://brandfinance.com/rankings/global-500 — Ativo, relatorio 2025 disponivel
+- https://brandfinance.com/press-releases/the-decline-of-x-musks-rebrand-wipes-billions-in-brand-value — Ativo
+- https://www.kantar.com/campaigns/brandz — Ativo
+- https://interbrand.com/best-brazilian-brands/ — Ativo (referencia atualizada para 24/25)
+- http://www.conar.org.br/ — Ativo
+- https://www.gov.br/inpi/ — Ativo
+
+### Dados Confirmados Sem Alteracao
+
+- Interbrand top 5 global (Apple, Microsoft, Amazon, Google, Samsung) — confirmado
+- AI branding tools (Looka, Brandmark.io, Midjourney, DALL-E) — confirmados como lideres em 2025-2026
+- CONAR descricao base (ONG, autorregulacao, nao-governamental) — confirmado
+- Casos de rebranding (Tropicana, Gap, Old Spice, Burberry) — dados historicos confirmados
+- Alexandre Wollner (1928-2018) — confirmado

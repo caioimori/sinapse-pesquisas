@@ -33,7 +33,7 @@
 
 ### 1.1 A Evolucao da Publicidade Digital
 
-A publicidade digital nasceu em 27 de outubro de 1994, quando a revista Wired (entao HotWired) vendeu o primeiro banner ad para a AT&T. O banner dizia "Have you ever clicked your mouse right HERE? You will." e obteve um CTR de 44% — um numero que jamais seria repetido na historia da publicidade digital. Esse momento inaugurou uma industria que em 2025 movimenta mais de USD 750 bilhoes em publicidade digital (dentro de um mercado publicitario global total que ultrapassa USD 1 trilhao), superando toda a midia tradicional combinada (TV, radio, jornal, revista, outdoor).
+A publicidade digital nasceu em 27 de outubro de 1994, quando a revista Wired (entao HotWired) vendeu o primeiro banner ad para a AT&T. O banner dizia "Have you ever clicked your mouse right HERE? You will." e obteve um CTR de 44% — um numero que jamais seria repetido na historia da publicidade digital. Esse momento inaugurou uma industria que em 2025 movimenta entre USD 680-800 bilhoes em publicidade digital dependendo da metodologia (Dentsu: USD 678.7B; Statista: USD 798.7B), dentro de um mercado publicitario global total que atingiu USD 1.14 trilhao em 2025 (WPP GroupM), superando toda a midia tradicional combinada (TV, radio, jornal, revista, outdoor).
 
 A evolucao da publicidade digital pode ser dividida em eras distintas:
 
@@ -172,19 +172,26 @@ A Meta oferece tres categorias de audiencias:
 
 O **Advantage+** e o umbrella da Meta para todas as features de automacao por ML:
 
-**Advantage+ Shopping Campaigns (ASC):**
-- Campanhas totalmente automatizadas para e-commerce
-- Sem controle manual de audiencia, placement ou bid
+**Advantage+ Sales Campaigns (antigo Advantage+ Shopping — renomeado em fevereiro de 2025):**
+- Campanhas automatizadas que agora suportam Sales, App Installs e Lead Generation (nao apenas e-commerce)
+- Multiplos ad sets permitidos (antes limitado a 1), cada um com ate 50 ads
+- Controles adicionados: exclusao de custom audiences, preferencias de idade/genero
 - Voce fornece: catalogo de produtos, criativos, budget, pais
 - A Meta otimiza tudo automaticamente
 - **Resultados:** Muitos anunciantes reportam ROAS 15-30% superior vs campanhas manuais
-- **Limitacao:** Caixa preta — pouco controle e visibilidade
-- **Quando nao usar:** Produtos de nicho muito especifico, B2B, servicos complexos
+- **Limitacao:** Ainda caixa preta em grande parte, mas com mais controle que a versao anterior
+- **Quando nao usar:** Produtos de nicho muito especifico, B2B com ciclo longo, servicos complexos
 
 **Advantage+ Audience:**
 - Substitui targeting manual por sugestoes algoritmicas
 - Voce pode dar "suggestions" de interesses/demografias, mas a Meta expande livremente
 - Na pratica, funciona como broad targeting com sinais iniciais
+- **Value Rules (2025):** Permitem influenciar a entrega sem desabilitar Advantage+ — regras que atribuem mais valor a segmentos especificos de audiencia (ex: clientes high-LTV)
+
+**Andromeda (infraestrutura 2025):**
+- Novo motor de ad retrieval da Meta que substitui o sistema anterior
+- Permite processar maior variedade de criativos simultaneamente
+- Pode causar volatilidade temporaria em CPMs durante fase de adaptacao
 
 **Advantage+ Placements:**
 - Default recomendado: deixar a Meta distribuir entre todos os placements
@@ -236,6 +243,11 @@ Em abril de 2021, a Apple lancou o iOS 14.5 com ATT (App Tracking Transparency),
 3. Conversions API Gateway para simplificar implementacao
 4. Modelagem estatistica para preencher lacunas de dados
 5. Advantage+ para compensar com ML mais agressivo
+
+**Mudancas de atribuicao em 2025:**
+- **Engaged-View Attribution:** Threshold reduzido de 10 segundos para 5 segundos (ou 97% de videos curtos). Meta reporta que 46% das conversoes de compra em Reels ocorrem nos primeiros 2 segundos de atencao
+- **Incremental Attribution (abril 2025):** Nova feature no Ads Manager que separa conversoes realmente causadas pelo anuncio daquelas que teriam ocorrido organicamente. Mede lift incremental real vs atribuicao total tradicional
+- **Recomendacao:** Usar engaged-view para otimizacao diaria e incremental attribution para decisoes de alocacao de budget
 
 ### 2.6 Estrutura de Testes Criativos na Meta
 
@@ -398,7 +410,9 @@ Para e-commerce, Shopping e frequentemente o canal com maior ROAS no Google:
 - Forneca: asset groups (imagens, videos, headlines, descriptions, logos) + feed + sinais de audiencia
 - O Google distribui budget e otimiza automaticamente
 - **Vantagens:** Simplicidade, alcance cross-channel, ML avancado
-- **Desvantagens:** Caixa preta total, canibaliza Search, reporting limitado, sem negative keywords (ate recentemente)
+- **Desvantagens:** Caixa preta, pode canibalizar Search, reporting melhorou mas ainda limitado
+- **Negative keywords (atualizado 2025):** Desde janeiro de 2025, negative keywords estao disponiveis no nivel de campanha via interface do Ads Manager (ate 10.000 por campanha, aumentado de 100 em marco de 2025). Aplicam-se apenas a inventario de Search e Shopping — Display, YouTube, Gmail e Discovery nao sao afetados
+- **Channel reporting (novembro 2025):** Novo relatorio de performance por canal (Search, Display, YouTube, Shopping) disponivel para todas as campanhas PMax
 - **Quando usar:** E-commerce com catalogo amplo, quando ja tem dados de conversao suficientes
 - **Quando evitar:** B2B com ciclo de venda longo, produtos de nicho, quando controle granular e essencial
 
@@ -445,6 +459,8 @@ Extensions melhoram Ad Rank e CTR sem custo adicional por clique:
 ### 4.1 O Ecossistema TikTok Ads
 
 TikTok se estabeleceu como a terceira maior plataforma de publicidade digital, atras apenas de Google e Meta. Com ~1.9 bilhao de usuarios ativos mensais (Q1 2026, crescendo de 1.59 bilhao no inicio de 2025), o TikTok domina a atencao da Gen Z e Millennials, mas sua audiencia esta envelhecendo rapidamente — usuarios 25-44 sao o segmento de maior crescimento. A receita global de ads do TikTok e projetada em USD 34.8 bilhoes em 2026.
+
+**Mudanca de propriedade nos EUA (2025):** O TikTok foi banido nos EUA em 19 de janeiro de 2025 apos decisao da Suprema Corte. Em 22 de janeiro de 2025, a plataforma assinou acordos com Oracle, Silver Lake e MGX (fundo emiradense) para formar um joint venture americano. A nova estrutura de propriedade introduziu processos adicionais de compliance para parametros de targeting, categorias de conteudo e segmentos de audiencia. Anunciantes que rodavam campanhas antes da transicao podem encontrar opcoes de targeting que requerem re-aprovacao. **Politicas atualizadas (fim de 2025):** Todo conteudo gerado por AI (AIGC) deve ser sinalizado via toggle in-app sob risco de rejeicao instantanea do anuncio. Ads politicos permanecem proibidos.
 
 O TikTok Ads Manager oferece uma estrutura similar a Meta:
 
@@ -1395,6 +1411,15 @@ AI esta transformando paid media em tres frentes: criacao de conteudo, otimizaca
 - **Video generation:** Runway, Pika, HeyGen, Synthesia para video ads
 - **Audio:** ElevenLabs para voiceovers, Suno para jingles
 
+**Meta Generative Ad Model (GEM) — horizonte 2026:**
+- Meta esta desenvolvendo o GEM, que permitira ao anunciante fornecer apenas URL do produto, budget e prompt basico — a AI gerara campanha completa (imagens, copy, headlines, animacoes)
+- Meta planeja descontinuar o recurso "Automated Ads" em favor das ferramentas Advantage+ com AI integrada
+- Ate o final de 2026, a expectativa e que AI gere ad, imagem, video e texto com recomendacoes de budget especificas
+
+**Google AI Max for Search (2025-2026):**
+- Novo tipo de campanha que aplica automacao de AI diretamente a campanhas de Search
+- Text guidelines beta expandido globalmente em fevereiro de 2026 para AI Max e Performance Max — permite ao anunciante fornecer diretrizes de marca que a AI respeita ao gerar copy
+
 **Limitacoes e cuidados:**
 - Plataformas (Meta, Google) permitem criativos gerados por AI, mas exigem disclosure em alguns mercados
 - AI gera volume mas nao garante qualidade — curadoria humana continua essencial
@@ -1478,8 +1503,8 @@ O Brasil e o maior mercado de publicidade digital da America Latina e um dos 10 
 
 | Metrica | Valor |
 |---------|-------|
-| **Investimento digital total (2025)** | ~BRL 42 bilhoes (projecao IAB Brasil) |
-| **Crescimento YoY** | ~18% |
+| **Investimento digital total (2025)** | ~BRL 42 bilhoes (projecao IAB Brasil) / ~USD 17.3 bilhoes (Research and Markets — metodologia diferente pode explicar divergencia vs IAB) |
+| **Crescimento YoY** | ~11-18% (IAB: ~18%; fontes internacionais: ~11.6%) |
 | **% do total publicitario** | ~65% (digital > TV pela primeira vez em 2023) |
 | **Maior plataforma** | Google (~40% share) |
 | **Segunda maior** | Meta (~25% share) |
@@ -1528,7 +1553,7 @@ Uma peculiaridade brasileira e a obrigacao fiscal sobre gastos com ads:
 - Cobram em reais (BRL) via cartao de credito ou boleto
 - Emitem invoice, nao nota fiscal brasileira
 - O anunciante precisa fazer operacao cambial ficta para contabilizar
-- IOF de 6.38% sobre transacoes internacionais com cartao (reduzido para 3.38% em alguns cenarios)
+- IOF unificado em 3.5% sobre todas as transacoes internacionais com cartao de credito, debito e pre-pago desde 2025 (anteriormente era 6.38%, reduzido progressivamente)
 - **Recomendacao:** Consultar contador sobre a melhor forma de contabilizar
 
 **Agencias brasileiras como intermediarias:**
@@ -1786,3 +1811,35 @@ O **CONAR** (Conselho Nacional de Autorregulamentacao Publicitaria) e o orgao de
 ---
 
 *Documento gerado por @analyst (Scope) como parte da SINAPSE Research Initiative — MS-005 Paid Traffic Master System. Ultima atualizacao: 2026-04-07.*
+
+---
+
+## Verificacao de Qualidade
+
+**Data da verificacao:** 2026-04-07
+**Verificado por:** @research-orqx (Prism) via WebSearch
+
+### Correcoes realizadas
+
+| # | Secao | Dado original | Correcao | Fonte |
+|---|-------|--------------|----------|-------|
+| 1 | 1.1 Panorama Geral | "mais de USD 750 bilhoes em publicidade digital" | Atualizado para range USD 680-800B (Dentsu: USD 678.7B; Statista: USD 798.7B) + mercado total USD 1.14T (WPP GroupM) | [WPP Media](https://www.marketingbrew.com/stories/2025/12/09/total-global-ad-revenue-grew-nearly-9-in-2025-wpp-media), [Dentsu](https://www.dentsu.com/news-releases/ad-spend-forecast-to-grow-by-four-point-nine-percent-in-2025-despite-a-reduced-economic-outlook) |
+| 2 | 2.4 Advantage+ | "Advantage+ Shopping Campaigns (ASC)" | Renomeado para Advantage+ Sales (fev 2025), suporta Sales/App/Leads, multiplos ad sets, controles adicionais | [Jon Loomer](https://www.jonloomer.com/meta-advertising-changes-2025/), [Kandidly](https://kandidly.co.uk/blog/metas-advantage-shopping-campaigns-are-changing-welcome-advantage-sales/) |
+| 3 | 2.4 Advantage+ | Sem mencao a Value Rules e Andromeda | Adicionados Value Rules (influenciar entrega sem desabilitar Advantage+) e Andromeda (novo motor de ad retrieval) | [Giovanni Perilli](https://giovanniperilli.com/en/blog/meta-ads-updates-what-really-changed-in-2025-and-how-to-prepare-for-2026/), [IMM Digital](https://imm.com/blog/unpacking-meta-2025-ad-overhaul-andromeda-advantage-and-what-it-means-for-your-ads) |
+| 4 | 2.5 Pixel/CAPI | Sem mencao a mudancas de atribuicao 2025 | Adicionados: Engaged-View (10s para 5s), Incremental Attribution (abril 2025) | [Jon Loomer](https://www.jonloomer.com/meta-ads-attribution-2026/), [Search Engine Land](https://searchengineland.com/meta-introduces-click-and-engage-through-attribution-updates-470629) |
+| 5 | 3.6 PMax | "sem negative keywords (ate recentemente)" | Atualizado: negative keywords disponiveis desde jan 2025 (ate 10K/campanha desde mar 2025), channel reporting desde nov 2025 | [Google Ads Help](https://support.google.com/google-ads/answer/15726455), [Practical Ecommerce](https://www.practicalecommerce.com/3-performance-max-updates-for-2026) |
+| 6 | 4.1 TikTok | Sem mencao a mudanca de propriedade nos EUA | Adicionado: ban jan 2025, joint venture com Oracle/Silver Lake/MGX, impacto em targeting, politicas AIGC | [Build My Plays](https://buildmyplays.com/tiktok-ban-update-2026/), [Digital Applied](https://www.digitalapplied.com/blog/tiktok-new-ownership-advertising-rebuilding-2026-rules) |
+| 7 | 13.1 AI | Sem mencao a Meta GEM e Google AI Max | Adicionados: Meta Generative Ad Model (GEM) para 2026, Google AI Max for Search, Text Guidelines beta global | [Adtaxi](https://www.adtaxi.com/blog/metas-ai-advertising-plans-what-to-expect-in-2026-and-how-to-prepare/), [PPC Land](https://ppc.land/googles-text-guidelines-beta-goes-global-for-ai-max-and-performance-max/) |
+| 8 | 14.4 IOF | "IOF de 6.38% (reduzido para 3.38% em alguns cenarios)" | Atualizado para IOF unificado em 3.5% desde 2025 | [Remessa Online](https://www.remessaonline.com.br/blog/o-que-e-o-iof-e-quando-ele-e-cobrado/), [CNN Brasil](https://www.cnnbrasil.com.br/economia/macroeconomia/iof-mais-alto-veja-o-que-muda-para-cartao-de-credito/) |
+| 9 | 14.1 Brazil ad spend | Apenas fonte IAB Brasil | Adicionado cross-reference com fontes internacionais (USD 17.3B — Research and Markets) para contexto | [Yahoo Finance](https://finance.yahoo.com/news/brazil-digital-ad-spend-business-123000750.html) |
+
+### Dados verificados e confirmados (sem correcao necessaria)
+
+| Dado | Status | Fonte verificadora |
+|------|--------|-------------------|
+| TikTok ~1.9B MAUs (Q1 2026) | Confirmado | [DemandSage](https://www.demandsage.com/tiktok-user-statistics/), [Backlinko](https://backlinko.com/tiktok-users) |
+| YouTube Shorts 200B views diarios (Cannes Lions 2025) | Confirmado | [The Wrap](https://www.thewrap.com/youtube-shorts-200-billion-daily-views/), [Digiday](https://digiday.com/marketing/as-youtube-shorts-reaches-200-billion-views-advertisers-increase-their-investment/) |
+| Privacy Sandbox: reversao de depreciacao de cookies, user choice model, aposentadoria de APIs em out/2025 | Confirmado | [JENTIS](https://www.jentis.com/blog/google-will-not-deprecate-third-party-cookies), [Segwise](https://segwise.ai/blog/google-privacy-sandbox-shutdown-reason) |
+| CPM benchmarks Brasil (Meta R$15-40, TikTok R$8-25, LinkedIn R$40-120) | Dentro do range global (Meta $8-14, TikTok $4-8 em USD) | [TrendTrack](https://www.trendtrack.io/blog-post/tiktok-vs-meta-cpm), [Lebesgue](https://lebesgue.io/tiktok-ads/tiktok-ads-benchmarks-for-ctr-cr-and-cpm) |
+| iOS 14.5 opt-in rate ~25% | Confirmado (dado historico consolidado) | Multiplas fontes |
+| Google migrou para first-price auction em 2019 | Confirmado (dado historico consolidado) | Multiplas fontes |

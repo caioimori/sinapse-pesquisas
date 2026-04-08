@@ -75,13 +75,13 @@ O conceito de **Design Engineering** — profissionais que operam confortavelmen
 
 Em 2024-2026, o continuo design-engineering se manifesta de varias formas:
 
-**Figma Dev Mode** (lancado em 2023, evoluido em 2024-2025): Permite que designers anotem componentes com informacoes tecnicas — tokens, estados, responsividade — e que desenvolvedores inspecionem designs com informacoes contextualizadas para seu stack tecnologico.
+**Figma Dev Mode** (lancado em 2023, evoluido significativamente em 2024-2026): Permite que designers anotem componentes com informacoes tecnicas — tokens, estados, responsividade — e que desenvolvedores inspecionem designs com informacoes contextualizadas para seu stack tecnologico. Em 2025-2026, Dev Mode ganhou integracao nativa com Git (branch, commit e merge direto para GitHub/GitLab), code sync bidirecional com codebases React, e suporte a MCP Server para geracao de codigo com contexto de design.
 
 **Code Connect** (Figma, 2024): Permite mapear componentes do Figma diretamente a componentes do codebase. Quando um desenvolvedor inspeciona um componente no Figma, ve a importacao e o uso exato do componente em React/Vue/Swift/Kotlin — nao uma aproximacao, mas o codigo real.
 
-**Design Tokens W3C** (Draft em progresso, 2021-2026): Especificacao que padroniza o formato de tokens, permitindo que o mesmo arquivo de tokens alimente Figma, CSS, iOS, Android e qualquer outra plataforma. O design token e o ponto de convergencia que conecta o trabalho do designer ao trabalho do engenheiro.
+**Design Tokens W3C** (primeira versao estavel 2025.10, apos draft desde 2021): Especificacao que padroniza o formato de tokens, permitindo que o mesmo arquivo de tokens alimente Figma, CSS, iOS, Android e qualquer outra plataforma. O design token e o ponto de convergencia que conecta o trabalho do designer ao trabalho do engenheiro.
 
-**Storybook como Single Source of Truth** (2016-2026): Ferramenta que documenta, desenvolve e testa componentes isoladamente. Em versoes recentes (Storybook 8, 2024), integra-se profundamente com Figma (Storybook Connect), Chromatic (visual regression), e Testing Library (interaction testing).
+**Storybook como Single Source of Truth** (2016-2026): Ferramenta que documenta, desenvolve e testa componentes isoladamente. Em versoes recentes (Storybook 10, 2025), integra-se profundamente com Figma (Storybook Connect), Chromatic (visual regression), Vitest (Storybook Test) e Testing Library (interaction testing). A evolucao de v8 para v9 (com parceria Vitest e suporte React Native) e v10 (ESM-only, reducao de 29% no install size) consolidou Storybook como infraestrutura essencial.
 
 O resultado e um fluxo cada vez mais unificado:
 
@@ -221,7 +221,7 @@ A definicao formal: um design token e **uma decisao de design nomeada** que arma
 
 A **W3C Design Tokens Community Group** (DTCG), fundada em 2019 com Kaelig Deloumeau-Prigent e Danny Banks como co-chairs, esta desenvolvendo uma especificacao padrao para o formato de design tokens. O objetivo e ambicioso: criar um formato universal que qualquer ferramenta (Figma, Sketch, Style Dictionary, Token Studio, qualquer framework) possa ler e escrever.
 
-A especificacao (ainda em draft em 2026, mas amplamente adotada na pratica) define:
+A especificacao alcancou sua primeira versao estavel (2025.10) em outubro de 2025, e agora define:
 
 **Formato JSON/JSON5:**
 ```json
@@ -264,7 +264,7 @@ A especificacao (ainda em draft em 2026, mas amplamente adotada na pratica) defi
 | `gradient` | Linear/radial com stops |
 | `typography` | Composicao de fontFamily + fontSize + fontWeight + lineHeight + letterSpacing |
 
-A adocao da W3C DTCG spec vem crescendo. Style Dictionary 4.0 (2024) adotou o formato como default. Token Studio (Figma plugin) suporta nativamente. Supernova, Specify e Zeroheight tambem suportam. A tendencia e clara: em 2-3 anos, o formato W3C sera o padrao de facto.
+A adocao da W3C DTCG spec acelerou significativamente apos a publicacao da versao estavel 2025.10. Style Dictionary 4.0 (2024) adotou o formato como default. Token Studio (Figma plugin) suporta nativamente. Supernova, Specify e Zeroheight tambem suportam. Com a versao estavel publicada, o formato W3C e agora o padrao de facto da industria.
 
 ### 3.3 Taxonomia de Tokens
 
@@ -372,7 +372,7 @@ Os componentes referenciam apenas alias tokens (`color.surface.default`), nunca 
 
 Tokens sao definidos em um formato neutro (JSON) mas precisam ser transformados para cada plataforma:
 
-**Style Dictionary (Amazon, open-source, 23K+ stars GitHub):**
+**Style Dictionary (originalmente Amazon, agora organizacao independente no GitHub, open-source):**
 
 O transformador de tokens mais utilizado. Recebe tokens em JSON e gera outputs para qualquer plataforma:
 
@@ -836,7 +836,7 @@ import * as Dialog from '@radix-ui/react-dialog';
 </Dialog.Root>
 ```
 
-O impacto de Radix na industria e enorme. **shadcn/ui** (2023, Shadcn — nome real desconhecido publicamente), a biblioteca de componentes mais popular de 2023-2025, e construida inteiramente sobre Radix UI + Tailwind CSS. shadcn/ui nao e um pacote npm — e uma colecao de componentes que voce copia para seu projeto e customiza. Essa abordagem "copy-paste components" desafiou o modelo tradicional de component libraries e se tornou um fenomeno (75K+ stars no GitHub).
+O impacto de Radix na industria e enorme. **shadcn/ui** (2023, Shadcn — nome real desconhecido publicamente), a biblioteca de componentes mais popular de 2023-2026, e construida inteiramente sobre Radix UI + Tailwind CSS. shadcn/ui nao e um pacote npm — e uma colecao de componentes que voce copia para seu projeto e customiza. Essa abordagem "copy-paste components" desafiou o modelo tradicional de component libraries e se tornou um fenomeno (112K+ stars no GitHub em abril 2026, ultrapassando 100K em novembro 2025). Em 2026, shadcn lancou um Visual Project Builder e expandiu suporte para Vue e Svelte alem de React/Next.js.
 
 ### 5.4 Compound Components Pattern
 
@@ -906,7 +906,7 @@ Com `asChild`, o Trigger delega a renderizacao para o child, mesclando props e e
 
 ### 6.1 WCAG 2.2
 
-A **Web Content Accessibility Guidelines (WCAG)** e o padrao internacional de acessibilidade web, publicado pelo W3C. A versao 2.2 (outubro 2023) adicionou 9 novos criterios, totalizando 86 criterios de sucesso em tres niveis:
+A **Web Content Accessibility Guidelines (WCAG)** e o padrao internacional de acessibilidade web, publicado pelo W3C. A versao 2.2 (outubro 2023, aprovada como ISO/IEC 40500:2025 em outubro de 2025) adicionou 9 novos criterios, totalizando 86 criterios de sucesso em tres niveis:
 
 | Nivel | Significado | Criterios |
 |-------|-------------|-----------|
@@ -914,7 +914,7 @@ A **Web Content Accessibility Guidelines (WCAG)** e o padrao internacional de ac
 | **AA** | Padrao recomendado — boa experiencia para a maioria | 24 criterios |
 | **AAA** | Maximo — excepcional acessibilidade | 32 criterios |
 
-O nivel **AA** e o target padrao para a maioria dos design systems e e exigido por lei em muitos paises (incluindo Brasil via Lei Brasileira de Inclusao).
+O nivel **AA** e o target padrao para a maioria dos design systems e e exigido por lei em muitos paises (incluindo Brasil via Lei Brasileira de Inclusao). A aprovacao do WCAG 2.2 como padrao ISO/IEC em outubro de 2025 acelerou a adocao global. O European Accessibility Act (EAA, efetivo junho 2025) referencia WCAG 2.1/2.2. O WCAG 3.0 esta em desenvolvimento mas ainda a anos de se tornar recomendacao oficial — WCAG 2.2 permanece o estado da arte.
 
 **Novidades WCAG 2.2 relevantes para design systems:**
 
@@ -1069,7 +1069,7 @@ Isso e revolucionario porque elimina a ambiguidade. O designer e o desenvolvedor
 
 ### 7.2 Storybook como Documentacao
 
-**Storybook** (lancado em 2016, mantido pela Chromatic) e a ferramenta padrao para desenvolvimento e documentacao de componentes isolados. Em 2026, Storybook esta na versao 8 e e usado por times em Shopify, GitHub, Airbnb, Mozilla, IBM, Microsoft e dezenas de milhares de outras organizacoes.
+**Storybook** (lancado em 2016, mantido pela Chromatic) e a ferramenta padrao para desenvolvimento e documentacao de componentes isolados. Em 2026, Storybook esta na versao 10 (v8 em marco 2024, v9 em mid-2025, v10 em outubro 2025) e e usado por times em Shopify, GitHub, Airbnb, Mozilla, IBM, Microsoft e dezenas de milhares de outras organizacoes.
 
 **O que Storybook faz:**
 - Renderiza componentes em isolamento (sem contexto de app)
@@ -1119,15 +1119,19 @@ export const Loading: Story = {
 };
 ```
 
-**Storybook 8 (2024) novidades:**
+**Evolucao Storybook 8 → 9 → 10 (2024-2025):**
 
-| Feature | Descricao |
-|---------|-----------|
-| Portable stories | Stories reutilizaveis em testes unitarios |
-| Visual tests built-in | Chromatic integration nativa |
-| RSC support | Suporte a React Server Components |
-| Controls improvements | Controles automaticos mais inteligentes |
-| Improved performance | Startup 2x mais rapido |
+| Versao | Feature | Descricao |
+|--------|---------|-----------|
+| v8 (Mar 2024) | Portable stories | Stories reutilizaveis em testes unitarios |
+| v8 | Visual tests built-in | Chromatic integration nativa |
+| v8 | RSC support | Suporte experimental a React Server Components |
+| v9 (Mid 2025) | Storybook Test | Parceria com Vitest para testing integrado |
+| v9 | Svelte 5 + React Native | Suporte a Runes/Snippets e React Native |
+| v9 | Install size -50% | Reducao significativa de dependencias |
+| v10 (Out 2025) | ESM-only | Reducao adicional de 29% no install size |
+| v10 | CSF Factories | Nova forma de definir stories (preview) |
+| v10 | Tag exclusion | Filtragem de stories por tags |
 
 ### 7.3 Visual Regression Testing
 
@@ -1206,10 +1210,10 @@ MUI v5+ usa Emotion como engine de estilos. MUI v6 (2025) introduziu suporte a C
 **Chakra UI — 38K+ stars:**
 Criada por **Segun Adebayo** (desenvolvedor nigeriano), Chakra UI prioriza developer experience e acessibilidade. Componentes acessiveis por default, API composicional, e theming poderoso. Chakra v3 (2025) reconstruiu a base sobre o Ark UI (headless) para melhor performance.
 
-**shadcn/ui — 80K+ stars:**
-Fenomeno de 2023-2025. Nao e uma biblioteca npm — e uma colecao de componentes copy-paste construida sobre Radix UI + Tailwind CSS. O desenvolvedor executa `npx shadcn@latest add button` e o componente e copiado para o projeto, totalmente customizavel. Filosofia: "componentes sao seus, nao de uma dependencia."
+**shadcn/ui — 112K+ stars:**
+Fenomeno de 2023-2026. Nao e uma biblioteca npm — e uma colecao de componentes copy-paste construida sobre Radix UI + Tailwind CSS. O desenvolvedor executa `npx shadcn@latest add button` e o componente e copiado para o projeto, totalmente customizavel. Filosofia: "componentes sao seus, nao de uma dependencia."
 
-Impacto: shadcn/ui mudou a forma como a industria pensa sobre component libraries. Em vez de instalar um pacote e aceitar suas limitacoes, voce possui o codigo e adapta livremente. Vercel, Supabase e centenas de startups adotaram.
+Impacto: shadcn/ui mudou a forma como a industria pensa sobre component libraries. Em vez de instalar um pacote e aceitar suas limitacoes, voce possui o codigo e adapta livremente. Vercel, Supabase e centenas de startups adotaram. Em 2025-2026, ferramentas de IA (Claude Code, v0, Lovable) adotaram shadcn como biblioteca UI padrao, acelerando ainda mais a adocao (250K+ weekly npm installs).
 
 **Radix Themes — 5K+ stars:**
 A propria WorkOS (criadora do Radix UI primitives) lancou Radix Themes: uma camada visual sobre Radix primitives com sistema de tokens, cores, e tipografia. Menos popular que shadcn/ui mas com design mais coeso out-of-the-box.
@@ -1224,7 +1228,7 @@ Biblioteca completa (130+ componentes) com foco em DX. Inclui hooks, forms, noti
 
 A forma como um design system aplica estilos visuais e uma das decisoes mais impactantes:
 
-**Tailwind CSS — 85K+ stars:**
+**Tailwind CSS — 94K+ stars:**
 Utility-first framework criado por **Adam Wathan** e **Steve Schoger**. Em vez de classes semanticas (`.button-primary`), usa classes utilitarias (`bg-blue-500 text-white px-4 py-2 rounded`). Controversial quando lancado (2017), tornou-se o framework CSS mais popular em 2023-2026.
 
 ```tsx
@@ -1235,7 +1239,7 @@ Utility-first framework criado por **Adam Wathan** e **Steve Schoger**. Em vez d
 </button>
 ```
 
-Tailwind 4 (2025) trouxe mudancas significativas: engine CSS nativo (sem PostCSS), configuracao em CSS (nao mais tailwind.config.js), performance dramaticamente melhor, e melhor integracao com CSS moderno (container queries, cascade layers).
+Tailwind 4 (lancado em 22 de janeiro de 2025) trouxe mudancas significativas: engine de alta performance reescrito do zero (full builds ate 5x mais rapidos, incremental builds 100x+ mais rapidos), configuracao CSS-first (nao mais tailwind.config.js), deteccao automatica de conteudo sem configuracao, paleta de cores modernizada em OKLCH, e uso nativo de cascade layers, @property e color-mix().
 
 **CSS Modules:**
 Escopoamento local por arquivo. Cada `.module.css` gera classes unicas em build time. Zero runtime overhead, funciona com qualquer framework. Simples e previsivel.
@@ -2002,13 +2006,16 @@ Design systems impactam diretamente Core Web Vitals:
 | Code Connect | 2024 | Mapeamento direto componente Figma → codigo |
 | Multi-edit | 2024 | Editar multiplas instancias de componente simultaneamente |
 | AI features | 2024-2025 | Geracao, busca e organizacao assistida por IA |
+| Git Integration | 2025-2026 | Branch, commit e merge direto para GitHub/GitLab |
+| Bidirectional Code Sync | 2025-2026 | Componentes Figma sincronizam com codebases React |
+| MCP Server | 2025-2026 | Dev Mode como contexto para geracao de codigo por IA |
 
 **Figma Variables vs Tokens Studio:**
 Figma Variables e nativo mas limitado (nao suporta todos os tipos de token, nao exporta facilmente). Tokens Studio e mais poderoso (suporta W3C DTCG, sync com Git, multi-brand) mas e um plugin de terceiro. A maioria dos times maduros usa ambos: Variables para o dia-a-dia no Figma, Tokens Studio para a pipeline automatizada.
 
-### 14.2 Storybook 8
+### 14.2 Storybook 10
 
-Ja coberto em secoes anteriores, mas vale consolidar o ecossistema de addons:
+Ja coberto em secoes anteriores, mas vale consolidar o ecossistema de addons (valido para v8-v10):
 
 | Addon | Funcao |
 |-------|--------|
@@ -2275,10 +2282,10 @@ O Brasil possui uma comunidade de design vibrante e em rapido crescimento. Segun
 A Natura e um dos casos mais avancados de design system no Brasil. Com multiplas marcas (Natura, Avon, The Body Shop), precisam de um sistema multi-brand que compartilha componentes mas permite expressao visual unica por marca. Usam design tokens para tematizacao e Storybook para documentacao.
 
 **Itau Design System (Itau Unibanco):**
-O maior banco privado da America Latina possui um design system robusto para seus canais digitais (app, internet banking, ATMs). O foco e consistencia cross-channel, acessibilidade (compliance regulatorio financeiro), e escala (milhoes de usuarios diarios). Historicamente um dos design systems mais maduros do Brasil.
+O maior banco privado da America Latina possui um design system robusto para seus canais digitais (app, internet banking, ATMs). O foco e consistencia cross-channel, acessibilidade (compliance regulatorio financeiro), e escala (milhoes de usuarios diarios). Em 2025, o Itau anunciou uma reformulacao digital massiva visando atender 75% dos clientes de varejo exclusivamente por canais digitais nos proximos 3 anos (vs 15% atual), o que implica investimento significativo na evolucao do design system.
 
-**Nubank:**
-O Nubank e referencia global em fintech design. Seu design system prioriza simplicidade extrema, animacoes delightful, e dark mode como diferencial. A cor roxa iconica e tratada como design token fundamental. O Nubank publicou artigos no Medium sobre sua abordagem de design system.
+**Nubank (NuDS — Nubank Design System):**
+O Nubank e referencia global em fintech design. Seu design system NuDS evoluiu de uma biblioteca minimalista para um framework multi-mercado com 100+ componentes reutilizaveis e templates de tela. Em 2025-2026, o Nubank lancou o **Nu Sans** — uma familia tipografica propria com 2 tamanhos oticos, 3 larguras e 4 pesos com italicos (32 fontes), desenvolvida pela Blackletra Type Foundry. A cor roxa iconica e tratada como design token fundamental, com atualizacao recente de brand colors para contas empresariais implementada em um unico sprint gracas a arquitetura de tokens do NuDS.
 
 **VTEX Design System (Styleguide):**
 VTEX, plataforma de e-commerce, possui um design system open-source. O VTEX Styleguide (depois renomeado) oferece componentes React para construcao de admin panels de e-commerce. E um dos poucos design systems brasileiros genuinamente open-source.
@@ -2558,3 +2565,41 @@ A origem de tudo. O livro que formalizou o uso de grids matematicos em design. F
 *MS-002 — Design System Master System Research*
 *SINAPSE Research Initiative — 2026-04-07*
 *@analyst (Scope) — 46 fontes | 19 secoes | 1,700+ linhas*
+
+---
+
+## Verificacao de Qualidade
+
+**Data da verificacao:** 2026-04-07
+**Verificado por:** @research-orqx (Prism) via WebSearch
+
+### Correcoes realizadas
+
+| Item | Valor original | Valor corrigido | Fonte |
+|------|---------------|----------------|-------|
+| W3C Design Tokens spec status | "ainda em draft em 2026" | Primeira versao estavel (2025.10) publicada em outubro 2025 | w3.org/community/design-tokens |
+| W3C DTCG adocao | "em 2-3 anos, sera padrao de facto" | Ja e padrao de facto apos versao estavel | designtokens.org |
+| Storybook versao atual | "Storybook 8, 2024" | Storybook 10 (v10.3.3), lancado outubro 2025 | storybook.js.org/releases |
+| Storybook features table | Apenas features v8 | Tabela expandida com v8, v9 e v10 features | storybook.js.org/blog/storybook-10 |
+| shadcn/ui stars | "75K+" e "80K+" | 112K+ (abril 2026) | github.com/shadcn-ui/ui |
+| shadcn/ui timeline | "2023-2025" | "2023-2026" com Visual Project Builder e expansao multi-framework | infoq.com/news/2026/02/shadcn-ui-builder |
+| Tailwind CSS stars | "85K+" | 94K+ | github.com/tailwindlabs/tailwindcss |
+| Tailwind v4 detalhes | Descricao generica | Data de lancamento (22 Jan 2025), metricas de performance (5x/100x), OKLCH, CSS-first config | tailwindcss.com/blog/tailwindcss-v4 |
+| WCAG 2.2 status | Apenas "outubro 2023" | Adicionado: aprovado como ISO/IEC 40500:2025 em outubro 2025 | w3.org/press-releases/2025/wcag22-iso-pas |
+| WCAG 3.0 | Nao mencionado | Adicionado nota sobre desenvolvimento em andamento | medium.com/@chukreiev |
+| Figma Dev Mode | "evoluido em 2024-2025" | Adicionado Git integration, bidirectional code sync, MCP Server (2025-2026) | figma.com/release-notes |
+| Figma features table | Ate 2024-2025 | Adicionadas 3 linhas: Git Integration, Bidirectional Code Sync, MCP Server | medium.com/@Rythmuxdesigner |
+| Nubank | Descricao generica | Atualizado com NuDS (100+ componentes), Nu Sans (32 fontes, Blackletra) | building.nubank.com, figma.com/customers/nubank |
+| Itau | Descricao historica | Adicionada reformulacao digital 2025 (meta 75% digital) | bloomberg.com |
+| Design Tokens W3C (secao 1.3) | "Draft em progresso" | "primeira versao estavel 2025.10" | designtokens.org/tr/drafts/format |
+
+### URLs verificadas
+
+- https://www.w3.org/community/design-tokens/2025/10/28/design-tokens-specification-reaches-first-stable-version/
+- https://storybook.js.org/releases/10.0
+- https://github.com/shadcn-ui/ui
+- https://tailwindcss.com/blog/tailwindcss-v4
+- https://www.w3.org/press-releases/2025/wcag22-iso-pas/
+- https://www.figma.com/release-notes/
+- https://building.nubank.com/design/
+- https://www.figma.com/customers/nubank-design-system-accessible-experiences-with-figma/

@@ -377,7 +377,7 @@ INP (Interaction to Next Paint) substituiu oficialmente o FID (First Input Delay
 | **INP** (Interaction to Next Paint) | Responsividade | <= 200ms | <= 500ms | > 500ms |
 | **CLS** (Cumulative Layout Shift) | Estabilidade visual | <= 0.1 | <= 0.25 | > 0.25 |
 
-O Google December 2025 Core Update aumentou significativamente o peso de fatores de performance tecnica no ranking, tornando a excelencia tecnica obrigatoria para posicoes competitivas. Sites com INP acima de 300ms reportaram quedas de ate 31% no ranking, especialmente em mobile.
+O Google December 2025 Core Update (sensor de volatilidade 8.7/10, afetando 40-60% dos sites globalmente) aumentou significativamente o peso de fatores de performance tecnica no ranking, tornando a excelencia tecnica obrigatoria para posicoes competitivas. Cerca de 15% das paginas no TOP 10 desapareceram do TOP 100. Sites com INP acima de 300ms reportaram quedas de ate 31% no ranking, especialmente em mobile. Apenas ~47% dos sites atingem os thresholds de Core Web Vitals em 2026, com INP sendo a metrica mais reprovada (43% dos sites falham).
 
 ### 4.3 Content SEO
 
@@ -462,11 +462,11 @@ Backlinks continuam sendo um dos fatores de ranking mais fortes. Ahrefs e Moz es
 A introducao de AI Overviews (antigo SGE — Search Generative Experience) pelo Google em 2024-2025 representa a maior disrupção em SEO desde a busca mobile.
 
 **Impactos observados (dados atualizados 2025-2026):**
-- AI Overviews aparecem em ~25.8% das buscas nos EUA (Jan 2026) e ~13% globalmente — com queries informacionais atingindo 39.4% de exposicao e e-commerce apenas 4% (Semrush, 2025-2026)
+- AI Overviews aparecem em ~25.8% das buscas nos EUA (Jan 2026, Semrush) — porem dados do BrightEdge e Ahrefs reportam ate 48-60% dependendo da metodologia e keyword set; queries informacionais atingem 39.4% de exposicao e e-commerce apenas 4% (Semrush, 2025-2026). A variacao entre fontes reflete diferentes metodologias de medicao
 - Click-through rate para resultados organicos cai 61% (de 1.76% para 0.61%) quando AI Overview esta presente; CTR pago cai 68% (Seer Interactive, 2025)
 - Sites citados dentro de AI Overviews podem ver CTR aumentar ate 35%; marcas mencionadas em AI responses experimentam 91% mais CTR pago
 - Buscas informacionais sao significativamente mais afetadas que transacionais
-- "Zero-click searches" representam ~58.5-60% de todas as buscas no Google (SparkToro/Datos, 2024-2025) — com taxa de 83% em buscas que ativam AI Overviews vs. ~60% em buscas tradicionais. Em mobile, zero-click atinge 77.2% vs. 46.5% em desktop
+- "Zero-click searches" representam ~58.5-60% de todas as buscas no Google (SparkToro/Datos, 2024-2025) — com taxa de 83% em buscas que ativam AI Overviews vs. ~60% em buscas tradicionais. Em mobile, zero-click atinge ~77% vs. ~47% em desktop. Para cada 1.000 buscas nos EUA, apenas 360 cliques vao para a open web (SparkToro, 2024)
 - Chegg reportou queda de 49% em trafego de nao-assinantes entre Jan/2024 e Jan/2025, coincidindo com AI Overviews respondendo queries educacionais
 
 **Estrategias de adaptacao:**
@@ -1232,7 +1232,7 @@ A pricing page e frequentemente a pagina mais visitada antes da conversao e uma 
 
 ### 12.5 Checkout Optimization
 
-O abandono de checkout e um dos maiores vazamentos de receita. A taxa media de abandono de carrinho e ~70% (Baymard Institute).
+O abandono de checkout e um dos maiores vazamentos de receita. A taxa media de abandono de carrinho e ~70.2% (Baymard Institute, media de 50 estudos, 2025-2026).
 
 **Causas e solucoes:**
 
@@ -1266,7 +1266,7 @@ Social proof (Robert Cialdini, "Influence") e uma das alavancas mais poderosas d
 
 ### 13.1 Email como Canal de Growth
 
-Email continua sendo um dos canais com maior ROI em marketing digital. A DMA (Data & Marketing Association) reporta ROI medio de $36 para cada $1 investido. Em 2025, email nao esta morto — esta mais sofisticado.
+Email continua sendo um dos canais com maior ROI em marketing digital. A DMA (Data & Marketing Association) reporta ROI medio de $36-38 para cada $1 investido (a DMA UK atualizou para $38 em 2026). Em 2025, email nao esta morto — esta mais sofisticado.
 
 **Vantagens do email:**
 - **Owned channel** — Voce controla a lista, nao depende de algoritmos
@@ -1504,12 +1504,12 @@ O Brasil e o maior mercado digital da America Latina e um dos maiores do mundo:
 
 | Metrica | Valor (2025-2026) | Fonte |
 |---------|-------------------|-------|
-| Populacao online | ~190 milhoes | DataReportal |
-| Penetracao internet | ~87% | DataReportal |
+| Populacao online | ~183 milhoes | DataReportal (Jan 2025) |
+| Penetracao internet | ~86.2% | DataReportal (Jan 2025) |
 | Smartphones | ~170 milhoes | GSMA |
 | Tempo medio online/dia | ~9h30 | DataReportal |
 | E-commerce GMV | ~R$200 bilhoes/ano | ABComm |
-| Social media users | ~150 milhoes | DataReportal |
+| Social media users | ~144 milhoes | DataReportal (Jan 2025) |
 
 **Caracteristicas unicas:**
 - **Mobile-first** — 60%+ do trafego e mobile
@@ -1567,8 +1567,8 @@ A Lei Geral de Protecao de Dados (LGPD, Lei 13.709/2018) impacta diretamente est
 
 | Plataforma | Categoria | Relevancia para Growth |
 |-----------|-----------|----------------------|
-| **RD Station** | Marketing automation | Lider em inbound marketing no Brasil |
-| **Hotmart** | Digital products | Maior plataforma de infoprodutos da AL |
+| **RD Station** | Marketing automation | Lider em inbound marketing no Brasil (50K+ clientes, adquirida pela TOTVS) |
+| **Hotmart** | Digital products | Maior plataforma de infoprodutos da AL ($10B+ GMV acumulado, 188 paises) |
 | **Eduzz** | Digital products | Alternativa a Hotmart, foco em afiliados |
 | **Monetizze** | Digital products | Terceira grande plataforma de infoprodutos |
 | **VTEX** | E-commerce platform | Enterprise e-commerce brasileiro |
@@ -1764,3 +1764,55 @@ Produtor cria curso → Afiliados promovem → Comissao de 30-70%
 | 18 | Fontes & Links (42+ fontes) | OK |
 | 19 | Aplicabilidade ao SINAPSE (squad-growth, Catalyst, conexoes cross-system) | OK |
 | 20 | Profundidade > 1200 linhas | OK |
+
+---
+
+## Verificacao de Qualidade
+
+**Data da verificacao:** 2026-04-07
+**Verificado por:** @research-orqx (Prism) via WebSearch
+
+### Correcoes Realizadas
+
+| # | Secao | Dado Original | Correcao | Fonte |
+|---|-------|---------------|----------|-------|
+| 1 | 16.1 Mercado Digital Brasileiro | Populacao online: ~190 milhoes | Corrigido para ~183 milhoes | DataReportal Jan 2025 |
+| 2 | 16.1 Mercado Digital Brasileiro | Penetracao internet: ~87% | Corrigido para ~86.2% | DataReportal Jan 2025 |
+| 3 | 16.1 Mercado Digital Brasileiro | Social media users: ~150 milhoes | Corrigido para ~144 milhoes | DataReportal Jan 2025 |
+| 4 | 4.7 AI & SGE | AI Overviews em ~25.8% (dado unico) | Adicionada nota sobre variacao metodologica (25.8-60% dependendo da fonte) | BrightEdge, Ahrefs, Semrush |
+| 5 | 4.7 AI & SGE | Zero-click mobile 77.2% vs desktop 46.5% | Arredondado para ~77% vs ~47%; adicionado dado SparkToro (360 cliques por 1000 buscas) | SparkToro/Datos 2024 |
+| 6 | 4.2 Technical SEO | Impacto Dec 2025 Core Update | Adicionados dados de volatilidade (8.7/10), 15% TOP 10 desapareceu, 47% sites passam CWV, 43% falham INP | SE Ranking, DebugBear, NitroPack |
+| 7 | 13.1 Email ROI | DMA ROI $36 per $1 | Atualizado para $36-38 (DMA UK atualizou para $38 em 2026) | DMA UK 2026 |
+| 8 | 12.5 Checkout | Taxa abandono ~70% | Precisado para ~70.2% (media de 50 estudos) | Baymard Institute 2025-2026 |
+| 9 | 16.5 Plataformas BR | RD Station e Hotmart sem dados quantitativos | Adicionados: RD Station 50K+ clientes (TOTVS); Hotmart $10B+ GMV acumulado, 188 paises | 6sense, Tracxn, Hotmart Press |
+
+### Dados Verificados Sem Necessidade de Correcao
+
+| Dado | Status | Fonte Confirmada |
+|------|--------|-----------------|
+| Organic search = 53.3% de todo trafego web | CONFIRMADO | BrightEdge (estudo citado desde 2019, valor estavel) |
+| AI Overviews CTR drop 61% | CONFIRMADO | Seer Interactive 2025 |
+| Chegg queda 49% trafego | CONFIRMADO | Chegg lawsuit Feb 2025, Search Engine Journal |
+| Core Web Vitals thresholds (LCP 2.5s, INP 200ms, CLS 0.1) | CONFIRMADO | Google Search Central (oficial) |
+| INP substituiu FID em Marco 2024 | CONFIRMADO | Google oficial |
+| Freemium conversion 2-5% | CONFIRMADO | ProductLed, First Page Sage, Lenny's Newsletter |
+| Free trial conversion 15-25% | PARCIAL -- 15-25% e faixa "great"; faixa "good" e 8-12% | Userpilot, amraandelma |
+| Cart abandonment ~70% | CONFIRMADO (~70.2%) | Baymard Institute (50 estudos) |
+| Email ROI $36 per $1 | CONFIRMADO (benchmark mais citado; DMA UK subiu para $38) | DMA, Litmus, EmailMonday |
+| PLG benchmarks (PQL, onboarding) | CONFIRMADO | OpenView Partners, ProductLed |
+
+### URLs Verificadas
+
+- https://datareportal.com/reports/digital-2025-brazil
+- https://searchengineland.com/google-ai-overviews-surge-pullback-data-466314
+- https://www.seerinteractive.com/insights/aio-impact-on-google-ctr-september-2025-update
+- https://sparktoro.com/blog/2024-zero-click-search-study-for-every-1000-us-google-searches-only-374-clicks-go-to-the-open-web-in-the-eu-its-360/
+- https://baymard.com/lists/cart-abandonment-rate
+- https://www.brightedge.com/resources/research-reports/channel_share
+- https://developers.google.com/search/docs/appearance/core-web-vitals
+- https://seranking.com/blog/google-december-2025-core-update-serp-analysis/
+- https://press.hotmart.com/hotmart-company-announces-record-breaking-10-billion-in-global-creator-earnings
+- https://6sense.com/tech/marketing-automation/rd-station-market-share
+- https://productled.com/blog/product-led-growth-benchmarks
+- https://firstpagesage.com/seo-blog/saas-freemium-conversion-rates/
+- https://www.emailmonday.com/email-marketing-roi-statistics/

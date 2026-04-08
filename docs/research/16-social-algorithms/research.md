@@ -49,7 +49,7 @@ O conceito de "economia da atencao" foi popularizado por Herbert Simon em 1971: 
 **Numeros que dimensionam a competicao (2025):**
 - Um usuario medio de smartphone interage com 80+ apps por mes
 - O tempo medio global em redes sociais e de 2h24min/dia (DataReportal 2025)
-- No Brasil, a media e de 3h37min/dia — um dos maiores do mundo
+- No Brasil, a media e de 3h49min/dia — o maior do mundo (DataReportal 2025)
 - O feed de um usuario medio do Instagram tem 500+ posts novos por dia de contas seguidas
 - Apenas ~30% do conteudo disponivel e realmente exibido ao usuario
 
@@ -186,7 +186,13 @@ O termo "shadowban" e controverso. O Instagram oficialmente nega que "shadowban"
 
 **Penalidade a agregadores (2025-2026):** O Instagram passou a remover contas agregadoras — que construiram seguidores repostando conteudo alheio — de seu sistema de recomendacao. Contas que postam 10+ reposts em 30 dias sao excluidas de recomendacoes (Explore, Reels feed, suggested posts). Criadores originais viram aumento de 40-60% no alcance, enquanto agregadores perderam 60-80%. Posts repostados agora aparecem com labels de atribuicao creditando os criadores originais.
 
-**Watch time como sinal #1:** Adam Mosseri confirmou em janeiro de 2025 que watch time e o fator de ranking #1 para Reels, com o limite critico nos primeiros 3 segundos pesando fortemente na decisao de distribuicao inicial.
+**Watch time como sinal #1:** Adam Mosseri confirmou em janeiro de 2025 que watch time e o fator de ranking #1 para Reels, com o limite critico nos primeiros 3 segundos pesando fortemente na decisao de distribuicao inicial. Likes per reach e DM shares foram confirmados como segundo e terceiro sinais mais importantes.
+
+**Peso de interacoes DM/comments/Stories (marco 2026):** O Instagram passou a dar peso ainda maior a contas com as quais o usuario interage frequentemente via DMs, comentarios e respostas de Stories, reforçando o sinal de relacionamento como fator de ranking.
+
+**Categorizacao por AI (2026):** O Instagram aprimorou significativamente sua capacidade de categorizar conteudo alem de hashtags, analisando elementos visuais, texto em imagens e clipes de video para matchear posts com usuarios — tornando hashtags menos relevantes como fator de descoberta.
+
+**Traducao AI para Reels (final de 2025):** O Instagram lancou traducoes automaticas por AI para Reels, traduzindo texto e audio para hindi, portugues, ingles e espanhol, com mais idiomas planejados.
 
 ### 2.8 Engagement Velocity — A Janela Critica
 
@@ -207,7 +213,7 @@ O conceito de engagement velocity e fundamental: o desempenho de um post nos pri
 
 ### 3.1 A Revolucao da For You Page (FYP)
 
-**Contexto regulatorio (2024-2026):** Em janeiro de 2025, a Suprema Corte dos EUA manteve a lei "Protecting Americans from Foreign Adversary Controlled Applications Act", que exigia que a ByteDance vendesse o TikTok ou enfrentasse banimento nos EUA. Em dezembro de 2025, a ByteDance fechou acordo de venda de 45% das operacoes americanas para um consorcio liderado por Oracle, Silver Lake e MGX, formando a TikTok USDS Joint Venture LLC. O acordo foi concluido em 22 de janeiro de 2026, com 80.1% de propriedade americana. Como parte dos termos, o algoritmo de recomendacao nos EUA passou a ser treinado exclusivamente com dados hospedados em servidores da Oracle, sem acesso da ByteDance aos dados de usuarios americanos.
+**Contexto regulatorio (2024-2026):** Em janeiro de 2025, a Suprema Corte dos EUA manteve a lei "Protecting Americans from Foreign Adversary Controlled Applications Act", que exigia que a ByteDance vendesse o TikTok ou enfrentasse banimento nos EUA. O app ficou sob banimento de jure de 19 de janeiro de 2025 a 22 de janeiro de 2026, mas servicos foram restaurados apos Trump assinar ordem executiva suspendendo a aplicacao por 75 dias. Em 22 de janeiro de 2026, a TikTok USDS Joint Venture LLC foi oficialmente estabelecida, com ByteDance retendo participacao minoritaria inferior a 20%. A propriedade restante ficou com investidores americanos e aliados, liderados por Oracle, Silver Lake e MGX (cada um com ~15%). Como parte dos termos, o algoritmo de recomendacao nos EUA passou a ser treinado exclusivamente com dados hospedados em servidores da Oracle, sem acesso da ByteDance aos dados de usuarios americanos.
 
 O TikTok fundamentalmente redefiniu como conteudo e distribuido em redes sociais. Antes do TikTok, plataformas operavam em um modelo "follow first, discover second" — voce precisava construir uma audiencia de seguidores antes de ter alcance. O TikTok inverteu isso: qualquer video de qualquer conta pode viralizar, independente do numero de seguidores.
 
@@ -388,6 +394,14 @@ O Shorts tem seu proprio ecossistema algoritmico, inspirado pelo TikTok:
 
 **Diferenca critica vs long-form:** O YouTube reconhece que audiences de Shorts e long-form podem ser diferentes. Um canal pode ter sucesso em Shorts sem que isso se traduza em viewers de long-form. O YouTube tem trabalhado em melhorar essa bridge.
 
+**Atualizacoes Shorts 2025-2026:**
+- **Duracao estendida (2025):** Shorts agora podem ter ate 3 minutos (anteriormente 60 segundos), permitindo storytelling mais elaborado.
+- **Nova contagem de views (marco 2025):** Qualquer Short que comeca a tocar ou faz loop conta como view, sem tempo minimo de visualizacao. Cada loop adiciona uma view, o que inflaciona contagens de views por replays passivos.
+- **Separacao algortimica (final de 2025):** O YouTube separou completamente o motor de recomendacao de Shorts do long-form. Shorts sao rankeados por swipe-through rate, loop rate, shares e engajamento nos primeiros segundos.
+- **Filtro de busca dedicado (janeiro 2026):** O YouTube adicionou filtro "Shorts" no menu de tipo de busca, tornando Shorts um resultado de busca de primeira classe.
+- **Mudanca no Browse Feed (dezembro 2025):** O homepage do YouTube reduziu dramaticamente recomendacoes de long-form (de ~12 para ~2 videos), priorizando Shorts sobre videos tradicionais.
+- **Satisfaction signals > watch time (2026):** Pesquisas de satisfacao e comportamento pos-visualizacao agora superam watch time bruto como sinal primario de ranking.
+
 ### 4.7 O Paper "Deep Neural Networks for YouTube Recommendations" (2016)
 
 O paper seminal de Covington, Adams & Sargin (Google, 2016) descreveu a arquitetura do sistema de recomendacao do YouTube. Conceitos-chave:
@@ -481,6 +495,16 @@ Baseado em analises de milhoes de posts (dados de Hootsuite, Buffer, Shield App,
 | **Enquete** | Alto (em declinio) | Alto | Pesquisa de mercado, engajamento |
 
 **Insight critico:** O LinkedIn penaliza posts com links externos porque quer manter usuarios na plataforma. A pratica recomendada e colocar o link no primeiro comentario, embora o LinkedIn tenha comecado a penalizar essa tatica tambem em 2024. A melhor abordagem e criar conteudo nativo e direcionar para links via DM ou bio.
+
+### 5.7 Mudancas Algoritmicas 2025-2026
+
+**Saves e Sends como sinais de valor (final de 2025):** O LinkedIn adicionou Saves e Sends as analiticas de posts, sinalizando que esses sinais sao valorizados pelo algoritmo — similar a evolucao do Instagram. Conteudo que gera saves (referencia) e sends (compartilhamento privado) recebe distribuicao ampliada.
+
+**Filtro anti-automacao (2026):** O LinkedIn declarou que pode "limitar a visibilidade de comentarios" quando detecta criacao excessiva ou uso de ferramentas de automacao. Posts que se assemelham a padroes de spam podem nunca receber teste real de distribuicao.
+
+**Qualidade sobre quantidade:** Taticas que antes geravam alcance — postagem frequente, uso excessivo de hashtags, engagement bait — perderam eficacia progressivamente. O LinkedIn prioriza conteudo expert-led (frameworks, analises de industria, insights valiosos). Recomendacao atual: limitar-se a 1-3 tags altamente relevantes para evitar ser flagged como spam.
+
+**Conteudo expert-led:** O algoritmo de 2026 funciona cada vez mais como um filtro de confianca ("trust filter"), priorizando sinais de expertise real sobre metricas de alcance ou reacoes superficiais.
 
 ---
 
@@ -622,7 +646,7 @@ Para criadores e marcas, o Facebook ainda oferece o maior alcance absoluto (3 bi
 
 ### 8.1 Threads
 
-Lancado pela Meta em julho de 2023, Threads atingiu 100 milhoes de usuarios em 5 dias — o lancamento de app mais rapido da historia. No entanto, retencao inicial foi problematica. Em 2025, Threads estabilizou com ~200 milhoes de MAU.
+Lancado pela Meta em julho de 2023, Threads atingiu 100 milhoes de usuarios em 5 dias — o lancamento de app mais rapido da historia. No entanto, retencao inicial foi problematica. Em agosto de 2025, Threads atingiu 400 milhoes de MAU, chegando a 450 milhoes no inicio de 2026. Em janeiro de 2026, Threads superou o X (antigo Twitter) em usuarios ativos diarios mobile pela primeira vez (141.5M vs 125M DAU mobile).
 
 **Algoritmo do Threads:**
 - Fortemente baseado em interesse (similar ao TikTok), nao apenas em follows
@@ -1246,20 +1270,22 @@ Plataformas usam AI extensivamente para moderacao de conteudo:
 O Brasil e um dos paises mais ativos em redes sociais do mundo. Dados DataReportal/We Are Social 2025:
 
 - **Populacao:** ~216 milhoes
-- **Usuarios de internet:** ~187 milhoes (87%)
-- **Usuarios de redes sociais:** ~153 milhoes (71%)
-- **Tempo medio em social media:** 3h37min/dia (top 5 global)
+- **Usuarios de internet:** ~183 milhoes (86.2%) (DataReportal Jan 2025)
+- **Identidades de usuarios de redes sociais:** ~144 milhoes (67.8%) (DataReportal Jan 2025)
+- **Usuarios de redes sociais 18+:** ~136 milhoes (83.5% da populacao adulta)
+- **Tempo medio em social media:** 3h49min/dia (maior do mundo, DataReportal 2025)
+- **Genero:** 55.8% feminino, 44.2% masculino
 - **Plataformas mais usadas por MAU:**
   1. WhatsApp: ~169 milhoes (99% dos smartphones)
-  2. Instagram: ~134 milhoes
-  3. Facebook: ~109 milhoes
-  4. TikTok: ~98 milhoes
-  5. YouTube: ~142 milhoes (dados Google)
+  2. YouTube: ~142 milhoes (dados Google)
+  3. Instagram: ~141 milhoes (DataReportal Jan 2025)
+  4. Facebook: ~109 milhoes
+  5. TikTok: ~131 milhoes (crescimento de 83M em 2023 para 131M em 2025)
   6. LinkedIn: ~75 milhoes
-  7. X/Twitter: ~22 milhoes (queda apos bloqueio judicial em 2024)
+  7. Telegram: ~75 milhoes (crescimento forte apos 2024)
   8. Pinterest: ~38 milhoes
-  9. Threads: ~18 milhoes
-  10. Telegram: ~75 milhoes (crescimento forte apos 2024)
+  9. Threads: ~34 milhoes (estimativa baseada em crescimento global)
+  10. X/Twitter: ~22 milhoes (queda apos bloqueio judicial em 2024)
 
 ### 15.2 Dominancia do WhatsApp
 
@@ -1289,7 +1315,7 @@ Instagram e a plataforma de conteudo mais importante do Brasil:
 
 O TikTok cresceu explosivamente no Brasil:
 
-- De ~20M MAU em 2020 para ~98M em 2025
+- De ~20M MAU em 2020 para ~131M em 2025
 - Audiencia mais jovem: 60%+ tem 16-34 anos
 - Nichos fortes: humor, danca, culinaria, educacao ("BookTok", "FinTok", "CleanTok")
 - TikTok Shop lancado em 2024 — social commerce direto
@@ -1560,3 +1586,50 @@ Criar conteudo em portugues brasileiro para algoritmos requer atencao a:
 *Pesquisa conduzida por @analyst (Scope) — SINAPSE Research Initiative*
 *MS-007 — Social Algorithms Master System*
 *42 fontes consultadas | 1300+ linhas | Abril 2026*
+
+---
+
+## Verificacao de Qualidade
+
+**Data da verificacao:** 2026-04-07
+**Verificador:** @research-orqx (Prism) via WebSearch
+
+### Correcoes Realizadas
+
+1. **Secao 3.1 (TikTok - Contexto regulatorio):** Corrigido detalhes do acordo TikTok USDS. O documento dizia "venda de 45% das operacoes americanas" e "80.1% de propriedade americana." Corrigido para: ByteDance reteve participacao minoritaria <20%, com Oracle/Silver Lake/MGX detendo ~15% cada. Adicionado periodo do banimento de jure (19 Jan 2025 a 22 Jan 2026) e ordem executiva de Trump.
+
+2. **Secao 8.1 (Threads MAU):** Corrigido de "~200 milhoes de MAU" para 400M MAU (agosto 2025) e 450M MAU (inicio 2026). Adicionado dado de que Threads superou X em DAU mobile em janeiro 2026 (141.5M vs 125M).
+
+3. **Secao 15.1 (Brasil - estatisticas):** Multiplas correcoes com dados DataReportal Jan 2025: usuarios de internet de ~187M para ~183M; usuarios de redes sociais de ~153M para ~144M (identidades); tempo medio de 3h37min para 3h49min (maior do mundo); Instagram de ~134M para ~141M; TikTok de ~98M para ~131M; Threads de ~18M para ~34M (estimativa). Adicionado genero (55.8% F / 44.2% M) e segmentacao adulta.
+
+4. **Secao 1.2 (Economia da Atencao):** Corrigido tempo medio Brasil de 3h37min para 3h49min.
+
+5. **Secao 15.4 (TikTok Brasil):** Corrigido de ~98M para ~131M MAU.
+
+6. **Secao 2.7 (Instagram 2025-2026):** Adicionados 4 novos itens: peso de interacoes DM/comments/Stories (marco 2026), categorizacao por AI (2026), traducao AI para Reels (final 2025), confirmacao dos 3 sinais top por Mosseri.
+
+7. **Secao 4.6 (YouTube Shorts):** Adicionado bloco completo "Atualizacoes Shorts 2025-2026": duracao estendida para 3 minutos, nova contagem de views (marco 2025), separacao algoritmica completa, filtro de busca dedicado, mudanca Browse Feed (dezembro 2025), satisfaction signals > watch time.
+
+8. **Secao 5 (LinkedIn):** Adicionada nova subsecao 5.7 com mudancas 2025-2026: Saves/Sends como sinais, filtro anti-automacao, qualidade sobre quantidade, conteudo expert-led.
+
+### URLs Verificadas
+
+- [Instagram Algorithm 2026 - Buffer](https://buffer.com/resources/instagram-algorithms/)
+- [Instagram Algorithm Updates 2026 - MeetEdgar](https://meetedgar.com/blog/instagram-algorithm-updates)
+- [Instagram Algorithm 2026 - Hootsuite](https://blog.hootsuite.com/instagram-algorithm/)
+- [TikTok Ban - Wikipedia](https://en.wikipedia.org/wiki/Efforts_to_ban_TikTok_in_the_United_States)
+- [TikTok Deal - Broadband Breakfast](https://broadbandbreakfast.com/what-to-know-about-the-deal-to-keep-tiktok-from-being-banned-in-the-u-s/)
+- [TikTok Ban Update 2026 - Build My Plays](https://buildmyplays.com/tiktok-ban-update-2026/)
+- [YouTube Shorts Algorithm 2026 - vidIQ](https://vidiq.com/blog/post/youtube-shorts-algorithm/)
+- [YouTube Shorts Algorithm Update January 2026 - Miraflow](https://miraflow.ai/blog/youtube-shorts-algorithm-update-january-2026)
+- [YouTube Algorithm December 2025 - Dataslayer](https://www.dataslayer.ai/blog/youtubes-december-2025-algorithm-update-browse-feed-cut-long-videos-by-80)
+- [LinkedIn Algorithm 2026 - Agorapulse](https://www.agorapulse.com/blog/linkedin/linkedin-algorithm-2025/)
+- [LinkedIn Algorithm 2026 - SourceGeek](https://www.sourcegeek.com/en/news/how-the-linkedin-algorithm-works-2026-update)
+- [Threads Statistics 2026 - DemandSage](https://www.demandsage.com/threads-statistics/)
+- [Threads Statistics - The Social Shepherd](https://thesocialshepherd.com/blog/threads-statistics)
+- [Threads Users - Backlinko](https://backlinko.com/threads-users)
+- [Creator Economy Statistics 2026 - DemandSage](https://www.demandsage.com/creator-economy-statistics/)
+- [Creator Economy Market Size - Precedence Research](https://www.precedenceresearch.com/creator-economy-market)
+- [Digital 2025: Brazil - DataReportal](https://datareportal.com/reports/digital-2025-brazil)
+- [Social Media Brazil - Statista](https://www.statista.com/topics/6949/social-media-usage-in-brazil/)
+- [Most Used Social Networks Brazil 2025 - BestContent](https://bestcontent.ai/blog/article/most-used-social-networks-in-brazil-in-2025)

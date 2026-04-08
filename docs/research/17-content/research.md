@@ -1004,7 +1004,7 @@ Programmatic content e conteudo gerado em escala usando templates + dados. Exemp
 
 ### 7.1 YouTube Strategy
 
-YouTube e o segundo maior mecanismo de busca do mundo e a segunda rede social mais usada (2.7 bilhoes de usuarios ativos mensais em 2025). Para content strategy, YouTube ocupa um papel unico: e ao mesmo tempo plataforma de busca (help/evergreen content), plataforma de conteudo serial (hub content) e plataforma de discovery (browse/suggested videos).
+YouTube e o segundo maior mecanismo de busca do mundo e a segunda rede social mais usada (2.5-2.6 bilhoes de usuarios ativos mensais em 2025, chegando a ~2.85 bilhoes em 2026). Para content strategy, YouTube ocupa um papel unico: e ao mesmo tempo plataforma de busca (help/evergreen content), plataforma de conteudo serial (hub content) e plataforma de discovery (browse/suggested videos).
 
 **Estrategia de crescimento no YouTube:**
 
@@ -1049,7 +1049,7 @@ Otimizacao de video para YouTube e Google Video:
 
 ### 7.3 Short-Form Video (Reels, TikTok, Shorts)
 
-Short-form video (< 60 segundos) dominou a atencao em 2023-2026. TikTok tem 1.5+ bilhoes de usuarios ativos. Instagram Reels e a feature de maior crescimento da plataforma. YouTube Shorts ultrapassa 70 bilhoes de views diarias.
+Short-form video (< 60 segundos) dominou a atencao em 2023-2026. TikTok tem ~1.9 bilhoes de usuarios ativos mensais (2026), aproximando-se de 2 bilhoes. Instagram Reels e a feature de maior crescimento da plataforma. YouTube Shorts ultrapassa 200 bilhoes de views diarias (2025), quase triplicando os 70 bilhoes de 2024.
 
 **Frameworks de script para short-form:**
 
@@ -1121,10 +1121,10 @@ Pos-Producao:
 O podcast se consolidou como o formato mais eficaz para construcao de autoridade profunda. Diferente de um blog post (5 minutos de leitura), um podcast ocupa 30-60 minutos da atencao do ouvinte — criando uma relacao de profundidade incomparavel.
 
 **Mercado global de podcasts (2025-2026):**
-- 500+ milhoes de ouvintes globais
-- Brasil e o 3o maior mercado de podcasts do mundo (apos EUA e Suecia)
-- 42% dos brasileiros com acesso a internet escutam podcasts regularmente (dados DataReportal 2025)
-- Spotify e a plataforma #1 no Brasil para podcasts
+- ~584 milhoes de ouvintes globais em 2025, projetados para 619 milhoes em 2026 (crescimento de ~6.8% ao ano)
+- Mercado global avaliado em USD 30.7 bilhoes (2024), projetado para USD 131 bilhoes ate 2030 (CAGR 27%)
+- Brasil e o 2o maior mercado de podcasts do mundo (apos EUA), com ~44% da populacao ouvindo podcasts semanalmente e media de 11 horas por semana
+- Spotify e a plataforma #1 no Brasil para podcasts; Google Podcasts foi descontinuado em 2024 (migrado para YouTube Music)
 
 **Estrategia de podcast:**
 
@@ -1145,7 +1145,7 @@ O podcast se consolidou como o formato mais eficaz para construcao de autoridade
 
 3. DISTRIBUICAO
    ├── RSS feed → todos os diretórios automaticamente
-   ├── Spotify, Apple Podcasts, Google Podcasts, Amazon Music
+   ├── Spotify, Apple Podcasts, YouTube Music (substituiu Google Podcasts em 2024), Amazon Music
    ├── YouTube (versao video do podcast = 2x audiencia)
    ├── Social clips (cortes de 30-60s para Reels/TikTok)
    └── Newsletter (show notes + link do episodio)
@@ -1274,7 +1274,7 @@ Social listening e o monitoramento de conversas sobre sua marca, concorrentes, i
 
 ### 10.1 Newsletter Strategy
 
-Newsletters experimentaram um renascimento a partir de 2020. Plataformas como Substack (35M+ subscribers totais), beehiiv, ConvertKit e Buttondown democratizaram a publicacao independente por email.
+Newsletters experimentaram um renascimento a partir de 2020. Plataformas como Substack (50M+ assinaturas ativas em inicio de 2026, das quais 5M sao pagas), beehiiv, Kit (ex-ConvertKit, rebrand em outubro 2024) e Buttondown democratizaram a publicacao independente por email.
 
 **Por que newsletter voltou:**
 - Ownership da audiencia (diferente de redes sociais, voce tem a lista)
@@ -1299,7 +1299,7 @@ Newsletters experimentaram um renascimento a partir de 2020. Plataformas como Su
 |-----------|--------|----------|
 | **Substack** | Freemium + 10% take rate | Network effects, discovery, simples |
 | **beehiiv** | Freemium | Growth tools (referral, recommendations), analytics |
-| **ConvertKit (Kit)** | Pago ($29+/mes) | Creator-focused, automacoes, commerce |
+| **Kit** (ex-ConvertKit, rebrand out/2024) | Pago ($29+/mes) | Creator-focused, automacoes, commerce, App Store de integracoes |
 | **Buttondown** | Freemium | Minimalista, developer-friendly, markdown |
 | **Mailchimp** | Freemium | Veterano, extenso, small business |
 | **Ghost** | Self-hosted / Managed | Open-source, memberships, temas |
@@ -1856,7 +1856,7 @@ Aspectos legais que equipes de conteudo devem conhecer:
 
 | CMS | Tipo | Ideal Para | Preco |
 |-----|------|-----------|-------|
-| **WordPress** | Monolitico + headless (REST/GraphQL) | Blogs, sites de conteudo, 43% da web | Gratis (hosting pago) |
+| **WordPress** | Monolitico + headless (REST/GraphQL) | Blogs, sites de conteudo, ~43% da web (61% dos sites com CMS) | Gratis (hosting pago) |
 | **Webflow** | Visual builder + CMS | Sites de marketing, landing pages, design-heavy | $14-212/mes |
 | **Ghost** | Publishing + memberships | Newsletters, blogs premium, creators | $9-199/mes ou self-hosted |
 | **Contentful** | Headless (API-first) | Enterprise multi-canal, apps + web | $0-$489+/mes |
@@ -1878,7 +1878,7 @@ Aspectos legais que equipes de conteudo devem conhecer:
 | **SEO** | Ahrefs, SEMrush, Surfer SEO, Clearscope | Pesquisa, otimizacao, monitoramento |
 | **Analytics** | GA4, Search Console, Hotjar, Plausible | Medicao e comportamento |
 | **Social scheduling** | Buffer, Hootsuite, Later, Sprout Social | Agendamento de posts |
-| **Email** | ConvertKit, beehiiv, Mailchimp, ActiveCampaign | Newsletter, automacao |
+| **Email** | Kit (ex-ConvertKit), beehiiv, Mailchimp, ActiveCampaign | Newsletter, automacao |
 | **AI writing** | Claude, ChatGPT, Jasper, Writer | Assistencia na escrita |
 | **Grammar/Style** | Grammarly, Hemingway Editor, LanguageTool | Revisao automatica |
 | **DAM** | Bynder, Brandfolder, Cloudinary | Gestao de assets digitais |
@@ -1891,7 +1891,7 @@ CMS: Ghost ou WordPress
 Escrita: Google Docs + Grammarly
 Design: Canva
 SEO: Ubersuggest (gratis) + Search Console
-Email: beehiiv ou ConvertKit (free tier)
+Email: beehiiv ou Kit (free tier)
 Social: Buffer (free)
 Analytics: GA4 + Search Console
 AI: Claude ou ChatGPT
@@ -1903,7 +1903,7 @@ Custo: $0-50/mes
 CMS: WordPress ou Webflow
 Ops: Notion (database + calendario + wiki)
 SEO: Ahrefs Lite ou SEMrush
-Email: ConvertKit ou beehiiv Growth
+Email: Kit ou beehiiv Growth
 Social: Buffer Pro ou Later
 Design: Canva Pro + Figma
 Video: Descript
@@ -1933,7 +1933,7 @@ Custo: $2.000-10.000/mes
 
 ### 16.1 O Mercado Brasileiro de Conteudo
 
-O Brasil e o maior mercado de conteudo digital da America Latina e um dos maiores do mundo. Com 187 milhoes de usuarios de internet (2025), 171 milhoes de usuarios de redes sociais e o 3o maior consumo de video online do mundo, o Brasil e um mercado enorme e complexo.
+O Brasil e o maior mercado de conteudo digital da America Latina e um dos maiores do mundo. Com 183 milhoes de usuarios de internet (inicio de 2025, penetracao de 86.2% — DataReportal), 144 milhoes de identidades de usuarios de redes sociais (67.8% da populacao) e o 3o maior consumo de video online do mundo, o Brasil e um mercado enorme e complexo. Brasileiros gastam em media 3h49min por dia em redes sociais — o maior tempo do mundo.
 
 **Caracteristicas unicas do mercado brasileiro:**
 
@@ -1969,15 +1969,15 @@ Escrever para o publico brasileiro requer atencao a nuances que ferramentas de I
 **Hotmart:**
 - Maior plataforma de infoprodutos da America Latina
 - Fundada em Belo Horizonte em 2011
-- 35+ milhoes de usuarios, 580.000+ produtos digitais
+- 26 milhoes de usuarios, 370.000+ produtos digitais registrados, vendas em 185+ paises
 - Ecossistema completo: marketplace, checkout, afiliados, area de membros
-- Modelo: comissao por venda (ate 80% para produtor)
+- Modelo: comissao por venda (taxa ~9.9% + R$1.00 por venda)
 
 **Kiwify:**
 - Concorrente brasileira da Hotmart, fundada em 2020
-- Crescimento rapido por interface simplificada e taxas menores
-- Forte em infoprodutos de menor ticket
-- Area de membros integrada
+- Crescimento rapido por interface simplificada, taxas competitivas (8.99% + R$2.49 por venda) e checkout de alta conversao
+- Em 2026, ja possui marketplace publico e aberto (antes restrito), eliminando desvantagem historica frente a Hotmart
+- Area de membros integrada, forte adocao por grandes produtores e influenciadores
 
 **Eduzz:**
 - Plataforma brasileira de produtos digitais
@@ -2206,3 +2206,54 @@ O Brasil tem um dos maiores e mais ativos ecossistemas de criadores de conteudo 
 - Livros referenciados: 19 obras fundamentais
 - Ferramentas catalogadas: 50+ ferramentas por categoria
 - Contexto brasileiro: Mercado, plataformas, regulatorio, creators, calendario cultural
+
+---
+
+## Verificacao de Qualidade
+
+**Data da verificacao:** 2026-04-07
+**Verificado por:** @research-orqx (Prism) via WebSearch
+
+### Correcoes Realizadas
+
+| Secao | Dado Original | Correcao | Fonte |
+|-------|--------------|----------|-------|
+| 7.1 YouTube Strategy | "2.7 bilhoes de MAU em 2025" | 2.5-2.6B em 2025, ~2.85B em 2026 | DemandSage, Backlinko |
+| 7.3 Short-Form Video | "TikTok 1.5+ bilhoes" | ~1.9B MAU em 2026, proximo de 2B | DemandSage, Buffer, Business of Apps |
+| 7.3 Short-Form Video | "YouTube Shorts 70 bilhoes de views diarias" | 200B+ diarias em 2025 (186% aumento vs 70B de 2024) | eMarketer, DemandSage |
+| 8.1 Podcasting | "500+ milhoes de ouvintes" | ~584M em 2025, projetados 619M em 2026 | Riverside, Grand View Research |
+| 8.1 Podcasting | "Brasil 3o maior mercado (apos EUA e Suecia)" | Brasil e o 2o maior mercado (apos EUA), com 44% ouvindo semanalmente | Nieman Lab, Podnews, YouGov |
+| 8.1 Podcasting | Google Podcasts listado como plataforma | Google Podcasts descontinuado em 2024, migrado para YouTube Music | TechCrunch |
+| 10.1 Newsletter | "Substack 35M+ subscribers" | 50M+ assinaturas ativas em inicio 2026 (5M pagas) | Backlinko, Increv |
+| 10.1 Newsletter | "ConvertKit" sem mencao ao rebrand | ConvertKit rebrandou para Kit em outubro 2024 | BusinessWire |
+| 16.1 Mercado BR | "187 milhoes de usuarios de internet" | 183 milhoes (penetracao 86.2%) — DataReportal Jan 2025 | DataReportal Digital 2025: Brazil |
+| 16.1 Mercado BR | "171 milhoes de usuarios de redes sociais" | 144 milhoes de identidades (67.8% da populacao) | DataReportal Digital 2025: Brazil |
+| 16.3 Hotmart | "35+ milhoes de usuarios, 580.000+ produtos" | 26 milhoes de usuarios, 370.000+ produtos, 185+ paises | Expanded Ramblings, Hotmart |
+| 16.3 Kiwify | Descricao generica | Atualizado com taxas (8.99%+R$2.49), marketplace aberto em 2026 | NegociosRapido, InstaNinja |
+
+### Dados Confirmados sem Alteracao
+
+| Dado | Status | Fonte de Verificacao |
+|------|--------|---------------------|
+| WordPress ~43% da web (61% dos CMS) | Confirmado | W3Techs via WordPress.com, ThemeHunk |
+| CMI 16a edicao B2B Report (91% usam content marketing) | Confirmado | Content Marketing Institute |
+| Jasper, Copy.ai, Writer como principais AI writing tools | Confirmado (Jasper receita caiu para $55M em 2024) | ElectroIQ, GurkaTech |
+| Mercado global content marketing ~$575B em 2025 | Confirmado | Research Dive, Business Research Insights |
+| 94% dos marketers planejam usar IA em content em 2026 | Confirmado | Typeface, SiegMedia |
+
+### URLs de Referencia Verificadas
+
+- https://datareportal.com/reports/digital-2025-brazil
+- https://backlinko.com/substack-users
+- https://www.demandsage.com/youtube-stats/
+- https://www.demandsage.com/tiktok-user-statistics/
+- https://www.demandsage.com/youtube-shorts-statistics/
+- https://www.demandsage.com/podcast-statistics/
+- https://www.businesswire.com/news/home/20241001564521/en/ConvertKit-Rebrands-to-Kit
+- https://expandedramblings.com/index.php/hotmart-statistics-facts/
+- https://wordpress.com/blog/2025/04/17/wordpress-market-share/
+- https://podnews.net/article/ignoring-brazil
+- https://www.niemanlab.org/reading/brazil-is-the-second-largest-market-for-podcasts-after-the-united-states/
+- https://techcrunch.com/2023/09/26/google-podcasts-to-shut-down-in-2024-with-listeners-migrated-to-youtube-music/
+- https://electroiq.com/stats/jasper-ai-statistics/
+- https://www.typeface.ai/blog/content-marketing-statistics
