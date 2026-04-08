@@ -53,18 +53,18 @@ Matt Dixon e Brent Adamson do CEB (Corporate Executive Board, depois Gartner) pu
 A fragmentacao de ferramentas (CRM, marketing automation, CS platforms) criou silos que prejudicavam o crescimento. O conceito de Revenue Operations (RevOps) emergiu para unificar sales, marketing e customer success sob uma unica funcao operacional. Simultaneamente, o Product-Led Growth (PLG) — popularizado por empresas como Slack, Dropbox e Zoom — desafiou o modelo tradicional ao usar o produto como principal veiculo de aquisicao, conversao e expansao.
 
 **Era 6 — AI-Augmented Sales (2023-presente)**
-Generative AI transformou vendas de forma irreversivel. Gong, 6sense, Apollo e dezenas de startups introduziram AI SDRs, conversational intelligence, predictive lead scoring e generative outreach em escala. O vendedor humano nao esta sendo substituido — esta sendo amplificado. Em 2025, pesquisas da McKinsey indicam que equipes de vendas que adotaram AI generativa aumentaram produtividade em 15-20% e taxas de conversao em 10-15%.
+Generative AI transformou vendas de forma irreversivel. Gong, 6sense, Apollo e dezenas de startups introduziram AI SDRs, conversational intelligence, predictive lead scoring e generative outreach em escala. O vendedor humano nao esta sendo substituido — esta sendo amplificado. Em 2025, o McKinsey State of AI Report indica que 88% das empresas usam AI em pelo menos uma funcao (vs. 78% em 2024). Equipes de vendas com AI reportam 15-20% de aumento em produtividade e organizacoes com AI estrategica alcancam 43% maior win rate e 37% ciclos mais rapidos (Highspot/MarketsandMarkets 2026).
 
 ### 1.2 O Mercado Global de Vendas em Numeros
 
 | Metrica | Valor | Fonte |
 |---------|-------|-------|
-| Mercado global de CRM | USD 89.4 bi (2025) | Gartner |
-| Mercado de sales intelligence | USD 5.2 bi (2025) | MarketsandMarkets |
-| Mercado de sales enablement | USD 3.8 bi (2025) | Grand View Research |
+| Mercado global de CRM | USD 90.1 bi (2025), projecao USD 304 bi ate 2035 (CAGR 12.9%) | Precedence Research / Gartner |
+| Mercado de sales intelligence | USD 4.5-4.9 bi (2025) | Fortune Business Insights / Mordor Intelligence |
+| Mercado de sales enablement | USD 6.0 bi (2025), projecao USD 12.8 bi ate 2030 (CAGR 16.3%) | Grand View Research |
 | Profissionais de vendas no mundo | ~15 milhoes (B2B) | LinkedIn |
 | % empresas usando CRM | 91% (B2B >50 func.) | Salesforce State of Sales |
-| % vendedores que batem quota | 24-28% | Pavilion/RepVue 2025 |
+| % vendedores que batem quota | ~30% (avg attainment 43%; 70% miss quota) | Pavilion/RepVue 2025, Hyperbound 2025 |
 | Tempo medio de ramp-up SDR | 3.2 meses | The Bridge Group |
 | Custo medio de aquisicao B2B SaaS | USD 395-702 (SMB) | ProfitWell |
 
@@ -1559,11 +1559,12 @@ O Brasil adotou inside sales de forma mais rapida e profunda que muitos paises:
 | COFINS | Faturamento | 3% (cumulativo) ou 7.6% (nao-cumulativo) |
 | IPI | Produtos industrializados | 0-300% (varia por produto) |
 
-**Reforma Tributaria (2026-2033):**
-- CBS (Contribuicao sobre Bens e Servicos) substituira PIS/COFINS em 2027
-- IBS (Imposto sobre Bens e Servicos) substituira ICMS/ISS em 2029-2033
-- IVA dual com aliquota estimada de 26.5% (entre as mais altas do mundo)
-- Impacto em pricing: empresas precisarao recalcular precos com novo regime
+**Reforma Tributaria (2026-2033) — Lei Complementar 214:**
+- **2026 e ano de teste**: CBS (0.9%) e IBS (0.1%) entram em vigor com aliquotas simbolicas informativas — nao ha cobranca efetiva, mas contribuintes devem calcular e reportar como se houvesse
+- CBS (Contribuicao sobre Bens e Servicos) substituira PIS/COFINS a partir de 2027
+- IBS (Imposto sobre Bens e Servicos) substituira ICMS/ISS gradualmente ate 2033
+- IVA dual com aliquota-referencia estimada de 26.5% (entre as mais altas do mundo)
+- Impacto em pricing: empresas precisarao recalcular precos com novo regime; contratos vigentes podem exigir aditivos para refletir nova carga tributaria
 
 **Nota Fiscal:**
 Todo faturamento no Brasil requer emissao de Nota Fiscal (NF-e para produtos, NFS-e para servicos). CRMs brasileiros geralmente tem integracao com sistemas de emissao de NF. CRMs internacionais precisam de integracao via API com ERPs locais (TOTVS, Omie, Bling).

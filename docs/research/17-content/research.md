@@ -57,7 +57,7 @@ A definicao de Pulizzi contem os cinco pilares que diferenciam content marketing
 | **Publico** | Demografico amplo | Persona especifica |
 | **Acao** | Compra imediata (CTA direto) | Jornada gradual (confianca → compra) |
 
-O CMI, fundado em 2011, tornou-se o epicentro global da disciplina. Seu relatorio anual "B2B Content Marketing" e a maior pesquisa do setor, com dados de milhares de profissionais. Em 2025, o relatorio mostrou que 91% dos profissionais de marketing B2B usam content marketing, e 72% relatam que sua organizacao ve conteudo como estrategia de negocios central — nao apenas uma tatica de marketing.
+O CMI, fundado em 2011, tornou-se o epicentro global da disciplina. Seu relatorio anual "B2B Content Marketing" e a maior pesquisa do setor — a 16a edicao (pesquisa de campo jun-ago 2025, 1.229 respondentes globais, 1.015 B2B) revelou que 91% dos profissionais de marketing B2B usam content marketing. Entretanto, 58% classificam sua estrategia de conteudo como apenas "moderadamente eficaz", e 42% dos que reportam sucesso moderado ou inferior citam falta de objetivos claros como fator contribuinte. Em 2026, 61% dos profissionais B2B estao aumentando o investimento geral, com as tres prioridades de alocacao sendo ferramentas de marketing com IA (45%), eventos e marketing experiencial (33%) e midia propria — website, blog e email (32%).
 
 ### 1.3 Content como Ativo de Negocios
 

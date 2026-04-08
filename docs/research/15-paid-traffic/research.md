@@ -33,7 +33,7 @@
 
 ### 1.1 A Evolucao da Publicidade Digital
 
-A publicidade digital nasceu em 27 de outubro de 1994, quando a revista Wired (entao HotWired) vendeu o primeiro banner ad para a AT&T. O banner dizia "Have you ever clicked your mouse right HERE? You will." e obteve um CTR de 44% — um numero que jamais seria repetido na historia da publicidade digital. Esse momento inaugurou uma industria que em 2025 movimenta mais de USD 740 bilhoes globalmente, superando toda a midia tradicional combinada (TV, radio, jornal, revista, outdoor).
+A publicidade digital nasceu em 27 de outubro de 1994, quando a revista Wired (entao HotWired) vendeu o primeiro banner ad para a AT&T. O banner dizia "Have you ever clicked your mouse right HERE? You will." e obteve um CTR de 44% — um numero que jamais seria repetido na historia da publicidade digital. Esse momento inaugurou uma industria que em 2025 movimenta mais de USD 750 bilhoes em publicidade digital (dentro de um mercado publicitario global total que ultrapassa USD 1 trilhao), superando toda a midia tradicional combinada (TV, radio, jornal, revista, outdoor).
 
 A evolucao da publicidade digital pode ser dividida em eras distintas:
 
@@ -366,7 +366,7 @@ YouTube e a segunda maior plataforma de busca do mundo e o segundo site mais vis
 **YouTube Shorts Ads:**
 - Formato vertical (9:16), ate 60 segundos
 - Aparece entre Shorts organicos
-- Formato em crescimento explosivo — YouTube Shorts tem 70+ bilhoes de views diarios
+- Formato em crescimento explosivo — YouTube Shorts atingiu 200 bilhoes de views diarios (anunciado por Neal Mohan no Cannes Lions 2025, crescimento de ~186% vs 70 bilhoes em marco de 2024)
 - Criativos precisam ser nativos (parecer conteudo, nao publicidade)
 
 **Video Reach Campaigns (VRC):**
@@ -444,7 +444,7 @@ Extensions melhoram Ad Rank e CTR sem custo adicional por clique:
 
 ### 4.1 O Ecossistema TikTok Ads
 
-TikTok se estabeleceu como a terceira maior plataforma de publicidade digital, atras apenas de Google e Meta. Com 1.5+ bilhao de usuarios ativos mensais (2025), o TikTok domina a atencao da Gen Z e Millennials, mas sua audiencia esta envelhecendo rapidamente — usuarios 25-44 sao o segmento de maior crescimento.
+TikTok se estabeleceu como a terceira maior plataforma de publicidade digital, atras apenas de Google e Meta. Com ~1.9 bilhao de usuarios ativos mensais (Q1 2026, crescendo de 1.59 bilhao no inicio de 2025), o TikTok domina a atencao da Gen Z e Millennials, mas sua audiencia esta envelhecendo rapidamente — usuarios 25-44 sao o segmento de maior crescimento. A receita global de ads do TikTok e projetada em USD 34.8 bilhoes em 2026.
 
 O TikTok Ads Manager oferece uma estrutura similar a Meta:
 
@@ -804,21 +804,29 @@ Incrementality testing mede o efeito causal real de uma campanha — "essas conv
 - Controla para sazonalidade e tendencias temporais
 - Mais dados com menos regioes
 
-### 7.5 O Mundo Pos-Cookie
+### 7.5 O Mundo Pos-Cookie (Atualizado: 2025-2026)
 
-Com a depreciacao dos third-party cookies (Chrome iniciou restricoes em 2024), o ecossistema esta em transicao:
+A saga dos third-party cookies no Chrome teve uma reviravolta significativa. Apos anos anunciando a depreciacao, o Google reverteu a decisao:
 
-**Google Privacy Sandbox:**
-- **Topics API:** Substitui cookies por "topicos" de interesse derivados do historico de navegacao. O browser categoriza sites visitados em ~350 topicos e compartilha 3 topicos aleatorios com anunciantes.
-- **Protected Audience API (ex-FLEDGE):** Remarketing on-device sem cookies. O browser faz o leilao localmente.
-- **Attribution Reporting API:** Atribuicao agregada e limitada, sem tracking individual.
+**Cronologia da reversao:**
+- **2020-2023:** Google anuncia e adia repetidamente a morte dos third-party cookies no Chrome
+- **Janeiro 2024:** Google inicia testes restringindo cookies para 1% dos usuarios do Chrome
+- **Julho 2024:** Google anuncia que NAO eliminara third-party cookies. Em vez disso, adota modelo de "user choice" — o usuario pode optar por desabilitar cookies nas configuracoes do Chrome
+- **Abril 2025:** Google confirma que nao introduzira prompt separado de consentimento para cookies — usuarios continuam gerenciando preferencias pelas configuracoes existentes de Privacidade do Chrome. Cookies de terceiros permanecem habilitados por default
+- **Outubro 2025:** Google anuncia a aposentadoria da maior parte das tecnologias do Privacy Sandbox, mantendo apenas CHIPS (Cookies Having Independent Partitioned State), FedCM (Federated Credential Management) e Private State Tokens
 
-**Impacto pratico:**
-- First-party data se tornou o ativo mais valioso
-- Server-side tracking (CAPI) e essencial
+**Google Privacy Sandbox (status atual):**
+- **Topics API:** Desenvolvida como substituto de cookies, mas com adocao limitada — apenas ~32% dos compradores programaticos reportaram usar APIs do Sandbox em campanhas (inicio de 2025). Receita por impressao dos publishers foi ~30% menor com ferramentas do Sandbox vs cookies normais (relatorio CMA UK, junho 2025)
+- **Protected Audience API (ex-FLEDGE):** Remarketing on-device — tecnicamente funcional mas adocao pela industria foi minima
+- **Attribution Reporting API:** Atribuicao agregada e limitada — a maioria do mercado continua usando metodos tradicionais
+
+**Impacto pratico (mesmo sem depreciacao formal):**
+- First-party data continua sendo o ativo mais valioso — a tendencia de privacidade e irreversivel independente da decisao do Google
+- Server-side tracking (CAPI) e essencial — Safari e Firefox ja bloqueiam third-party cookies por default
 - Walled gardens (Google, Meta) ganham poder — eles tem logged-in users
 - Contextual advertising ressurge como alternativa ao behavioral targeting
 - Ferramentas de modelagem (conversions modeling) ganham importancia
+- **A industria se preparou para um mundo sem cookies e nao volta atras** — mesmo com cookies mantidos no Chrome, o investimento em solucoes privacy-first continua
 
 ### 7.6 Estrategia de UTMs
 

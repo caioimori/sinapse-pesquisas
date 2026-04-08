@@ -340,7 +340,7 @@ Se K > 1, o crescimento e viral (cada usuario traz mais de 1 novo). Se K < 1 mas
 
 ### 4.1 Fundamentos de SEO
 
-Search Engine Optimization e a pratica de otimizar conteudo e infraestrutura tecnica para rankear organicamente nos motores de busca. Permanece como um dos canais de aquisicao mais poderosos e sustentaveis: trafego organico do Google representa 53% de todo o trafego web (BrightEdge, 2024).
+Search Engine Optimization e a pratica de otimizar conteudo e infraestrutura tecnica para rankear organicamente nos motores de busca. Permanece como um dos canais de aquisicao mais poderosos e sustentaveis: trafego organico do Google representa 53.3% de todo o trafego web (BrightEdge, 2025) — e embora AI search esteja crescendo rapidamente, ainda responde por menos de 1% do trafego referral, mantendo busca organica como pilar dominante de aquisicao.
 
 **Os tres pilares do SEO:**
 
@@ -367,13 +367,17 @@ Technical SEO garante que os motores de busca consigam rastrear, indexar e rende
 | **HTTPS** | Certificado SSL | Ranking factor |
 | **Internal linking** | Links entre paginas do site | Distribui PageRank, ajuda crawling |
 
-**Core Web Vitals (detalhamento):**
+**Core Web Vitals (detalhamento — atualizado 2025):**
+
+INP (Interaction to Next Paint) substituiu oficialmente o FID (First Input Delay) como Core Web Vital em Marco de 2024. INP mede a responsividade de ponta a ponta — desde a acao do usuario ate a atualizacao visual na tela — oferecendo uma avaliacao mais completa que FID.
 
 | Metrica | O que mede | Bom | Precisa melhorar | Ruim |
 |---------|-----------|-----|-------------------|------|
-| **LCP** (Largest Contentful Paint) | Velocidade de carregamento | <= 2.5s | <= 4.0s | > 4.0s |
+| **LCP** (Largest Contentful Paint) | Velocidade de carregamento | <= 2.5s (novo gold standard: < 2.0s) | <= 4.0s | > 4.0s |
 | **INP** (Interaction to Next Paint) | Responsividade | <= 200ms | <= 500ms | > 500ms |
 | **CLS** (Cumulative Layout Shift) | Estabilidade visual | <= 0.1 | <= 0.25 | > 0.25 |
+
+O Google December 2025 Core Update aumentou significativamente o peso de fatores de performance tecnica no ranking, tornando a excelencia tecnica obrigatoria para posicoes competitivas. Sites com INP acima de 300ms reportaram quedas de ate 31% no ranking, especialmente em mobile.
 
 ### 4.3 Content SEO
 
@@ -457,11 +461,13 @@ Backlinks continuam sendo um dos fatores de ranking mais fortes. Ahrefs e Moz es
 
 A introducao de AI Overviews (antigo SGE — Search Generative Experience) pelo Google em 2024-2025 representa a maior disrupção em SEO desde a busca mobile.
 
-**Impactos observados:**
-- AI Overviews aparecem em ~15-20% das buscas (e crescendo)
-- Click-through rate para resultados organicos cai 30-40% quando AI Overview esta presente
-- Buscas informacionais sao mais afetadas que transacionais
-- "Zero-click searches" ja representam ~65% de todas as buscas (SparkToro/Datos, 2024)
+**Impactos observados (dados atualizados 2025-2026):**
+- AI Overviews aparecem em ~25.8% das buscas nos EUA (Jan 2026) e ~13% globalmente — com queries informacionais atingindo 39.4% de exposicao e e-commerce apenas 4% (Semrush, 2025-2026)
+- Click-through rate para resultados organicos cai 61% (de 1.76% para 0.61%) quando AI Overview esta presente; CTR pago cai 68% (Seer Interactive, 2025)
+- Sites citados dentro de AI Overviews podem ver CTR aumentar ate 35%; marcas mencionadas em AI responses experimentam 91% mais CTR pago
+- Buscas informacionais sao significativamente mais afetadas que transacionais
+- "Zero-click searches" representam ~58.5-60% de todas as buscas no Google (SparkToro/Datos, 2024-2025) — com taxa de 83% em buscas que ativam AI Overviews vs. ~60% em buscas tradicionais. Em mobile, zero-click atinge 77.2% vs. 46.5% em desktop
+- Chegg reportou queda de 49% em trafego de nao-assinantes entre Jan/2024 e Jan/2025, coincidindo com AI Overviews respondendo queries educacionais
 
 **Estrategias de adaptacao:**
 1. **Otimizar para citacao em AI** — Conteudo bem estruturado, dados factuais, autoridade

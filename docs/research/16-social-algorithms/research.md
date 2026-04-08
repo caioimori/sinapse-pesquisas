@@ -178,7 +178,17 @@ O termo "shadowban" e controverso. O Instagram oficialmente nega que "shadowban"
 - Usar links em bio (nao afeta feed)
 - Editar caption depois de postar (mito persistente, nao confirmado)
 
-### 2.7 Engagement Velocity — A Janela Critica
+### 2.7 Mudancas Algoritmicas 2025-2026
+
+**"Your Algorithm" (dezembro 2025):** O Instagram lancou a ferramenta "Your Algorithm" que permite aos usuarios ver e controlar os topicos que moldam suas recomendacoes no Reels. Diferente do TikTok, que mostra apenas categorias genericas, o Instagram personaliza a lista e permite adicionar interesses hiper-especificos. A ferramenta planeja expandir para Explore e outras superficies do app.
+
+**Carrosseis como formato dominante:** Dados de 2025-2026 revelam que carrosseis entregam engagement rate medio de 10%, superando imagens unicas (7%) e Reels (6%). Comparados com fotos unicas, carrosseis alcancam 1.4x mais alcance e 3.1x mais engajamento. O Instagram tambem adicionou a possibilidade de reordenar slides de carrosseis apos publicacao.
+
+**Penalidade a agregadores (2025-2026):** O Instagram passou a remover contas agregadoras — que construiram seguidores repostando conteudo alheio — de seu sistema de recomendacao. Contas que postam 10+ reposts em 30 dias sao excluidas de recomendacoes (Explore, Reels feed, suggested posts). Criadores originais viram aumento de 40-60% no alcance, enquanto agregadores perderam 60-80%. Posts repostados agora aparecem com labels de atribuicao creditando os criadores originais.
+
+**Watch time como sinal #1:** Adam Mosseri confirmou em janeiro de 2025 que watch time e o fator de ranking #1 para Reels, com o limite critico nos primeiros 3 segundos pesando fortemente na decisao de distribuicao inicial.
+
+### 2.8 Engagement Velocity — A Janela Critica
 
 O conceito de engagement velocity e fundamental: o desempenho de um post nos primeiros 30-60 minutos determina seu destino algoritmico.
 
@@ -196,6 +206,8 @@ O conceito de engagement velocity e fundamental: o desempenho de um post nos pri
 ## 3. TikTok Algorithm
 
 ### 3.1 A Revolucao da For You Page (FYP)
+
+**Contexto regulatorio (2024-2026):** Em janeiro de 2025, a Suprema Corte dos EUA manteve a lei "Protecting Americans from Foreign Adversary Controlled Applications Act", que exigia que a ByteDance vendesse o TikTok ou enfrentasse banimento nos EUA. Em dezembro de 2025, a ByteDance fechou acordo de venda de 45% das operacoes americanas para um consorcio liderado por Oracle, Silver Lake e MGX, formando a TikTok USDS Joint Venture LLC. O acordo foi concluido em 22 de janeiro de 2026, com 80.1% de propriedade americana. Como parte dos termos, o algoritmo de recomendacao nos EUA passou a ser treinado exclusivamente com dados hospedados em servidores da Oracle, sem acesso da ByteDance aos dados de usuarios americanos.
 
 O TikTok fundamentalmente redefiniu como conteudo e distribuido em redes sociais. Antes do TikTok, plataformas operavam em um modelo "follow first, discover second" — voce precisava construir uma audiencia de seguidores antes de ter alcance. O TikTok inverteu isso: qualquer video de qualquer conta pode viralizar, independente do numero de seguidores.
 
